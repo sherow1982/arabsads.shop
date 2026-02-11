@@ -39,3 +39,4 @@ Allow: /
 Sitemap: https://emirates.storesads.shop/sitemap.xml
 Sitemap: https://emirates.storesads.shop/mass-seo-sitemap.xml
 Sitemap: https://emirates.storesads.shop/product-feed.xml
+
