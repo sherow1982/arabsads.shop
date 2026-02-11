@@ -199,8 +199,29 @@ export default function ProductDetail({ product: initialProduct, seoData }) {
           </div>
         </div>
 
+        {/* زر اشتري الآن الثابت */}
+        <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-2xl z-50">
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div className="flex flex-col">
+              <span className="text-2xl md:text-3xl font-bold text-primary">{product.salePrice} د.إ</span>
+              {discount > 0 && (
+                <span className="text-sm text-gray-400 line-through">{product.price} د.إ</span>
+              )}
+            </div>
+            <button 
+              onClick={() => {
+                handleAddToCart();
+                router.push('/checkout');
+              }}
+              className="flex-1 max-w-md bg-green-600 text-white py-4 px-8 rounded-full text-lg font-bold hover:bg-green-700 transition shadow-lg"
+            >
+              🛒 اشتري الآن
+            </button>
+          </div>
+        </div>
+
         {/* التقييمات والأسئلة الشائعة */}
-        <div className="mt-12 bg-white rounded-2xl shadow-card p-4 md:p-8 overflow-hidden">
+        <div className="mt-12 mb-24 bg-white rounded-2xl shadow-card p-4 md:p-8 overflow-hidden">
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b mb-6 overflow-x-auto">
             <button 
               onClick={() => setActiveTab('description')}
