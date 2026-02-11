@@ -5,14 +5,29 @@ Allow: /
 Disallow: /api/
 Disallow: /checkout/
 Disallow: /_next/
-Disallow: /cart
 
 User-agent: Googlebot
 Allow: /
-Disallow: /api/
-Disallow: /checkout/
 
 User-agent: Googlebot-Image
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://emirates.storesads.shop/sitemap.xml
