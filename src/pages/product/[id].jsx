@@ -1,16 +1,16 @@
 import { useRouter } from 'next/router';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart } from '@/redux/features/cartSlice';
 import { products } from '@/data/products';
 import { toast } from 'react-toastify';
 import Link from 'next/link';
+import SEO from '@/components/SEO';
 import { useState } from 'react';
 
 export default function ProductDetail() {
   const router = useRouter();
   const { id } = router.query;
   const dispatch = useDispatch();
-  const { items } = useSelector((state) => state.cart);
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -18,9 +18,9 @@ export default function ProductDetail() {
 
   if (!product) {
     return (
-      <div className="container" style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h2>المنتج غير موجود</h2>
-        <button onClick={() => router.push('/shop')} style={{ marginTop: '20px', padding: '10px 30px', background: '#007bff', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>
+      <div className="max-w-7xl mx-auto px-4 py-20 text-center">
+        <h2 className="text-3xl font-bold text-dark mb-6">المنتج غير موجود</h2>
+        <button onClick={() => router.push('/shop')} className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:bg-primary-dark transition">
           العودة للمتجر
         </button>
       </div>
@@ -38,380 +38,104 @@ export default function ProductDetail() {
 
   return (
     <>
-      <header className="header">
-        <div className="container">
-          <h1>متجر إماراتي</h1>
-          <nav>
-            <Link href="/">الرئيسية</Link>
-            <Link href="/shop">المتجر</Link>
-            <Link href="/cart">السلة ({items.length})</Link>
-          </nav>
-        </div>
-      </header>
+      <SEO 
+        title={`${product.title} - إماراتي ستور`}
+        description={`${product.description || product.title} - شحن مجاني. السعر: ${product.salePrice} د.إ بدلاً من ${product.price} د.إ. توصيل سريع 1-3 أيام`}
+        keywords={`${product.title}, ${product.category}, شراء ${product.title}, ${product.sku}`}
+        image={product.image}
+        url={`https://emeratis-store.com/product/${product.id}`}
+        type="product"
+        product={product}
+      />
 
-      <div className="product-detail-page">
-        <div className="container">
-          <button className="back-btn" onClick={() => router.back()}>
-            ← العودة
-          </button>
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <button className="bg-white border border-gray-300 px-6 py-2 rounded-lg mb-8 hover:bg-light-gray transition" onClick={() => router.back()}>
+          ← العودة
+        </button>
 
-          <div className="product-detail">
-            <div className="product-images">
-              <div className="main-image">
-                <img src={selectedImage || product.image} alt={product.title} />
-                {discount > 0 && (
-                  <span className="discount-badge">-{discount}%</span>
-                )}
-              </div>
-              <div className="thumbnail-images">
+        <div className="bg-white rounded-2xl shadow-card p-8 grid md:grid-cols-2 gap-12">
+          <div className="space-y-4">
+            <div className="relative h-96 rounded-xl overflow-hidden bg-light-gray">
+              <img src={selectedImage || product.image} alt={product.title} className="w-full h-full object-cover" />
+              {discount > 0 && (
+                <span className="absolute top-4 right-4 bg-danger text-white px-4 py-2 rounded-full font-bold">
+                  -{discount}%
+                </span>
+              )}
+            </div>
+            <div className="flex gap-3">
+              <img 
+                src={product.image} 
+                alt={product.title}
+                onClick={() => setSelectedImage(product.image)}
+                className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 transition ${selectedImage === product.image || !selectedImage ? 'border-primary' : 'border-transparent'}`}
+              />
+              {product.additionalImage && product.additionalImage !== product.image && (
                 <img 
-                  src={product.image} 
+                  src={product.additionalImage} 
                   alt={product.title}
-                  onClick={() => setSelectedImage(product.image)}
-                  className={selectedImage === product.image || !selectedImage ? 'active' : ''}
+                  onClick={() => setSelectedImage(product.additionalImage)}
+                  className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 transition ${selectedImage === product.additionalImage ? 'border-primary' : 'border-transparent'}`}
                 />
-                {product.additionalImage && product.additionalImage !== product.image && (
-                  <img 
-                    src={product.additionalImage} 
-                    alt={product.title}
-                    onClick={() => setSelectedImage(product.additionalImage)}
-                    className={selectedImage === product.additionalImage ? 'active' : ''}
-                  />
-                )}
-              </div>
+              )}
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <h1 className="text-4xl font-bold text-dark">{product.title}</h1>
+            
+            <div className="flex gap-3 flex-wrap">
+              <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-lg text-sm">{product.category}</span>
+              <span className="bg-light-gray text-gray-600 px-3 py-1 rounded-lg text-sm">رقم المنتج: {product.sku}</span>
+              {product.inStock ? (
+                <span className="bg-green-100 text-success px-3 py-1 rounded-lg text-sm">متوفر</span>
+              ) : (
+                <span className="bg-red-100 text-danger px-3 py-1 rounded-lg text-sm">غير متوفر</span>
+              )}
             </div>
 
-            <div className="product-details-info">
-              <h1>{product.title}</h1>
-              
-              <div className="product-meta">
-                <span className="category">{product.category}</span>
-                <span className="sku">رقم المنتج: {product.sku}</span>
-                {product.inStock ? (
-                  <span className="in-stock">متوفر</span>
-                ) : (
-                  <span className="out-of-stock">غير متوفر</span>
-                )}
-              </div>
-
-              <div className="product-prices">
-                <span className="sale-price">{product.salePrice} د.إ</span>
-                <span className="original-price">{product.price} د.إ</span>
-                {discount > 0 && (
-                  <span className="save-amount">وفر {product.price - product.salePrice} د.إ</span>
-                )}
-              </div>
-
-              {product.description && (
-                <div className="product-description">
-                  <h3>وصف المنتج</h3>
-                  <p>{product.description}</p>
-                </div>
+            <div className="flex items-center gap-4 pb-6 border-b">
+              <span className="text-5xl font-bold text-primary">{product.salePrice} د.إ</span>
+              <span className="text-2xl text-gray-400 line-through">{product.price} د.إ</span>
+              {discount > 0 && (
+                <span className="bg-warning bg-opacity-20 text-yellow-800 px-3 py-1 rounded-lg font-bold">وفر {product.price - product.salePrice} د.إ</span>
               )}
+            </div>
 
-              <div className="product-actions">
-                <div className="quantity-selector">
-                  <label>الكمية:</label>
-                  <div className="quantity-controls">
-                    <button onClick={() => setQuantity(Math.max(1, quantity - 1))}>-</button>
-                    <span>{quantity}</span>
-                    <button onClick={() => setQuantity(quantity + 1)}>+</button>
-                  </div>
-                </div>
-
-                <button className="add-to-cart-btn" onClick={handleAddToCart}>
-                  أضف إلى السلة
-                </button>
+            {product.description && (
+              <div>
+                <h3 className="text-xl font-bold text-dark mb-3">وصف المنتج</h3>
+                <p className="text-gray-600 leading-relaxed">{product.description}</p>
               </div>
+            )}
+
+            <div className="flex gap-3 text-sm">
+              <Link href="/return-policy" className="text-primary hover:underline">🔄 سياسة الإرجاع</Link>
+              <span className="text-gray-300">|</span>
+              <Link href="/shipping-policy" className="text-primary hover:underline">🚚 سياسة الشحن</Link>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <label className="font-bold text-dark">الكمية:</label>
+                <div className="flex items-center gap-4 bg-light-gray px-4 py-2 rounded-lg">
+                  <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="w-10 h-10 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition">
+                    -
+                  </button>
+                  <span className="text-xl font-bold min-w-[40px] text-center">{quantity}</span>
+                  <button onClick={() => setQuantity(quantity + 1)} className="w-10 h-10 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition">
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <button onClick={handleAddToCart} className="w-full bg-primary text-white py-4 rounded-full text-lg font-bold hover:bg-primary-dark transition shadow-lg hover:shadow-xl">
+                أضف إلى السلة
+              </button>
             </div>
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .header {
-          background-color: #fff;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-          padding: 20px 0;
-          margin-bottom: 30px;
-        }
-
-        .header h1 {
-          color: #333;
-          font-size: 28px;
-          margin-bottom: 10px;
-        }
-
-        .header nav {
-          display: flex;
-          gap: 20px;
-        }
-
-        .header nav a {
-          color: #666;
-          text-decoration: none;
-          font-weight: 500;
-          padding: 8px 16px;
-          border-radius: 6px;
-          transition: all 0.3s;
-        }
-
-        .header nav a:hover {
-          color: #007bff;
-          background: #f0f7ff;
-        }
-
-        .product-detail-page {
-          min-height: 100vh;
-          padding: 40px 0;
-          background: #f5f5f5;
-        }
-
-        .back-btn {
-          background: white;
-          border: 1px solid #ddd;
-          padding: 10px 20px;
-          border-radius: 6px;
-          cursor: pointer;
-          margin-bottom: 30px;
-          font-size: 16px;
-          transition: all 0.3s;
-        }
-
-        .back-btn:hover {
-          background: #f8f9fa;
-          border-color: #007bff;
-          color: #007bff;
-        }
-
-        .product-detail {
-          background: white;
-          border-radius: 12px;
-          padding: 40px;
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 60px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        @media (max-width: 968px) {
-          .product-detail {
-            grid-template-columns: 1fr;
-            gap: 30px;
-            padding: 20px;
-          }
-        }
-
-        .product-images {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        }
-
-        .main-image {
-          position: relative;
-          width: 100%;
-          height: 500px;
-          border-radius: 12px;
-          overflow: hidden;
-          background: #f8f9fa;
-        }
-
-        .main-image img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        .discount-badge {
-          position: absolute;
-          top: 20px;
-          right: 20px;
-          background: #ff4444;
-          color: white;
-          padding: 8px 16px;
-          border-radius: 25px;
-          font-weight: bold;
-          font-size: 16px;
-        }
-
-        .thumbnail-images {
-          display: flex;
-          gap: 15px;
-        }
-
-        .thumbnail-images img {
-          width: 100px;
-          height: 100px;
-          object-fit: cover;
-          border-radius: 8px;
-          cursor: pointer;
-          border: 2px solid transparent;
-          transition: all 0.3s;
-        }
-
-        .thumbnail-images img:hover,
-        .thumbnail-images img.active {
-          border-color: #007bff;
-          transform: scale(1.05);
-        }
-
-        .product-details-info h1 {
-          font-size: 32px;
-          color: #333;
-          margin-bottom: 20px;
-        }
-
-        .product-meta {
-          display: flex;
-          gap: 15px;
-          flex-wrap: wrap;
-          margin-bottom: 25px;
-        }
-
-        .product-meta span {
-          padding: 6px 12px;
-          border-radius: 6px;
-          font-size: 14px;
-        }
-
-        .category {
-          background: #e3f2fd;
-          color: #1976d2;
-        }
-
-        .sku {
-          background: #f5f5f5;
-          color: #666;
-        }
-
-        .in-stock {
-          background: #e8f5e9;
-          color: #2e7d32;
-        }
-
-        .out-of-stock {
-          background: #ffebee;
-          color: #c62828;
-        }
-
-        .product-prices {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-          margin-bottom: 30px;
-          padding-bottom: 30px;
-          border-bottom: 1px solid #eee;
-        }
-
-        .sale-price {
-          font-size: 36px;
-          font-weight: bold;
-          color: #007bff;
-        }
-
-        .original-price {
-          font-size: 24px;
-          color: #999;
-          text-decoration: line-through;
-        }
-
-        .save-amount {
-          background: #fff3cd;
-          color: #856404;
-          padding: 6px 12px;
-          border-radius: 6px;
-          font-size: 14px;
-          font-weight: 600;
-        }
-
-        .product-description {
-          margin-bottom: 30px;
-        }
-
-        .product-description h3 {
-          font-size: 20px;
-          margin-bottom: 15px;
-          color: #333;
-        }
-
-        .product-description p {
-          color: #666;
-          line-height: 1.8;
-          white-space: pre-wrap;
-        }
-
-        .product-actions {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        }
-
-        .quantity-selector {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-        }
-
-        .quantity-selector label {
-          font-size: 16px;
-          font-weight: 600;
-          color: #333;
-        }
-
-        .quantity-controls {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-          background: #f8f9fa;
-          padding: 8px 15px;
-          border-radius: 8px;
-        }
-
-        .quantity-controls button {
-          width: 36px;
-          height: 36px;
-          border: none;
-          background: white;
-          border-radius: 6px;
-          cursor: pointer;
-          font-size: 20px;
-          font-weight: bold;
-          color: #007bff;
-          transition: all 0.3s;
-        }
-
-        .quantity-controls button:hover {
-          background: #007bff;
-          color: white;
-        }
-
-        .quantity-controls span {
-          font-size: 18px;
-          font-weight: 600;
-          min-width: 40px;
-          text-align: center;
-        }
-
-        .add-to-cart-btn {
-          width: 100%;
-          padding: 18px;
-          background: #007bff;
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-size: 18px;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.3s;
-        }
-
-        .add-to-cart-btn:hover {
-          background: #0056b3;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 12px rgba(0,123,255,0.3);
-        }
-      `}</style>
     </>
   );
 }

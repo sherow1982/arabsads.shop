@@ -2,7 +2,7 @@ export const products = [
   {
     "id": 1,
     "title": "سخان مياه الدش الفوري",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1765440482750623.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765440482547493.webp",
     "price": 290,
@@ -15,7 +15,7 @@ export const products = [
   {
     "id": 2,
     "title": "طقم أدوات القهوة للرحلات والتخييم",
-    "description": "",
+    "description": "معدات تخييم عملية ومتينة. مصنوعة من مواد عالية الجودة تتحمل الظروف الخارجية، خفيفة الوزن وسهلة الحمل. مثالية لمحبي المغامرات والرحلات.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1765441902562393.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765441902479733.webp",
     "price": 410,
@@ -28,7 +28,7 @@ export const products = [
   {
     "id": 3,
     "title": "حقيبة أقلام تلوين للأطفال",
-    "description": "",
+    "description": "أضيفي لمسة من الفخامة إلى إطلالتك مع هذه الحقيبة الأنيقة. تصميم راقٍ يناسب جميع المناسبات، مصنوعة من أجود الخامات لتدوم معك لسنوات.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1765443045734974.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176544304554291.webp",
     "price": 200,
@@ -41,7 +41,7 @@ export const products = [
   {
     "id": 4,
     "title": "شاحن سيارة ستارلايت 5*1 الحديث",
-    "description": "",
+    "description": "إكسسوار سيارة عملي يضيف الراحة والأناقة لسيارتك. مصنوع من مواد عالية الجودة، سهل التركيب والاستخدام. يحسن من تجربة القيادة ويوفر لك المزيد من الراحة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1765443728743099.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765443728776104.webp",
     "price": 232,
@@ -54,7 +54,7 @@ export const products = [
   {
     "id": 5,
     "title": "إضاءة LED ذكية على شكل ألعاب نارية",
-    "description": "",
+    "description": "أنر مساحتك بأناقة مع هذه الإضاءة المميزة. تصميم حديث وجودة عالية، توفر إضاءة مريحة للعين. مثالية لجميع الغرف والمساحات.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1765445097732173.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765445097969933.webp",
     "price": 166,
@@ -67,7 +67,7 @@ export const products = [
   {
     "id": 6,
     "title": "عصارة الحمضيات اليدوية",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1765445621215714.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765445622846361.webp",
     "price": 320,
@@ -80,7 +80,7 @@ export const products = [
   {
     "id": 7,
     "title": "جهاز مساج القدم الاحترافي",
-    "description": "",
+    "description": "منتج عناية احترافي بجودة عالية. يوفر لك النتائج الفعالة والآمنة، سهل الاستخدام في المنزل. استثمار مثالي في صحتك وراحتك.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1765446978456971.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765446978980399.webp",
     "price": 340,
@@ -93,7 +93,7 @@ export const products = [
   {
     "id": 8,
     "title": "كرسي وطاولة للاطفال قابلة للطي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1765447385384401.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765447385384401.webp",
     "price": 248,
@@ -106,7 +106,7 @@ export const products = [
   {
     "id": 9,
     "title": "مروحة مكتب حديثة",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/176545454216725.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765454542440900.webp",
     "price": 290,
@@ -119,7 +119,7 @@ export const products = [
   {
     "id": 10,
     "title": "منشر غسيل قابل للطي وموفر للغسيل",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1765454838421540.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765454838849430.webp",
     "price": 410,
@@ -132,7 +132,7 @@ export const products = [
   {
     "id": 11,
     "title": "شورت تشكيل الأرداف للنساء",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1765455368902119.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765455369335354.webp",
     "price": 230,
@@ -145,7 +145,7 @@ export const products = [
   {
     "id": 12,
     "title": "وسادة نوم متعددة الوظائف",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1765455727850976.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765455727814339.webp",
     "price": 290,
@@ -158,7 +158,7 @@ export const products = [
   {
     "id": 13,
     "title": "Bvlgari Serpenti (Silver with strass) Ladies Watch",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1764354226607806.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764354226607806.webp",
     "price": 620,
@@ -171,7 +171,7 @@ export const products = [
   {
     "id": 14,
     "title": "Bvlgari Serpenti (Gold with strass) Ladies Watch",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1764355332309563.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764355332309563.webp",
     "price": 620,
@@ -184,7 +184,7 @@ export const products = [
   {
     "id": 15,
     "title": "Bvlgari Serpenti (Rose Gold with strass) Ladies Watch",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1764355734190839.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764355734190839.webp",
     "price": 620,
@@ -197,7 +197,7 @@ export const products = [
   {
     "id": 16,
     "title": "Bvlgari Serpenti (Rose Gold) Ladies Watch",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1764355894697168.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764355894697168.webp",
     "price": 620,
@@ -210,7 +210,7 @@ export const products = [
   {
     "id": 17,
     "title": "Bvlgari Serpenti (Green&gold) Ladies Watch",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1764356045161908.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764356045161908.webp",
     "price": 620,
@@ -223,7 +223,7 @@ export const products = [
   {
     "id": 18,
     "title": "Bvlgari Serpenti (Silver&gold&green) Ladies Watch",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1764356163712954.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764356163712954.webp",
     "price": 620,
@@ -236,7 +236,7 @@ export const products = [
   {
     "id": 19,
     "title": "ساعة نسائية Boucheron Boheme باللون الفضي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/176435737130836.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764357371855820.webp",
     "price": 730,
@@ -249,7 +249,7 @@ export const products = [
   {
     "id": 20,
     "title": "ساعة رولكس نسائي مينا بني",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/176459776381828.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176459776381828.webp",
     "price": 300,
@@ -262,7 +262,7 @@ export const products = [
   {
     "id": 21,
     "title": "جهاز تدليك ومساج الرقبة الحديث",
-    "description": "",
+    "description": "منتج عناية احترافي بجودة عالية. يوفر لك النتائج الفعالة والآمنة، سهل الاستخدام في المنزل. استثمار مثالي في صحتك وراحتك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/176537611432849.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765376114296121.webp",
     "price": 340,
@@ -275,7 +275,7 @@ export const products = [
   {
     "id": 22,
     "title": "ماكينة صنع الفشار",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1765376299952940.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765376300642780.webp",
     "price": 194,
@@ -288,7 +288,7 @@ export const products = [
   {
     "id": 23,
     "title": "مقشرة الفواكه والخضار الأوتوماتيكية",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1765438737969500.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765438738400127.webp",
     "price": 226,
@@ -301,7 +301,7 @@ export const products = [
   {
     "id": 24,
     "title": "قفازات مطبخ سميكة مقاومة للحرارة",
-    "description": "",
+    "description": "أداة مطبخ عملية تسهل عليك تحضير ألذ الأطباق. مصنوعة من مواد آمنة وصحية، سهلة التنظيف والاستخدام. إضافة لا غنى عنها لمطبخك العصري.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1765439753607457.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1765439753242454.webp",
     "price": 230,
@@ -314,7 +314,7 @@ export const products = [
   {
     "id": 25,
     "title": "صندوق تخزين جانبي لباب السيارة",
-    "description": "",
+    "description": "إكسسوار سيارة عملي يضيف الراحة والأناقة لسيارتك. مصنوع من مواد عالية الجودة، سهل التركيب والاستخدام. يحسن من تجربة القيادة ويوفر لك المزيد من الراحة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763988039461227.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763988039461227.png",
     "price": 170,
@@ -327,7 +327,7 @@ export const products = [
   {
     "id": 26,
     "title": "لعبة Funny rabbit",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763988976489817.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763988977960928.webp",
     "price": 240,
@@ -340,7 +340,7 @@ export const products = [
   {
     "id": 27,
     "title": "وسادة لدعم نوم الاطفال",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763989154466058.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763989154248820.webp",
     "price": 196,
@@ -353,7 +353,7 @@ export const products = [
   {
     "id": 28,
     "title": "منظم ادراج المطبخ",
-    "description": "",
+    "description": "أداة مطبخ عملية تسهل عليك تحضير ألذ الأطباق. مصنوعة من مواد آمنة وصحية، سهلة التنظيف والاستخدام. إضافة لا غنى عنها لمطبخك العصري.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763989318597448.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763989318925554.webp",
     "price": 190,
@@ -366,7 +366,7 @@ export const products = [
   {
     "id": 29,
     "title": "مقص تقليم اشجار كهربائي",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763989568131202.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763989568779864.webp",
     "price": 320,
@@ -379,7 +379,7 @@ export const products = [
   {
     "id": 30,
     "title": "كاتل كهربائي و ترمس 2*1",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763989950951161.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763989950214456.webp",
     "price": 250,
@@ -418,7 +418,7 @@ export const products = [
   {
     "id": 33,
     "title": "Bvlgari Serpenti (Gold) Ladies Watch",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1764352772354003.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764352772354003.webp",
     "price": 620,
@@ -431,7 +431,7 @@ export const products = [
   {
     "id": 34,
     "title": "Bvlgari Serpenti (Gold&Silver) Ladies Watch",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1764353572943855.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764353572943855.webp",
     "price": 620,
@@ -444,7 +444,7 @@ export const products = [
   {
     "id": 35,
     "title": "Bvlgari Serpenti (Silver) Ladies Watch",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1764353851289012.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764353851289012.webp",
     "price": 620,
@@ -457,7 +457,7 @@ export const products = [
   {
     "id": 36,
     "title": "Bvlgari Serpenti Ladies Watch",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1764353999492182.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1764353999492182.webp",
     "price": 620,
@@ -470,7 +470,7 @@ export const products = [
   {
     "id": 37,
     "title": "دلو الممسحة الدوارة",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763984810963888.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176398481095053.webp",
     "price": 184,
@@ -483,7 +483,7 @@ export const products = [
   {
     "id": 38,
     "title": "مطحنة القهوة المحمولة",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763985013817152.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763985013710745.webp",
     "price": 172,
@@ -496,7 +496,7 @@ export const products = [
   {
     "id": 39,
     "title": "مصباح ليد علي شكل قنديل البحر",
-    "description": "",
+    "description": "إضاءة عصرية توفر لك الإنارة المثالية. تصميم أنيق يناسب جميع الديكورات، موفرة للطاقة وطويلة العمر. تضيف لمسة جمالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763985242597579.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763985244416941.webp",
     "price": 200,
@@ -509,7 +509,7 @@ export const products = [
   {
     "id": 40,
     "title": "مجموعة سكاكين مقاومة للصدا",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1763985585155099.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763985585155099.webp",
     "price": 182,
@@ -522,7 +522,7 @@ export const products = [
   {
     "id": 41,
     "title": "مجموعة سكاكين مع لوح تقطيع",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763985778777246.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763985779708167.webp",
     "price": 160,
@@ -535,7 +535,7 @@ export const products = [
   {
     "id": 42,
     "title": "مجموعة سكاكين تقطيع مع حامل",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763986102766652.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763986102509818.webp",
     "price": 186,
@@ -548,7 +548,7 @@ export const products = [
   {
     "id": 43,
     "title": "مجموعة سكاكين المطبخ6 قطع",
-    "description": "",
+    "description": "أداة مطبخ عملية تسهل عليك تحضير ألذ الأطباق. مصنوعة من مواد آمنة وصحية، سهلة التنظيف والاستخدام. إضافة لا غنى عنها لمطبخك العصري.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763986313500901.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763986314462284.webp",
     "price": 192,
@@ -561,7 +561,7 @@ export const products = [
   {
     "id": 44,
     "title": "مجموعة ادوات المطبخ 8 قطع",
-    "description": "",
+    "description": "أداة مطبخ عملية تسهل عليك تحضير ألذ الأطباق. مصنوعة من مواد آمنة وصحية، سهلة التنظيف والاستخدام. إضافة لا غنى عنها لمطبخك العصري.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763986484393684.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763986484847198.webp",
     "price": 196,
@@ -574,7 +574,7 @@ export const products = [
   {
     "id": 45,
     "title": "ماكينة صنع القهوة المحمولة",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763986702229828.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763986702291581.webp",
     "price": 380,
@@ -587,7 +587,7 @@ export const products = [
   {
     "id": 46,
     "title": "ماكينة تحديد وتنعيم الشعر من كيمي",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1763986973778004.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763986973938576.webp",
     "price": 190,
@@ -600,7 +600,7 @@ export const products = [
   {
     "id": 47,
     "title": "فرن سلفر كرست 15 لتر",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1763987513107377.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176398751495047.webp",
     "price": 370,
@@ -613,7 +613,7 @@ export const products = [
   {
     "id": 48,
     "title": "غلاية كهربائية مزدوجة لتحضير الشاي",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763987785765231.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176398778698393.webp",
     "price": 236,
@@ -652,7 +652,7 @@ export const products = [
   {
     "id": 51,
     "title": "كشاف يعمل بالطاقة الشمسية",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763217584248022.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763217584849836.webp",
     "price": 610,
@@ -665,7 +665,7 @@ export const products = [
   {
     "id": 52,
     "title": "مجفف احذية كهربائي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763217752897010.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763217752572378.webp",
     "price": 174,
@@ -678,7 +678,7 @@ export const products = [
   {
     "id": 53,
     "title": "محول طاقة للسيارة من باورولوجي",
-    "description": "",
+    "description": "اجعل سيارتك أكثر عملية وأناقة مع هذا الإكسسوار المميز. تصميم حديث يناسب جميع أنواع السيارات، جودة عالية تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763217952546082.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763217952137812.webp",
     "price": 340,
@@ -691,7 +691,7 @@ export const products = [
   {
     "id": 54,
     "title": "مدفاة كهربائية محمولة",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763218239512647.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763218240283519.webp",
     "price": 240,
@@ -704,7 +704,7 @@ export const products = [
   {
     "id": 55,
     "title": "عرض قطعتين زيت الشعر الأفغاني",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763389218375023.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763389218375023.webp",
     "price": 250,
@@ -717,7 +717,7 @@ export const products = [
   {
     "id": 56,
     "title": "رف تجفيف ملابس قابل للسحب",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763894975662470.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763894975221388.webp",
     "price": 250,
@@ -730,7 +730,7 @@ export const products = [
   {
     "id": 57,
     "title": "منظمات حقائب السفر",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1763895173934103.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763895173988265.webp",
     "price": 230,
@@ -743,7 +743,7 @@ export const products = [
   {
     "id": 58,
     "title": "لعبة دب بيكابو للاطفال",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763983959733760.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763983959501150.webp",
     "price": 200,
@@ -756,7 +756,7 @@ export const products = [
   {
     "id": 59,
     "title": "موزع خليط بلاستيك شفاف",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763984396111120.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763984396134004.webp",
     "price": 164,
@@ -769,7 +769,7 @@ export const products = [
   {
     "id": 60,
     "title": "منظم اكسسوارات و مجوهرات",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763984585801760.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763984586953315.webp",
     "price": 156,
@@ -795,7 +795,7 @@ export const products = [
   {
     "id": 62,
     "title": "مدفأة كهربائية طويلة",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763090930978137.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763090930287284.webp",
     "price": 300,
@@ -808,7 +808,7 @@ export const products = [
   {
     "id": 63,
     "title": "دفاية كهربائية محمولة",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1763091215218657.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763091215770475.webp",
     "price": 224,
@@ -821,7 +821,7 @@ export const products = [
   {
     "id": 64,
     "title": "دفاية كهربائية مع مروحة",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763091412983883.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176309141218911.webp",
     "price": 240,
@@ -847,7 +847,7 @@ export const products = [
   {
     "id": 66,
     "title": "جهاز تسخين مج قهوة كهربائي للمكتب",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763112227260702.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763112228568038.webp",
     "price": 154,
@@ -860,7 +860,7 @@ export const products = [
   {
     "id": 67,
     "title": "جهاز استنشاق البخار المحمول",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763114399200497.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763114399724815.webp",
     "price": 150,
@@ -873,7 +873,7 @@ export const products = [
   {
     "id": 68,
     "title": "دفاية هوائية تعمل بالكهرباء",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763215584406030.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763215584786967.webp",
     "price": 180,
@@ -938,7 +938,7 @@ export const products = [
   {
     "id": 73,
     "title": "Women high quality rolex watch",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1762505038456961.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1762505038456961.webp",
     "price": 610,
@@ -951,7 +951,7 @@ export const products = [
   {
     "id": 74,
     "title": "فرشاة تنظيف وتلميع كهربائية لاسلكية",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1762754174898426.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1762754174195115.webp",
     "price": 214,
@@ -964,7 +964,7 @@ export const products = [
   {
     "id": 75,
     "title": "عدة كهربائية للحدائق 4*1",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/176308370655342.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763083706356603.webp",
     "price": 510,
@@ -977,7 +977,7 @@ export const products = [
   {
     "id": 76,
     "title": "فواحة عطرية كهربائية على شكل سفينة",
-    "description": "",
+    "description": "عطر راقٍ بعبير أخاذ يترك انطباعاً لا يُنسى. تركيبة متوازنة من النفحات العطرية الفاخرة، يدوم معك طوال اليوم. إضافة مثالية لمجموعتك من العطور.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1763084466794787.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763084466768747.webp",
     "price": 262,
@@ -990,7 +990,7 @@ export const products = [
   {
     "id": 77,
     "title": "مقلاة كهربائية غير لاصقة للطهي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763084939150920.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763084939629608.webp",
     "price": 230,
@@ -1003,7 +1003,7 @@ export const products = [
   {
     "id": 78,
     "title": "قفازات تنظيف الأطباق المنزلية",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763085828857744.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763085828333225.webp",
     "price": 180,
@@ -1016,7 +1016,7 @@ export const products = [
   {
     "id": 79,
     "title": "خلاط أسمنت ودهانات كهربائي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763087226256949.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763087226634810.webp",
     "price": 300,
@@ -1029,7 +1029,7 @@ export const products = [
   {
     "id": 80,
     "title": "دريل كهربائي لاسلكي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763087798389105.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763087798976237.webp",
     "price": 260,
@@ -1042,7 +1042,7 @@ export const products = [
   {
     "id": 81,
     "title": "عربة أطفال خفيفة الوزن قابلة للطي 3*1",
-    "description": "",
+    "description": "منتج عملي ومسلي للأطفال. تصميم آمن ومريح، مصنوع من مواد عالية الجودة. يساعد على تنمية مهارات طفلك وإسعاده.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1763088540698865.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763088540169734.webp",
     "price": 500,
@@ -1055,7 +1055,7 @@ export const products = [
   {
     "id": 82,
     "title": "محول USB لاسلكي للسيارة",
-    "description": "",
+    "description": "اجعل سيارتك أكثر عملية وأناقة مع هذا الإكسسوار المميز. تصميم حديث يناسب جميع أنواع السيارات، جودة عالية تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1763089276291989.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1763089277809479.webp",
     "price": 232,
@@ -1094,7 +1094,7 @@ export const products = [
   {
     "id": 85,
     "title": "Aigner watch 1 silver*gold مينا اخضر",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1761121941149980.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761121941149980.webp",
     "price": 244,
@@ -1107,7 +1107,7 @@ export const products = [
   {
     "id": 86,
     "title": "Aigner watch 1 silver*gold مينا بني",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761121998362983.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761121998362983.webp",
     "price": 244,
@@ -1120,7 +1120,7 @@ export const products = [
   {
     "id": 87,
     "title": "Aigner watch 1 silver*gold مينا ابيض",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1761122053977631.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761122053977631.webp",
     "price": 244,
@@ -1133,7 +1133,7 @@ export const products = [
   {
     "id": 88,
     "title": "Piaget watch silver",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761122396851293.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761137725889458.webp",
     "price": 244,
@@ -1146,7 +1146,7 @@ export const products = [
   {
     "id": 89,
     "title": "Piaget watch silver*gold",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1761122539172326.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761137762358547.webp",
     "price": 244,
@@ -1159,7 +1159,7 @@ export const products = [
   {
     "id": 90,
     "title": "مينا ابيض Piaget watch gold",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/176112260435495.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761137793961855.webp",
     "price": 244,
@@ -1172,7 +1172,7 @@ export const products = [
   {
     "id": 91,
     "title": "مينا اخضر Piaget watch gold",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/176112265599750.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761137825873112.webp",
     "price": 244,
@@ -1185,7 +1185,7 @@ export const products = [
   {
     "id": 92,
     "title": "مينا اسود Piaget watch gold",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761123021259283.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761137861236962.webp",
     "price": 244,
@@ -1198,7 +1198,7 @@ export const products = [
   {
     "id": 93,
     "title": "ساعة كوبل رولكس اويستر مينا بني",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761123423859239.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761123423859239.webp",
     "price": 378,
@@ -1211,7 +1211,7 @@ export const products = [
   {
     "id": 94,
     "title": "ساعة كوبل رولكس اويستر مينا اسود",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761123469483260.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761123469483260.webp",
     "price": 378,
@@ -1224,7 +1224,7 @@ export const products = [
   {
     "id": 95,
     "title": "ساعة Rolex ديت جاست مينا اخضر + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1761157567360958.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761157567360958.png",
     "price": 310,
@@ -1237,7 +1237,7 @@ export const products = [
   {
     "id": 96,
     "title": "Rolex Daytona Cosmograph - Copy 1",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761597476438628.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761597476438628.webp",
     "price": 590,
@@ -1250,7 +1250,7 @@ export const products = [
   {
     "id": 97,
     "title": "ساعة ديور نسائية سيلفر مينا اسود",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761059022113201.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761059022113201.webp",
     "price": 244,
@@ -1263,7 +1263,7 @@ export const products = [
   {
     "id": 98,
     "title": "ساعة ديور نسائية جولد مينا اسود",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761059124893031.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761059124893031.webp",
     "price": 244,
@@ -1276,7 +1276,7 @@ export const products = [
   {
     "id": 99,
     "title": "ساعة ديور نسائية جولد مينا ابيض",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761059185702630.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761059185702630.webp",
     "price": 244,
@@ -1289,7 +1289,7 @@ export const products = [
   {
     "id": 100,
     "title": "Aigner watch gold strab",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761061092894534.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761061092894534.webp",
     "price": 244,
@@ -1302,7 +1302,7 @@ export const products = [
   {
     "id": 101,
     "title": "Aigner watch silver strab مينا ابيض",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1761061317936794.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761061317936794.webp",
     "price": 244,
@@ -1315,7 +1315,7 @@ export const products = [
   {
     "id": 102,
     "title": "Aigner watch silver strab مينا اسود",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/176106137087541.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176106137087541.webp",
     "price": 244,
@@ -1328,7 +1328,7 @@ export const products = [
   {
     "id": 103,
     "title": "Aigner watch silver*gold strab مينا اسود",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/176106153438940.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176106153438940.webp",
     "price": 244,
@@ -1341,7 +1341,7 @@ export const products = [
   {
     "id": 104,
     "title": "Aigner watch silver strab مينا ابيض",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761061732362698.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761061732362698.webp",
     "price": 244,
@@ -1354,7 +1354,7 @@ export const products = [
   {
     "id": 105,
     "title": "Aigner watch silver strab مينا اخضر",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761061776840789.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761061776840789.webp",
     "price": 244,
@@ -1367,7 +1367,7 @@ export const products = [
   {
     "id": 106,
     "title": "Aigner watch 1 gold",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/176112166341271.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176112166341271.webp",
     "price": 244,
@@ -1380,7 +1380,7 @@ export const products = [
   {
     "id": 107,
     "title": "Aigner watch 1 silver strab مينا ابيض",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/176112173168356.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176112173168356.webp",
     "price": 244,
@@ -1393,7 +1393,7 @@ export const products = [
   {
     "id": 108,
     "title": "Aigner watch 1 silver strab مينا اسود",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1761121784104784.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761121784104784.webp",
     "price": 244,
@@ -1406,7 +1406,7 @@ export const products = [
   {
     "id": 109,
     "title": "Rolex Datejust 41 Two Tone Rose Gold",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1760005930625468.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1760005930625468.webp",
     "price": 580,
@@ -1419,7 +1419,7 @@ export const products = [
   {
     "id": 110,
     "title": "Rolex Date Just Wimbledon",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1760091360730496.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1760091360730496.webp",
     "price": 560,
@@ -1445,7 +1445,7 @@ export const products = [
   {
     "id": 112,
     "title": "ساعة رولكس فضي مينا أبيض",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1760368436660482.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1760368436660482.webp",
     "price": 230,
@@ -1458,7 +1458,7 @@ export const products = [
   {
     "id": 113,
     "title": "ساعة رولكس فضي مينا أبيض + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1760368527279408.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1760368527279408.webp",
     "price": 290,
@@ -1471,7 +1471,7 @@ export const products = [
   {
     "id": 114,
     "title": "Rolex Datejust 28ml black",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761057799460976.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761057799460976.webp",
     "price": 580,
@@ -1484,7 +1484,7 @@ export const products = [
   {
     "id": 115,
     "title": "ساعة ديور نسائية دائري مينا اسود",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1761058180115134.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761058180115134.webp",
     "price": 244,
@@ -1497,7 +1497,7 @@ export const products = [
   {
     "id": 116,
     "title": "ساعة ديور نسائية دائري مينا ابيض",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1761058250637754.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761058250637754.webp",
     "price": 244,
@@ -1510,7 +1510,7 @@ export const products = [
   {
     "id": 117,
     "title": "ساعة ديور نسائية دائري مينا اخضر",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1761058305782570.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761058305782570.webp",
     "price": 244,
@@ -1523,7 +1523,7 @@ export const products = [
   {
     "id": 118,
     "title": "ساعة ديور نسائية جولد و سيلفر مينا ابيض",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1761058693749451.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761058693749451.webp",
     "price": 244,
@@ -1536,7 +1536,7 @@ export const products = [
   {
     "id": 119,
     "title": "ساعة ديور نسائية جولد و سيلفر مينا اخضر",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/176105879096577.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/176105879096577.webp",
     "price": 244,
@@ -1549,7 +1549,7 @@ export const products = [
   {
     "id": 120,
     "title": "ساعة ديور نسائية سيلفر مينا ابيض",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1761058955825455.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761058955825455.webp",
     "price": 244,
@@ -1562,7 +1562,7 @@ export const products = [
   {
     "id": 121,
     "title": "عطر ايف سان لوران ليبر انتنس",
-    "description": "",
+    "description": "تألق برائحة مميزة مع هذا العطر الفاخر. عبير راقٍ يناسب جميع الأوقات، تركيبة عطرية فريدة تمنحك الثقة والتميز.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761130441694431.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761130441694431.webp",
     "price": 220,
@@ -1575,7 +1575,7 @@ export const products = [
   {
     "id": 122,
     "title": "عطر ايف سان لوران لا نوي",
-    "description": "",
+    "description": "عطر فاخر برائحة مميزة تدوم طويلاً. تركيبة فريدة من أجود المكونات العطرية، تمنحك إطلالة مميزة وثقة لا مثيل لها. مثالي لجميع المناسبات.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1761130531790935.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761130531790935.webp",
     "price": 220,
@@ -1588,7 +1588,7 @@ export const products = [
   {
     "id": 123,
     "title": "عطر ايف سان لوران بلاك اوبيوم",
-    "description": "",
+    "description": "تألق برائحة مميزة مع هذا العطر الفاخر. عبير راقٍ يناسب جميع الأوقات، تركيبة عطرية فريدة تمنحك الثقة والتميز.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1759742975829378.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759742975964496.webp",
     "price": 220,
@@ -1601,7 +1601,7 @@ export const products = [
   {
     "id": 124,
     "title": "Marly Delina La Rosee",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/175975181394783.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759751813439719.webp",
     "price": 230,
@@ -1614,7 +1614,7 @@ export const products = [
   {
     "id": 125,
     "title": "Marly Oriana",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759752059894649.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759752059595724.webp",
     "price": 230,
@@ -1627,7 +1627,7 @@ export const products = [
   {
     "id": 126,
     "title": "Marly palatine",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759752155317065.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759752156329220.webp",
     "price": 230,
@@ -1640,7 +1640,7 @@ export const products = [
   {
     "id": 127,
     "title": "Marly Safanad",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759752249414638.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759752249830059.webp",
     "price": 230,
@@ -1653,7 +1653,7 @@ export const products = [
   {
     "id": 128,
     "title": "Valaya de Marly",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1759752352855323.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759752352467880.webp",
     "price": 230,
@@ -1666,7 +1666,7 @@ export const products = [
   {
     "id": 129,
     "title": "Marly Delina",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759752475380680.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759752475836441.webp",
     "price": 230,
@@ -1679,7 +1679,7 @@ export const products = [
   {
     "id": 130,
     "title": "Marly Delina",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759752504730376.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759752504439250.webp",
     "price": 230,
@@ -1692,7 +1692,7 @@ export const products = [
   {
     "id": 131,
     "title": "ساعة ديت جاست جولد و سيلفر مينا بني+ البوكس الاصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759770308161661.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759770308161661.webp",
     "price": 290,
@@ -1705,7 +1705,7 @@ export const products = [
   {
     "id": 132,
     "title": "مكواة بخار قماشية محمولة",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1759926053870124.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759926053671580.webp",
     "price": 228,
@@ -1718,7 +1718,7 @@ export const products = [
   {
     "id": 133,
     "title": "Kayali Eden",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759673390418898.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759673390783684.webp",
     "price": 250,
@@ -1731,7 +1731,7 @@ export const products = [
   {
     "id": 134,
     "title": "Kayali Vanilla",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1759673587418353.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759673587236213.webp",
     "price": 250,
@@ -1744,7 +1744,7 @@ export const products = [
   {
     "id": 135,
     "title": "Kayali Lovefest",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759674736187451.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759674736905341.webp",
     "price": 250,
@@ -1757,7 +1757,7 @@ export const products = [
   {
     "id": 136,
     "title": "Kayali Vanilla Candy Purple",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759674917780142.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175967491791141.webp",
     "price": 250,
@@ -1770,7 +1770,7 @@ export const products = [
   {
     "id": 137,
     "title": "Yves Saint Laurent Eau De Parfum",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759741384587711.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759741384619902.webp",
     "price": 220,
@@ -1783,7 +1783,7 @@ export const products = [
   {
     "id": 138,
     "title": "Yves Saint laurent intense",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1759741673848880.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759741673366156.webp",
     "price": 220,
@@ -1796,7 +1796,7 @@ export const products = [
   {
     "id": 139,
     "title": "عطر ايف سان لوران ليبر أو دو تواليت",
-    "description": "",
+    "description": "تألق برائحة مميزة مع هذا العطر الفاخر. عبير راقٍ يناسب جميع الأوقات، تركيبة عطرية فريدة تمنحك الثقة والتميز.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/17597420384190.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175974203884914.webp",
     "price": 220,
@@ -1809,7 +1809,7 @@ export const products = [
   {
     "id": 140,
     "title": "عطر ايف سان لوران ماي سيلف",
-    "description": "",
+    "description": "عطر راقٍ بعبير أخاذ يترك انطباعاً لا يُنسى. تركيبة متوازنة من النفحات العطرية الفاخرة، يدوم معك طوال اليوم. إضافة مثالية لمجموعتك من العطور.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759742278653756.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759742278534444.webp",
     "price": 220,
@@ -1822,7 +1822,7 @@ export const products = [
   {
     "id": 141,
     "title": "عطر ايف سان لوران لوم او دو تواليت",
-    "description": "",
+    "description": "عطر راقٍ بعبير أخاذ يترك انطباعاً لا يُنسى. تركيبة متوازنة من النفحات العطرية الفاخرة، يدوم معك طوال اليوم. إضافة مثالية لمجموعتك من العطور.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1759742530807604.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759742530261244.webp",
     "price": 220,
@@ -1835,7 +1835,7 @@ export const products = [
   {
     "id": 142,
     "title": "عطر ايف سان لوران لا نوي دي لومي",
-    "description": "",
+    "description": "تألق برائحة مميزة مع هذا العطر الفاخر. عبير راقٍ يناسب جميع الأوقات، تركيبة عطرية فريدة تمنحك الثقة والتميز.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1759742678719484.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759742678190953.webp",
     "price": 220,
@@ -1848,7 +1848,7 @@ export const products = [
   {
     "id": 143,
     "title": "عطر ايف سان لوران ليبر",
-    "description": "",
+    "description": "عطر فاخر برائحة مميزة تدوم طويلاً. تركيبة فريدة من أجود المكونات العطرية، تمنحك إطلالة مميزة وثقة لا مثيل لها. مثالي لجميع المناسبات.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1761129701703382.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761129701703382.webp",
     "price": 220,
@@ -1861,7 +1861,7 @@ export const products = [
   {
     "id": 144,
     "title": "عطر ايف سان لوران ليبر فلاورز اند فليمز",
-    "description": "",
+    "description": "عطر راقٍ بعبير أخاذ يترك انطباعاً لا يُنسى. تركيبة متوازنة من النفحات العطرية الفاخرة، يدوم معك طوال اليوم. إضافة مثالية لمجموعتك من العطور.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1761130241239728.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1761130241239728.webp",
     "price": 220,
@@ -1874,7 +1874,7 @@ export const products = [
   {
     "id": 145,
     "title": "Rolex day - date rose gold chocolate copy 1",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759341674220265.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759341674220265.webp",
     "price": 600,
@@ -1887,7 +1887,7 @@ export const products = [
   {
     "id": 146,
     "title": "Rolex Datejust || Blue silver + البوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759356021504771.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759356021504771.webp",
     "price": 290,
@@ -1900,7 +1900,7 @@ export const products = [
   {
     "id": 147,
     "title": "Tom Ford Bitter Peach",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759671271239887.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759671271937645.webp",
     "price": 220,
@@ -1913,7 +1913,7 @@ export const products = [
   {
     "id": 148,
     "title": "Tom Ford Tuscan Leather",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1759671443655830.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759671444358559.webp",
     "price": 220,
@@ -1926,7 +1926,7 @@ export const products = [
   {
     "id": 149,
     "title": "Tom Ford Black Lacouer",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759671623798685.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759671623798685.webp",
     "price": 220,
@@ -1939,7 +1939,7 @@ export const products = [
   {
     "id": 150,
     "title": "Tom Ford Oud Minerale",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1759671814358679.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759671815419411.webp",
     "price": 220,
@@ -1952,7 +1952,7 @@ export const products = [
   {
     "id": 151,
     "title": "Tom Ford Ebene Fume",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759672010235875.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759672011337942.webp",
     "price": 220,
@@ -1965,7 +1965,7 @@ export const products = [
   {
     "id": 152,
     "title": "Tom Ford Neroli Portofino",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759672123220700.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759672124763524.webp",
     "price": 220,
@@ -1978,7 +1978,7 @@ export const products = [
   {
     "id": 153,
     "title": "Hermes Maguet Porcelaine",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1759672442981598.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759672442179015.webp",
     "price": 260,
@@ -1991,7 +1991,7 @@ export const products = [
   {
     "id": 154,
     "title": "Penhaligons Halfeti Leather",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759672817518252.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759672817518252.png",
     "price": 260,
@@ -2004,7 +2004,7 @@ export const products = [
   {
     "id": 155,
     "title": "Xerjoff Tonny Iommi",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1759672907296410.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759672907818302.webp",
     "price": 260,
@@ -2017,7 +2017,7 @@ export const products = [
   {
     "id": 156,
     "title": "Kayali vanilla candy pink",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759673129924512.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175967313074512.webp",
     "price": 250,
@@ -2134,7 +2134,7 @@ export const products = [
   {
     "id": 165,
     "title": "مكواة فرد الشعر",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759327887672062.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759327887672062.webp",
     "price": 188,
@@ -2147,7 +2147,7 @@ export const products = [
   {
     "id": 166,
     "title": "رافعة ومنفاخ للسيارة",
-    "description": "",
+    "description": "إكسسوار سيارة ضروري لكل سائق. يوفر لك الراحة والأمان أثناء القيادة، مصنوع من خامات متينة تتحمل الاستخدام اليومي.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1759327960218660.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759327960218660.webp",
     "price": 570,
@@ -2160,7 +2160,7 @@ export const products = [
   {
     "id": 167,
     "title": "ميزان تحليل رقمي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1759328020855789.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759328020855789.webp",
     "price": 168,
@@ -2173,7 +2173,7 @@ export const products = [
   {
     "id": 168,
     "title": "ساعة رولكس مينا أخضر نسائي نيو موديل + البوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1759334391865213.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1759334391865213.webp",
     "price": 314,
@@ -2342,7 +2342,7 @@ export const products = [
   {
     "id": 181,
     "title": "ساعة رولكس نسائي مينا أخضر + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1758053169323932.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1758053169323932.webp",
     "price": 370,
@@ -2355,7 +2355,7 @@ export const products = [
   {
     "id": 182,
     "title": "ساعة رولكس نسائي مينا أزرق + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1758053303204910.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1758053303204910.webp",
     "price": 360,
@@ -2368,7 +2368,7 @@ export const products = [
   {
     "id": 183,
     "title": "Rolex datejust chocolate for women",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1758469890649889.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1758469890649889.webp",
     "price": 254,
@@ -2381,7 +2381,7 @@ export const products = [
   {
     "id": 184,
     "title": "Rolex datejust all silver copy 1",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1758546095954083.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1758546095954083.webp",
     "price": 550,
@@ -2394,7 +2394,7 @@ export const products = [
   {
     "id": 185,
     "title": "ساعة رولكس نسائي مينا بني + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1758742078744162.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1758742078744162.webp",
     "price": 360,
@@ -2407,7 +2407,7 @@ export const products = [
   {
     "id": 186,
     "title": "Rolex datejust chocolate for women + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1758744551129745.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1758744551129745.webp",
     "price": 314,
@@ -2498,7 +2498,7 @@ export const products = [
   {
     "id": 193,
     "title": "Couple Rolex watch - Silver",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1757524816214151.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757524816214151.webp",
     "price": 390,
@@ -2511,7 +2511,7 @@ export const products = [
   {
     "id": 194,
     "title": "Couple Rolex watch - Silver&black",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1757524962884190.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757524962884190.webp",
     "price": 390,
@@ -2524,7 +2524,7 @@ export const products = [
   {
     "id": 195,
     "title": "Couple Rolex watch - gold&black",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1757525126959642.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757525126959642.webp",
     "price": 390,
@@ -2537,7 +2537,7 @@ export const products = [
   {
     "id": 196,
     "title": "Couple Rolex watch - gold &black &silver",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1757525267213998.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757525267213998.webp",
     "price": 390,
@@ -2550,7 +2550,7 @@ export const products = [
   {
     "id": 197,
     "title": "Couple Rolex watch - gold",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1757525426185833.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757525426185833.webp",
     "price": 390,
@@ -2563,7 +2563,7 @@ export const products = [
   {
     "id": 198,
     "title": "Couple Rolex watch - white&silver&gold",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1757525529148384.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757525529148384.webp",
     "price": 390,
@@ -2576,7 +2576,7 @@ export const products = [
   {
     "id": 199,
     "title": "Couple Rolex watch - green&silver&gold",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1757525635608050.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757525635608050.webp",
     "price": 390,
@@ -2589,7 +2589,7 @@ export const products = [
   {
     "id": 200,
     "title": "Tom Ford Vanilla Sex",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1757731212122499.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175773121312376.webp",
     "price": 230,
@@ -2602,7 +2602,7 @@ export const products = [
   {
     "id": 201,
     "title": "Tom Ford Myrrhe Mystere",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/175773127350287.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757731273366962.webp",
     "price": 230,
@@ -2615,7 +2615,7 @@ export const products = [
   {
     "id": 202,
     "title": "Tom Ford Eau De Soleil Blanc",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/175773142284159.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757731423522246.webp",
     "price": 230,
@@ -2628,7 +2628,7 @@ export const products = [
   {
     "id": 203,
     "title": "Tom Ford Ombre Leather",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1757731526832014.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757731527554623.webp",
     "price": 230,
@@ -2641,7 +2641,7 @@ export const products = [
   {
     "id": 204,
     "title": "Tom Ford Lost Cherry",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1757731867437602.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757731867816500.webp",
     "price": 230,
@@ -2654,7 +2654,7 @@ export const products = [
   {
     "id": 205,
     "title": "Patek philippe geneve black copy 1",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1755444255492836.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1755444255492836.webp",
     "price": 620,
@@ -2667,7 +2667,7 @@ export const products = [
   {
     "id": 206,
     "title": "(Rolex Submariner Green COPY 1  ( AUTOMATIC",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1755603291676285.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1755603291676285.webp",
     "price": 560,
@@ -2680,7 +2680,7 @@ export const products = [
   {
     "id": 207,
     "title": "Rolex datejust mint green copy 1  automatic 41mm",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1755963296244340.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1755963296244340.webp",
     "price": 880,
@@ -2693,7 +2693,7 @@ export const products = [
   {
     "id": 208,
     "title": "Rolex day - date just white copy 1 automatic",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1756294484966883.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1756294484966883.webp",
     "price": 930,
@@ -2706,7 +2706,7 @@ export const products = [
   {
     "id": 209,
     "title": "عرض الصيف",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/175630312140401.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175630312140401.webp",
     "price": 308,
@@ -2719,7 +2719,7 @@ export const products = [
   {
     "id": 210,
     "title": "Eau The Audacity Penhaligons Green",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/175669385359976.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1756693853285947.webp",
     "price": 270,
@@ -2732,7 +2732,7 @@ export const products = [
   {
     "id": 211,
     "title": "Eau The Audacity Penhaligons white",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1756693962685036.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1756693962685036.webp",
     "price": 270,
@@ -2745,7 +2745,7 @@ export const products = [
   {
     "id": 212,
     "title": "Fleurs  Bohemes Inverness",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1756694146294035.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1756694146294035.webp",
     "price": 270,
@@ -2758,7 +2758,7 @@ export const products = [
   {
     "id": 213,
     "title": "Fleurs  Bohemes Inverness",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1756694224611806.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1756694224611806.webp",
     "price": 270,
@@ -2771,7 +2771,7 @@ export const products = [
   {
     "id": 214,
     "title": "Rolex روز جولد (31mm) + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1757099201703253.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1757099201703253.webp",
     "price": 310,
@@ -2784,7 +2784,7 @@ export const products = [
   {
     "id": 215,
     "title": "Rolex Daydate rose gold-brown 41mm + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/175718095635360.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175718095635360.webp",
     "price": 290,
@@ -2797,7 +2797,7 @@ export const products = [
   {
     "id": 216,
     "title": "حافظة طعام كواليتي ممتازة",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/175734109193625.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175734109193625.webp",
     "price": 190,
@@ -2810,7 +2810,7 @@ export const products = [
   {
     "id": 217,
     "title": "Emporio Armani Watch For Women اسود",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1753714676788171.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753714676788171.webp",
     "price": 250,
@@ -2823,7 +2823,7 @@ export const products = [
   {
     "id": 218,
     "title": "Emporio Armani Watch For Women هافان",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753714732396997.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753714732396997.webp",
     "price": 250,
@@ -2836,7 +2836,7 @@ export const products = [
   {
     "id": 219,
     "title": "Emporio Armani Watch For Women احمر",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1753714797626239.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753714797626239.webp",
     "price": 250,
@@ -2849,7 +2849,7 @@ export const products = [
   {
     "id": 220,
     "title": "Emporio Armani Watch For Women كحلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/175371485999260.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175371485999260.webp",
     "price": 250,
@@ -2862,7 +2862,7 @@ export const products = [
   {
     "id": 221,
     "title": "Emporio Armani Watch For Women اخضر",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1753714913529844.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753714913529844.webp",
     "price": 250,
@@ -2875,7 +2875,7 @@ export const products = [
   {
     "id": 222,
     "title": "Breitling Endurance Pro كحلي",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753715027424007.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753715027424007.webp",
     "price": 250,
@@ -2888,7 +2888,7 @@ export const products = [
   {
     "id": 223,
     "title": "Omega watch - navy blue strap",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753972808675319.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753972808675319.webp",
     "price": 740,
@@ -2901,7 +2901,7 @@ export const products = [
   {
     "id": 224,
     "title": "Rolex datejust Black silver - copy 1",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1754412726895640.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1754412726895640.webp",
     "price": 560,
@@ -2914,7 +2914,7 @@ export const products = [
   {
     "id": 225,
     "title": "Rolex datejust green watch",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/175447227738668.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175447227738668.webp",
     "price": 244,
@@ -2927,7 +2927,7 @@ export const products = [
   {
     "id": 226,
     "title": "ساعة رولكس مينا أخضر نسائي نيو موديل",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1754574717779013.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1754574717779013.webp",
     "price": 254,
@@ -2940,7 +2940,7 @@ export const products = [
   {
     "id": 227,
     "title": "فرشاة تنظيف قابلة للتمدد",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1754908359382080.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1754908359748741.webp",
     "price": 190,
@@ -2953,7 +2953,7 @@ export const products = [
   {
     "id": 228,
     "title": "Rolex Oyster Perpetual 41 - Silver copy1",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1755255922525936.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1755255923422805.webp",
     "price": 550,
@@ -2966,7 +2966,7 @@ export const products = [
   {
     "id": 229,
     "title": "Patek Philippe مينا كحلي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753712279952594.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753712279952594.webp",
     "price": 250,
@@ -2979,7 +2979,7 @@ export const products = [
   {
     "id": 230,
     "title": "Patek Philippe مينا بيضا",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753712462987314.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753712462987314.webp",
     "price": 250,
@@ -2992,7 +2992,7 @@ export const products = [
   {
     "id": 231,
     "title": "Patek Philippe مينا بيج",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753712566754148.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753712566754148.webp",
     "price": 250,
@@ -3005,7 +3005,7 @@ export const products = [
   {
     "id": 232,
     "title": "Emporio Armani كحلي",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1753713139664965.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753713139664965.webp",
     "price": 250,
@@ -3018,7 +3018,7 @@ export const products = [
   {
     "id": 233,
     "title": "Emporio Armani اسود مينا ابيض",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1753713265494853.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753713265494853.webp",
     "price": 250,
@@ -3031,7 +3031,7 @@ export const products = [
   {
     "id": 234,
     "title": "Emporio Armani اسود مينا اسود",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1753713342179796.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753713342179796.webp",
     "price": 250,
@@ -3044,7 +3044,7 @@ export const products = [
   {
     "id": 235,
     "title": "Emporio Armani اسود هافان",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1753713415756893.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753713415756893.webp",
     "price": 250,
@@ -3057,7 +3057,7 @@ export const products = [
   {
     "id": 236,
     "title": "Cartier Tank اسود مينا اسود",
-    "description": "",
+    "description": "إكسسوار سيارة ضروري لكل سائق. يوفر لك الراحة والأمان أثناء القيادة، مصنوع من خامات متينة تتحمل الاستخدام اليومي.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753713564735416.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753713564735416.webp",
     "price": 250,
@@ -3070,7 +3070,7 @@ export const products = [
   {
     "id": 237,
     "title": "Cartier Tank اسود مينا ابيض",
-    "description": "",
+    "description": "اجعل سيارتك أكثر عملية وأناقة مع هذا الإكسسوار المميز. تصميم حديث يناسب جميع أنواع السيارات، جودة عالية تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753713761513914.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753713761513914.webp",
     "price": 250,
@@ -3083,7 +3083,7 @@ export const products = [
   {
     "id": 238,
     "title": "Cartier Tank اسود كحلي",
-    "description": "",
+    "description": "إكسسوار سيارة عملي يضيف الراحة والأناقة لسيارتك. مصنوع من مواد عالية الجودة، سهل التركيب والاستخدام. يحسن من تجربة القيادة ويوفر لك المزيد من الراحة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1753714143726784.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753714143726784.webp",
     "price": 250,
@@ -3096,7 +3096,7 @@ export const products = [
   {
     "id": 239,
     "title": "Cartier Tank اسود هافان",
-    "description": "",
+    "description": "إكسسوار سيارة عملي يضيف الراحة والأناقة لسيارتك. مصنوع من مواد عالية الجودة، سهل التركيب والاستخدام. يحسن من تجربة القيادة ويوفر لك المزيد من الراحة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/175371443140178.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175371443140178.webp",
     "price": 250,
@@ -3109,7 +3109,7 @@ export const products = [
   {
     "id": 240,
     "title": "Emporio Armani Watch For Women ابيض",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753714598253004.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753714598253004.webp",
     "price": 250,
@@ -3122,7 +3122,7 @@ export const products = [
   {
     "id": 241,
     "title": "عصا ترايبود مع اضاءة",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/175273913294190.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1752739132714317.webp",
     "price": 210,
@@ -3135,7 +3135,7 @@ export const products = [
   {
     "id": 242,
     "title": "شرايط انف مغناطيسية للتنفس اثناء النوم",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1752844147499094.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1752844147624362.webp",
     "price": 150,
@@ -3148,7 +3148,7 @@ export const products = [
   {
     "id": 243,
     "title": "شرايط انف مغناطيسية للتنفس اثناء النوم - قطعتين",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1752844277567841.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1752844277262809.webp",
     "price": 170,
@@ -3161,7 +3161,7 @@ export const products = [
   {
     "id": 244,
     "title": "شرايط انف مغناطيسية للتنفس اثناء النوم -  3 قطع",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1752844410214740.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1752844411516342.webp",
     "price": 190,
@@ -3174,7 +3174,7 @@ export const products = [
   {
     "id": 245,
     "title": "Rolex Oyster Perpetual Daytona silver",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753366503225791.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753366503225791.webp",
     "price": 250,
@@ -3187,7 +3187,7 @@ export const products = [
   {
     "id": 246,
     "title": "Rolex Oyster Perpetual Daytona rosegold",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1753367784126760.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753367784126760.webp",
     "price": 250,
@@ -3200,7 +3200,7 @@ export const products = [
   {
     "id": 247,
     "title": "Rolex Oyster Perpetual Daytona gold",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/175336774489564.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175336774489564.webp",
     "price": 250,
@@ -3213,7 +3213,7 @@ export const products = [
   {
     "id": 248,
     "title": "Rolex Oyster Perpetual Daytona blue",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753367922554262.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753367922554262.webp",
     "price": 250,
@@ -3226,7 +3226,7 @@ export const products = [
   {
     "id": 249,
     "title": "Versace Casual Chronograph استيك هافان",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1753368382531031.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753368382531031.webp",
     "price": 250,
@@ -3239,7 +3239,7 @@ export const products = [
   {
     "id": 250,
     "title": "Versace Casual Chronograph استيك اسود مينا ابيض",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/175336848158797.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175336848158797.webp",
     "price": 250,
@@ -3252,7 +3252,7 @@ export const products = [
   {
     "id": 251,
     "title": "Versace Casual Chronograph استيك اسود مينا اسود",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1753368533605832.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753368533605832.webp",
     "price": 250,
@@ -3265,7 +3265,7 @@ export const products = [
   {
     "id": 252,
     "title": "Patek Philippe مينا سوداء",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1753712133267951.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1753712133267951.webp",
     "price": 250,
@@ -3317,7 +3317,7 @@ export const products = [
   {
     "id": 256,
     "title": "Rolex Daytona Platinum Blue copy1",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1751812044876798.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751812044876798.webp",
     "price": 700,
@@ -3330,7 +3330,7 @@ export const products = [
   {
     "id": 257,
     "title": "Rolex Yacht-Master  gold copy1",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/175181222818362.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175181222818362.webp",
     "price": 700,
@@ -3343,7 +3343,7 @@ export const products = [
   {
     "id": 258,
     "title": "Rolex Submariner black copy1",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/175181238524703.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175181238524703.webp",
     "price": 700,
@@ -3356,7 +3356,7 @@ export const products = [
   {
     "id": 259,
     "title": "Patek philippe geneve royal blue & gold - copy 1",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751993512231502.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751993512231502.webp",
     "price": 620,
@@ -3369,7 +3369,7 @@ export const products = [
   {
     "id": 260,
     "title": "Audemars Piguet blue & silver copy 1",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1751993781852135.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751993781852135.webp",
     "price": 660,
@@ -3382,7 +3382,7 @@ export const products = [
   {
     "id": 261,
     "title": "Rolex Datejust Green + البوكس الاصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1752057721201515.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1752057721201515.webp",
     "price": 290,
@@ -3395,7 +3395,7 @@ export const products = [
   {
     "id": 262,
     "title": "Rolex datejust brown silver - copy 1",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1752071301392347.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1752071301392347.webp",
     "price": 580,
@@ -3408,7 +3408,7 @@ export const products = [
   {
     "id": 263,
     "title": "ساعة رولكس يخت ماستر - أسود - موديل حديث",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/175233238867849.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175233238867849.webp",
     "price": 240,
@@ -3421,7 +3421,7 @@ export const products = [
   {
     "id": 264,
     "title": "ساعة رولكس يخت ماستر - أسود - موديل حديث + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1752332472489634.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1752332472489634.webp",
     "price": 300,
@@ -3590,7 +3590,7 @@ export const products = [
   {
     "id": 277,
     "title": "LOUIS VUITTON 3 IN 1 بينك",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751284569292276.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751283700475206.webp",
     "price": 370,
@@ -3603,7 +3603,7 @@ export const products = [
   {
     "id": 278,
     "title": "LOUIS VUITTON 3 IN 1 بني",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751285084687352.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751285027903216.webp",
     "price": 370,
@@ -3616,7 +3616,7 @@ export const products = [
   {
     "id": 279,
     "title": "LOUIS VUITTON 3 IN 1 اسود",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751287603401950.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751287603585262.webp",
     "price": 370,
@@ -3629,7 +3629,7 @@ export const products = [
   {
     "id": 280,
     "title": "Burberry watches لون اسود مينا ازرق",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1751369978749040.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751369978749040.webp",
     "price": 740,
@@ -3642,7 +3642,7 @@ export const products = [
   {
     "id": 281,
     "title": "Burberry watches لون سيلفر مينا ابيض",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751370116882448.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751370116882448.webp",
     "price": 740,
@@ -3655,7 +3655,7 @@ export const products = [
   {
     "id": 282,
     "title": "Burberry watches لون اسود مينا اسود",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1751370565818324.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751370565818324.webp",
     "price": 740,
@@ -3668,7 +3668,7 @@ export const products = [
   {
     "id": 283,
     "title": "Burberry watches لون سيلفر مينا نبيتي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751370682936787.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751370682936787.webp",
     "price": 740,
@@ -3681,7 +3681,7 @@ export const products = [
   {
     "id": 284,
     "title": "Burberry watches لون سيلفر مينا اسود",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1751370794144466.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751370794144466.webp",
     "price": 740,
@@ -3694,7 +3694,7 @@ export const products = [
   {
     "id": 285,
     "title": "Burberry watches لون سيلفر مينا كحلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751370911816816.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751370911816816.webp",
     "price": 740,
@@ -3707,7 +3707,7 @@ export const products = [
   {
     "id": 286,
     "title": "Burberry watches سيلفر",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1751371744995356.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751371744995356.webp",
     "price": 740,
@@ -3720,7 +3720,7 @@ export const products = [
   {
     "id": 287,
     "title": "Burberry watches اسود مينا رصاصي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751371859193388.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751371859193388.webp",
     "price": 740,
@@ -3746,7 +3746,7 @@ export const products = [
   {
     "id": 289,
     "title": "ساعة رولكس رجالي سبرايت new",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1750346888724103.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750346888724103.webp",
     "price": 250,
@@ -3759,7 +3759,7 @@ export const products = [
   {
     "id": 290,
     "title": "ساعة رولكس رجالي سبرايت new + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1750347062198715.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750347062198715.webp",
     "price": 310,
@@ -3772,7 +3772,7 @@ export const products = [
   {
     "id": 291,
     "title": "حقيبة لويس فيتون الما لون بني",
-    "description": "",
+    "description": "أضيفي لمسة من الفخامة إلى إطلالتك مع هذه الحقيبة الأنيقة. تصميم راقٍ يناسب جميع المناسبات، مصنوعة من أجود الخامات لتدوم معك لسنوات.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1750419995965968.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750419996941413.webp",
     "price": 320,
@@ -3785,7 +3785,7 @@ export const products = [
   {
     "id": 292,
     "title": "حقيبة لويس فيتون الما لون أسود",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/175042006713345.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750420067584695.webp",
     "price": 320,
@@ -3798,7 +3798,7 @@ export const products = [
   {
     "id": 293,
     "title": "ساعة رولكس ديت جاست سيلفر*جولد",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1750854553419596.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750854553419596.webp",
     "price": 254,
@@ -3811,7 +3811,7 @@ export const products = [
   {
     "id": 294,
     "title": "ساعة رولكس نسائي جولد مينا أبيض",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1750877880119754.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750877880119754.webp",
     "price": 254,
@@ -3824,7 +3824,7 @@ export const products = [
   {
     "id": 295,
     "title": "رولكس ديت جاست سيلفر مينا ازرق",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751200672540929.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751200672540929.webp",
     "price": 600,
@@ -3837,7 +3837,7 @@ export const products = [
   {
     "id": 296,
     "title": "حقيبة GUCCI  لون ابيض",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751281730484699.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751281730728165.webp",
     "price": 280,
@@ -3850,7 +3850,7 @@ export const products = [
   {
     "id": 297,
     "title": "حقيبة GUCCI لون اسود",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751282087856322.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751281976607636.webp",
     "price": 280,
@@ -3863,7 +3863,7 @@ export const products = [
   {
     "id": 298,
     "title": "حقيبة GUCCI لون بني",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/175128243219932.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751282322435326.webp",
     "price": 280,
@@ -3876,7 +3876,7 @@ export const products = [
   {
     "id": 299,
     "title": "حقيبة  GUCCI لون سيلفر",
-    "description": "",
+    "description": "أضيفي لمسة من الفخامة إلى إطلالتك مع هذه الحقيبة الأنيقة. تصميم راقٍ يناسب جميع المناسبات، مصنوعة من أجود الخامات لتدوم معك لسنوات.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1751282734772305.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751282734472289.webp",
     "price": 280,
@@ -3889,7 +3889,7 @@ export const products = [
   {
     "id": 300,
     "title": "حقيبة GUCCI لون رصاصي",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1751282981793740.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1751282893874990.webp",
     "price": 280,
@@ -3902,7 +3902,7 @@ export const products = [
   {
     "id": 301,
     "title": "ساعة ديت جاست جولد و سيلفر مينا بني",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1750060846527552.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750060846504181.webp",
     "price": 230,
@@ -3915,7 +3915,7 @@ export const products = [
   {
     "id": 302,
     "title": "ساعة رولكس ديت جاست سيلفر في جولد مينا اسود",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/17499912923186.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/17499912925124.webp",
     "price": 270,
@@ -3928,7 +3928,7 @@ export const products = [
   {
     "id": 303,
     "title": "Rolex oyster اسود في ذهبي (42mm) + البوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1750000726702559.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750000726702559.webp",
     "price": 300,
@@ -3941,7 +3941,7 @@ export const products = [
   {
     "id": 304,
     "title": "ساعة رولكس اويستر مينا سيلفر + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1750002069252771.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750002069252771.webp",
     "price": 330,
@@ -3954,7 +3954,7 @@ export const products = [
   {
     "id": 305,
     "title": "ساعة رولكس دايتون جولد + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1750002486109431.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750002486109431.webp",
     "price": 310,
@@ -3967,7 +3967,7 @@ export const products = [
   {
     "id": 306,
     "title": "ساعة رولكس ديت جاست سيلفر في جولد مينا اسود بالبوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1750149140107247.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750149140328489.webp",
     "price": 330,
@@ -3980,7 +3980,7 @@ export const products = [
   {
     "id": 307,
     "title": "ساعة رولكس اويستر مينا كحلي بالبوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1750149812497686.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750149812497686.webp",
     "price": 340,
@@ -3993,7 +3993,7 @@ export const products = [
   {
     "id": 308,
     "title": "ساعة رولكس اويستر مينا اخضر+البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1750159016228559.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750159016228559.webp",
     "price": 340,
@@ -4006,7 +4006,7 @@ export const products = [
   {
     "id": 309,
     "title": "ساعة رولكس اويستر سيلفر مينا اسود+ البوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1750162222166751.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750162222166751.webp",
     "price": 330,
@@ -4019,7 +4019,7 @@ export const products = [
   {
     "id": 310,
     "title": "ساعة رولكس اويستر جولد*سيلفر مينا اسود\t+ البوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1750166975382833.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750166975382833.webp",
     "price": 330,
@@ -4032,7 +4032,7 @@ export const products = [
   {
     "id": 311,
     "title": "ساعة رولكس ذهبي نسائي مميزة+ البوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1750167259783871.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750167259783871.webp",
     "price": 290,
@@ -4045,7 +4045,7 @@ export const products = [
   {
     "id": 312,
     "title": "ساعة رولكس بتصميم الكعبة",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1750340228334282.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750340228334282.webp",
     "price": 580,
@@ -4058,7 +4058,7 @@ export const products = [
   {
     "id": 313,
     "title": "حقيبة لويس فيتون الما لون بني*كافيه",
-    "description": "",
+    "description": "أضيفي لمسة من الفخامة إلى إطلالتك مع هذه الحقيبة الأنيقة. تصميم راقٍ يناسب جميع المناسبات، مصنوعة من أجود الخامات لتدوم معك لسنوات.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749736976205600.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749736976205600.webp",
     "price": 320,
@@ -4071,7 +4071,7 @@ export const products = [
   {
     "id": 314,
     "title": "حقيبة لويس فيتون الما لون ابيض*كافيه",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749737270195555.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749737270195555.webp",
     "price": 320,
@@ -4084,7 +4084,7 @@ export const products = [
   {
     "id": 315,
     "title": "حقيبة لويس فيتون الما لون اسود*ابيض",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749737492482092.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749737492482092.webp",
     "price": 320,
@@ -4097,7 +4097,7 @@ export const products = [
   {
     "id": 316,
     "title": "ساعة رولكس يخت ماستر - فضي + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1749818454922358.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749818454922358.webp",
     "price": 300,
@@ -4110,7 +4110,7 @@ export const products = [
   {
     "id": 317,
     "title": "Rolex Datejust Brown silver + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1749818829176187.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749818829176187.webp",
     "price": 290,
@@ -4123,7 +4123,7 @@ export const products = [
   {
     "id": 318,
     "title": "Rolex GMT Black + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1749819757399056.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749819757399056.webp",
     "price": 290,
@@ -4136,7 +4136,7 @@ export const products = [
   {
     "id": 319,
     "title": "Rolex Daydate Black 41mm + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749902198415295.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749902198415295.webp",
     "price": 290,
@@ -4149,7 +4149,7 @@ export const products = [
   {
     "id": 320,
     "title": "ساعة رولكس مينا بني (31mm) + البوكس الاصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749905685679911.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749905685679911.webp",
     "price": 280,
@@ -4175,7 +4175,7 @@ export const products = [
   {
     "id": 322,
     "title": "ساعة رولكس ديت جاست للرجال",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749907743553826.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749907743553826.webp",
     "price": 244,
@@ -4188,7 +4188,7 @@ export const products = [
   {
     "id": 323,
     "title": "ساعة رولكس ديت جاست للرجال + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1749908045267365.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749908045267365.webp",
     "price": 304,
@@ -4201,7 +4201,7 @@ export const products = [
   {
     "id": 324,
     "title": "ساعة rolex باللون الذهبي والأسود + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1757284775221317.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175728477599621.webp",
     "price": 280,
@@ -4214,7 +4214,7 @@ export const products = [
   {
     "id": 325,
     "title": "ساعة رولكس اويستر سيلفر مينا اسود",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1749650255855109.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749650255855109.webp",
     "price": 270,
@@ -4227,7 +4227,7 @@ export const products = [
   {
     "id": 326,
     "title": "ساعة رولكس اويستر مينا اخضر",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1749650379632795.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749650379632795.webp",
     "price": 270,
@@ -4240,7 +4240,7 @@ export const products = [
   {
     "id": 327,
     "title": "ساعة رولكس اويستر مينا كحلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749650467665542.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749650467665542.webp",
     "price": 270,
@@ -4253,7 +4253,7 @@ export const products = [
   {
     "id": 328,
     "title": "اللابوبو Labubu toy",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749741461641812.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749741461850218.webp",
     "price": 210,
@@ -4266,7 +4266,7 @@ export const products = [
   {
     "id": 329,
     "title": "حقيبة ديور لون كحلي",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/174973312935747.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750421173145184.webp",
     "price": 310,
@@ -4279,7 +4279,7 @@ export const products = [
   {
     "id": 330,
     "title": "حقيبة ديور لون كافيه",
-    "description": "",
+    "description": "أضيفي لمسة من الفخامة إلى إطلالتك مع هذه الحقيبة الأنيقة. تصميم راقٍ يناسب جميع المناسبات، مصنوعة من أجود الخامات لتدوم معك لسنوات.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1749734899210681.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750420909471725.webp",
     "price": 310,
@@ -4292,7 +4292,7 @@ export const products = [
   {
     "id": 331,
     "title": "حقيبة ديور لون ابيض",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1749735027630971.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750420946153847.webp",
     "price": 310,
@@ -4305,7 +4305,7 @@ export const products = [
   {
     "id": 332,
     "title": "حقيبة ديور لون احمر",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749735128756277.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750420963395699.webp",
     "price": 310,
@@ -4318,7 +4318,7 @@ export const products = [
   {
     "id": 333,
     "title": "حقيبة ديور لون اسود",
-    "description": "",
+    "description": "أضيفي لمسة من الفخامة إلى إطلالتك مع هذه الحقيبة الأنيقة. تصميم راقٍ يناسب جميع المناسبات، مصنوعة من أجود الخامات لتدوم معك لسنوات.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749735382513327.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750420982783364.webp",
     "price": 310,
@@ -4331,7 +4331,7 @@ export const products = [
   {
     "id": 334,
     "title": "حقيبة ديور لون جولد",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749735521374212.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750420998903498.webp",
     "price": 310,
@@ -4344,7 +4344,7 @@ export const products = [
   {
     "id": 335,
     "title": "حقيبة لويس فيتون الما لون اسود",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749736236954997.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749736236954997.webp",
     "price": 320,
@@ -4357,7 +4357,7 @@ export const products = [
   {
     "id": 336,
     "title": "حقيبة لويس فيتون الما لون بني*هافان",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1749736765105977.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749736765105977.webp",
     "price": 320,
@@ -4370,7 +4370,7 @@ export const products = [
   {
     "id": 337,
     "title": "ساعة رولكس يخت ماستر اسود + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1747652707865326.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747652707865326.png",
     "price": 740,
@@ -4396,7 +4396,7 @@ export const products = [
   {
     "id": 339,
     "title": "ستيل Rolex جولد و سيلفر (31mm)+ البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/174827948380468.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/174827948380468.webp",
     "price": 294,
@@ -4409,7 +4409,7 @@ export const products = [
   {
     "id": 340,
     "title": "ساعة رولكس دايتون جولد",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1748439740739970.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1748439740739970.webp",
     "price": 250,
@@ -4422,7 +4422,7 @@ export const products = [
   {
     "id": 341,
     "title": "Audemars Piguet Royal - Orange",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749109017733058.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749109017733058.webp",
     "price": 820,
@@ -4435,7 +4435,7 @@ export const products = [
   {
     "id": 342,
     "title": "حقيبة نسائية BOTTEGA لون اسود",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749551521284898.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750423536620260.webp",
     "price": 370,
@@ -4448,7 +4448,7 @@ export const products = [
   {
     "id": 343,
     "title": "حقيبة نسائية BOTTEGA  لون رصاصي",
-    "description": "",
+    "description": "أضيفي لمسة من الفخامة إلى إطلالتك مع هذه الحقيبة الأنيقة. تصميم راقٍ يناسب جميع المناسبات، مصنوعة من أجود الخامات لتدوم معك لسنوات.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/174955167885812.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750423544521452.webp",
     "price": 370,
@@ -4461,7 +4461,7 @@ export const products = [
   {
     "id": 344,
     "title": "حقيبة LOUIS VUITTON 3 IN 1  لون اسود",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1749551917672429.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750423317686796.webp",
     "price": 320,
@@ -4474,7 +4474,7 @@ export const products = [
   {
     "id": 345,
     "title": "حقيبة LOUIS VUITTON 3 IN 1 لون ابيض",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749552046258746.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750423322405825.webp",
     "price": 320,
@@ -4487,7 +4487,7 @@ export const products = [
   {
     "id": 346,
     "title": "حقيبة LOUIS VUITTON 3 IN 1  لون بني",
-    "description": "",
+    "description": "حقيبة فاخرة تجمع بين الأناقة والوظيفية. تصميم عصري يناسب جميع الأذواق، مع جيوب متعددة لتنظيم أغراضك بسهولة. خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1749552136221776.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/175042332857752.webp",
     "price": 320,
@@ -4500,7 +4500,7 @@ export const products = [
   {
     "id": 347,
     "title": "حقيبة LOUIS VUITTON FOR MEN",
-    "description": "",
+    "description": "حقيبة عصرية بتصميم أنيق وعملي. مصنوعة من مواد فاخرة عالية الجودة، توفر مساحة واسعة لجميع احتياجاتك اليومية. مثالية للعمل، التسوق، أو النزهات.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1749557048711597.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1750422699833315.webp",
     "price": 300,
@@ -4513,7 +4513,7 @@ export const products = [
   {
     "id": 348,
     "title": "ساعة رولكس اويستر جولد*سيلفر مينا اسود",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1749650147932375.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1749650147932375.webp",
     "price": 270,
@@ -4539,7 +4539,7 @@ export const products = [
   {
     "id": 350,
     "title": "عصارة الفواكه والخضروات الكهربائية",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1746717599999957.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746717599999957.webp",
     "price": 330,
@@ -4552,7 +4552,7 @@ export const products = [
   {
     "id": 351,
     "title": "Rolex GMT Golden Silver + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746974614613186.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746974614613186.webp",
     "price": 290,
@@ -4565,7 +4565,7 @@ export const products = [
   {
     "id": 352,
     "title": "Rolex Daydate olive gold high quality",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1747145774156279.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747145774336241.webp",
     "price": 620,
@@ -4578,7 +4578,7 @@ export const products = [
   {
     "id": 353,
     "title": "gold rolex watch for women",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1747237008436551.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747237008436551.webp",
     "price": 230,
@@ -4591,7 +4591,7 @@ export const products = [
   {
     "id": 354,
     "title": "ساعة رولكس نسائي مينا أخضر",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1747497427813513.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747497427813513.webp",
     "price": 240,
@@ -4604,7 +4604,7 @@ export const products = [
   {
     "id": 355,
     "title": "ماكينة تحضير المعجنات الكهربائية",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/174757806794368.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747578067866816.webp",
     "price": 310,
@@ -4617,7 +4617,7 @@ export const products = [
   {
     "id": 356,
     "title": "حامل جوال مغناطيسي للسيارة",
-    "description": "",
+    "description": "اجعل سيارتك أكثر عملية وأناقة مع هذا الإكسسوار المميز. تصميم حديث يناسب جميع أنواع السيارات، جودة عالية تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/174757891532193.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747578915600162.webp",
     "price": 170,
@@ -4630,7 +4630,7 @@ export const products = [
   {
     "id": 357,
     "title": "حامل بهارات زجاجي دوار",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1747579169782562.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747579169974064.webp",
     "price": 210,
@@ -4643,7 +4643,7 @@ export const products = [
   {
     "id": 358,
     "title": "وحدة تخزين للمطبخ أو الحمام",
-    "description": "",
+    "description": "أداة مطبخ عملية تسهل عليك تحضير ألذ الأطباق. مصنوعة من مواد آمنة وصحية، سهلة التنظيف والاستخدام. إضافة لا غنى عنها لمطبخك العصري.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1747579462458573.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747579462731891.webp",
     "price": 450,
@@ -4656,7 +4656,7 @@ export const products = [
   {
     "id": 359,
     "title": "جهاز صاعق الناموس والحشرات",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1747579789743589.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1747579789965484.webp",
     "price": 170,
@@ -4669,7 +4669,7 @@ export const products = [
   {
     "id": 360,
     "title": "وسادة تدليك بالأشعة تحت الحمراء",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1747580276934141.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/174758027695355.webp",
     "price": 176,
@@ -4682,7 +4682,7 @@ export const products = [
   {
     "id": 361,
     "title": "Rolex Daydate Green Olive",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1746186466334048.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746186466334048.webp",
     "price": 230,
@@ -4695,7 +4695,7 @@ export const products = [
   {
     "id": 362,
     "title": "Rolex Daydate mint green",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746187778346572.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746187778346572.webp",
     "price": 230,
@@ -4708,7 +4708,7 @@ export const products = [
   {
     "id": 363,
     "title": "Rolex Daydate Black 41mm",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1746189390932241.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746189390932241.webp",
     "price": 230,
@@ -4721,7 +4721,7 @@ export const products = [
   {
     "id": 364,
     "title": "Rolex Daydate Ice Blue 41mm",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746189543271503.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746189543271503.webp",
     "price": 230,
@@ -4734,7 +4734,7 @@ export const products = [
   {
     "id": 365,
     "title": "Rolex Daydate gold-black 41mm",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746196018274769.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746196018274769.webp",
     "price": 230,
@@ -4747,7 +4747,7 @@ export const products = [
   {
     "id": 366,
     "title": "Rolex Daydate rose gold-brown 41mm",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746196155893617.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746196155893617.webp",
     "price": 230,
@@ -4760,7 +4760,7 @@ export const products = [
   {
     "id": 367,
     "title": "Rolex Daydate silver 41mm",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1746196240133469.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746196240133469.webp",
     "price": 230,
@@ -4773,7 +4773,7 @@ export const products = [
   {
     "id": 368,
     "title": "Rolex Oyster Perpetual - Blue",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746196600697526.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746196600697526.webp",
     "price": 240,
@@ -4786,7 +4786,7 @@ export const products = [
   {
     "id": 369,
     "title": "Rolex Oyster Perpetual - yellow",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1746196714322531.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746196714322531.webp",
     "price": 240,
@@ -4799,7 +4799,7 @@ export const products = [
   {
     "id": 370,
     "title": "Rolex Oyster Perpetual - light blue",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/174619683662416.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/174619683662416.webp",
     "price": 240,
@@ -4812,7 +4812,7 @@ export const products = [
   {
     "id": 371,
     "title": "Rolex Oyster Perpetual - green",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1746196895411006.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746196895411006.webp",
     "price": 240,
@@ -4838,7 +4838,7 @@ export const products = [
   {
     "id": 373,
     "title": "ستيل Rolex سيلفر و جولد  (31mm) + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1745851597651248.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745851597651248.png",
     "price": 310,
@@ -4851,7 +4851,7 @@ export const products = [
   {
     "id": 374,
     "title": "Rolex GMT Black",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1746181059555396.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746181059555396.webp",
     "price": 230,
@@ -4864,7 +4864,7 @@ export const products = [
   {
     "id": 375,
     "title": "Rolex GMT Batman",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746181464408885.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746181464408885.webp",
     "price": 230,
@@ -4877,7 +4877,7 @@ export const products = [
   {
     "id": 376,
     "title": "Rolex GMT 2 Batman",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1746181605739421.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746181605739421.webp",
     "price": 230,
@@ -4890,7 +4890,7 @@ export const products = [
   {
     "id": 377,
     "title": "Rolex GMT Pepsi",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746181717142457.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746181717142457.webp",
     "price": 230,
@@ -4903,7 +4903,7 @@ export const products = [
   {
     "id": 378,
     "title": "Rolex GMT Red Black",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1746181903494936.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746181903494936.webp",
     "price": 230,
@@ -4916,7 +4916,7 @@ export const products = [
   {
     "id": 379,
     "title": "Rolex GMT Golden Silver",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1746182079990165.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746182079990165.webp",
     "price": 230,
@@ -4929,7 +4929,7 @@ export const products = [
   {
     "id": 380,
     "title": "Rolex Datejust Green",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1746182515551179.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746182515551179.webp",
     "price": 230,
@@ -4942,7 +4942,7 @@ export const products = [
   {
     "id": 381,
     "title": "Rolex Datejust Brown silver",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746184369399410.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746184369399410.webp",
     "price": 230,
@@ -4955,7 +4955,7 @@ export const products = [
   {
     "id": 382,
     "title": "Rolex Datejust Blue silver",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1746184513791138.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746184513791138.webp",
     "price": 230,
@@ -4968,7 +4968,7 @@ export const products = [
   {
     "id": 383,
     "title": "Rolex Datejust || Blue silver",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1746184700388993.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746184700388993.webp",
     "price": 230,
@@ -4981,7 +4981,7 @@ export const products = [
   {
     "id": 384,
     "title": "Rolex Datejust Black",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1746185014846505.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1746185014846505.webp",
     "price": 230,
@@ -4994,7 +4994,7 @@ export const products = [
   {
     "id": 385,
     "title": "كمادة كهربائية لتخفيف آلام العضلات وآلام الدورة",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1745678802324485.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745678802288206.webp",
     "price": 192,
@@ -5007,7 +5007,7 @@ export const products = [
   {
     "id": 386,
     "title": "جهاز التدريبات الرياضية المنزلي",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1745679378908043.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745679378169634.webp",
     "price": 330,
@@ -5020,7 +5020,7 @@ export const products = [
   {
     "id": 387,
     "title": "آلة تلميع السيارات الكهربائية",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/174567969930403.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745679699762800.webp",
     "price": 320,
@@ -5033,7 +5033,7 @@ export const products = [
   {
     "id": 388,
     "title": "مروحة مكتب كهربائية لاسلكية محمولة",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/174567991842548.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745679918401851.webp",
     "price": 182,
@@ -5046,7 +5046,7 @@ export const products = [
   {
     "id": 389,
     "title": "مصباح مكتبي LED بشاحن لاسلكي ٤ في ١ مع مكبر صوت بلوتوث وساعة",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1745680785929113.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/174568078514744.webp",
     "price": 220,
@@ -5059,7 +5059,7 @@ export const products = [
   {
     "id": 390,
     "title": "ماكينة صنع الساندوتشات المنزلية",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1745681078557019.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745681079377288.webp",
     "price": 290,
@@ -5072,7 +5072,7 @@ export const products = [
   {
     "id": 391,
     "title": "قناع للوجه لمكافحة الشيخوخة وتجديد البشرة",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1745682006358131.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745682006172135.webp",
     "price": 292,
@@ -5111,7 +5111,7 @@ export const products = [
   {
     "id": 394,
     "title": "منظم ميكاب بيضاوي أنيق",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1745683564143358.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745683708250035.webp",
     "price": 286,
@@ -5137,7 +5137,7 @@ export const products = [
   {
     "id": 396,
     "title": "Rolex watch silver and gold (w) (31mm) + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1745837050237538.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745837050237538.webp",
     "price": 320,
@@ -5163,7 +5163,7 @@ export const products = [
   {
     "id": 398,
     "title": "ساعة رولكس Date just  ازرق فاتح *جولد (36mm)",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/174118277945310.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/174118277945310.webp",
     "price": 250,
@@ -5176,7 +5176,7 @@ export const products = [
   {
     "id": 399,
     "title": "ساعة رولكس انيقة باللون الازرق",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1741616006216496.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1741616006216496.webp",
     "price": 240,
@@ -5189,7 +5189,7 @@ export const products = [
   {
     "id": 400,
     "title": "Rolex روز جولد (31mm)",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/174239814891443.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1741728126779240.webp",
     "price": 250,
@@ -5254,7 +5254,7 @@ export const products = [
   {
     "id": 405,
     "title": "ساعة رولكس نسائي مينا أخضر ملكي (31mm) (W)",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1745420116792035.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745420116792035.webp",
     "price": 220,
@@ -5280,7 +5280,7 @@ export const products = [
   {
     "id": 407,
     "title": "ساعة رولكس مينا أبيض (M) (41mm)",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1745609014583872.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/17456090153584.webp",
     "price": 230,
@@ -5293,7 +5293,7 @@ export const products = [
   {
     "id": 408,
     "title": "عصارة حمضيات كهربائية حديثة",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1745678613139353.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1745678614485457.webp",
     "price": 210,
@@ -5306,7 +5306,7 @@ export const products = [
   {
     "id": 409,
     "title": "ساعة رولكس باتمان اسود",
-    "description": "",
+    "description": "ساعة فاخرة تجمع بين الأناقة والدقة السويسرية. تصميم عصري يناسب جميع المناسبات، مصنوعة من مواد عالية الجودة لتدوم معك لسنوات. مثالية للاستخدام اليومي أو المناسبات الخاصة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1741220018820605.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1741220018820605.png",
     "price": 680,
@@ -5410,7 +5410,7 @@ export const products = [
   {
     "id": 417,
     "title": "ساعة Rolex ديت جاست مينا اخضر",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1741219965465187.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1741219965465187.png",
     "price": 250,
@@ -5423,7 +5423,7 @@ export const products = [
   {
     "id": 418,
     "title": "ساعة Rolex ديت جاست مينا اسود  (36mm)",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1741219862491625.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1741219862491625.png",
     "price": 250,
@@ -5436,7 +5436,7 @@ export const products = [
   {
     "id": 419,
     "title": "Rolex oyster اسود في ذهبي (42mm)",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1741219710495579.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1741219710495579.png",
     "price": 240,
@@ -5566,7 +5566,7 @@ export const products = [
   {
     "id": 429,
     "title": "ساعة Rolex باللون الأخضر الملكي + البوكس الأصلي",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1737384308361283.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/173738430821696.webp",
     "price": 280,
@@ -5592,7 +5592,7 @@ export const products = [
   {
     "id": 431,
     "title": "ساعة رولكس يخت ماستر ذهبي + البوكس الأصلي",
-    "description": "",
+    "description": "تألق بإطلالة مميزة مع هذه الساعة الفاخرة. تصميم كلاسيكي يجمع بين الفخامة والعملية، مصنوعة بعناية فائقة لتمنحك الأناقة والثقة في كل لحظة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1737397213723650.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1737397213723650.webp",
     "price": 288,
@@ -5605,7 +5605,7 @@ export const products = [
   {
     "id": 432,
     "title": "ساعة رولكس يخت ماستر اسود - كوبي 1",
-    "description": "",
+    "description": "ساعة أنيقة بتصميم راقٍ يعكس ذوقك الرفيع. مقاومة للماء والخدش، مع حركة دقيقة تضمن لك الوقت الصحيح دائماً. إضافة مثالية لمجموعتك من الإكسسوارات الفاخرة.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1741220095315902.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1741220095315902.png",
     "price": 680,
@@ -6242,7 +6242,7 @@ export const products = [
   {
     "id": 481,
     "title": "قناع ترطيب الشعر فينو",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1742773078717989.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725719419675355.webp",
     "price": 170,
@@ -6255,7 +6255,7 @@ export const products = [
   {
     "id": 482,
     "title": "مجموعة ساكورا للعنابة بالبشرة",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1742735079870795.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725719659673035.webp",
     "price": 230,
@@ -6281,7 +6281,7 @@ export const products = [
   {
     "id": 484,
     "title": "مجفف الشعر 3*1",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/172572705311532.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725727053587963.webp",
     "price": 188,
@@ -6476,7 +6476,7 @@ export const products = [
   {
     "id": 499,
     "title": "منظم لمستحضرات التجميل",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر في الإمارات مع ضمان الجودة والاستبدال خلال 7 أيام.",
     "image": "https://m5zoon.com/public/uploads/products/1725717490790124.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/172571749081480.webp",
     "price": 296,
@@ -6489,7 +6489,7 @@ export const products = [
   {
     "id": 500,
     "title": "منظم مكياج دوار 360 درجة",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1725717604462967.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725717604645064.webp",
     "price": 160,
@@ -6502,7 +6502,7 @@ export const products = [
   {
     "id": 501,
     "title": "بخاخ البواسير العشبي لتخفيف الآلام",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nمتوفر الآن في الإمارات مع توصيل سريع لجميع الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/172571842791369.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725718427857148.webp",
     "price": 160,
@@ -6515,7 +6515,7 @@ export const products = [
   {
     "id": 502,
     "title": "بخاخ لعلاج حبوب الظهر",
-    "description": "",
+    "description": "منتج عملي وعصري يلبي احتياجاتك اليومية. مصنوع من مواد عالية الجودة، سهل الاستخدام والصيانة. إضافة مثالية لمنزلك أو مكتبك.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1725718594228195.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725718594534243.webp",
     "price": 162,
@@ -6528,7 +6528,7 @@ export const products = [
   {
     "id": 503,
     "title": "قناع ترطيب الشعر بالزنجبيل",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1742773770654623.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725719019721600.webp",
     "price": 174,
@@ -6541,7 +6541,7 @@ export const products = [
   {
     "id": 504,
     "title": "قناع ازالة الروؤس السوداء",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1742773281658667.png",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725719244177369.webp",
     "price": 164,
@@ -6593,7 +6593,7 @@ export const products = [
   {
     "id": 508,
     "title": "جهاز تمارين البطن والظهر",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nتوصيل سريع لجميع مناطق الإمارات. اطلب الآن واستمتع بالتسوق الآمن.",
     "image": "https://m5zoon.com/public/uploads/products/1725705852239023.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/172570585217624.webp",
     "price": 460,
@@ -6632,7 +6632,7 @@ export const products = [
   {
     "id": 511,
     "title": "شامبو ساكورا الياباني",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nاطلبه الآن واستمتع بالتوصيل السريع في دبي، أبوظبي، الشارقة وجميع أنحاء الإمارات.",
     "image": "https://m5zoon.com/public/uploads/products/1725707434117990.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1725707434641918.webp",
     "price": 168,
@@ -10506,7 +10506,7 @@ export const products = [
   {
     "id": 809,
     "title": "شنطة YSL small Loulou",
-    "description": "",
+    "description": "استمتع بالجودة والعملية مع هذا المنتج المميز. تصميم ذكي يسهل عليك المهام اليومية، مصنوع من خامات متينة تضمن الاستخدام الطويل.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1731193911155074.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1684330045232016.webp",
     "price": 300,
@@ -10662,7 +10662,7 @@ export const products = [
   {
     "id": 821,
     "title": "رذاذ طلاء عامل مقاوم للماء عالي الجودة 550 مل",
-    "description": "",
+    "description": "منتج مبتكر بتصميم حديث وعملي. يوفر لك الراحة والكفاءة في الاستخدام اليومي. جودة عالية وأداء موثوق يدوم طويلاً.\n\nشحن مجاني لجميع إمارات الدولة. اطلب الآن واستلم خلال 24-48 ساعة.",
     "image": "https://m5zoon.com/public/uploads/products/1683031679319249.webp",
     "additionalImage": "https://m5zoon.com/public/uploads/products/1683031679941697.webp",
     "price": 150,

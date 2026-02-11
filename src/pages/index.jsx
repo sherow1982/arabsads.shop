@@ -1,21 +1,15 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart } from '@/redux/features/cartSlice';
 import { products } from '@/data/products';
 import { toast } from 'react-toastify';
+import SEO from '@/components/SEO';
 
 export default function Home() {
   const router = useRouter();
   const dispatch = useDispatch();
-  const { items } = useSelector((state) => state.cart);
-  const [mounted, setMounted] = useState(false);
-  
-  useEffect(() => {
-    setMounted(true);
-  }, []);
   
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
@@ -24,84 +18,167 @@ export default function Home() {
   
   return (
     <>
+      <SEO 
+        title="إماراتي ستور - مخزونك في جيبك | شحن مجاني"
+        description="أفضل متجر إلكتروني في 7 دول عربية. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%. تسوق في الإمارات والسعودية ومصر"
+        keywords="متجر إلكتروني, تسوق أونلاين, شحن مجاني, إماراتي ستور, تسوق في الإمارات, تسوق في السعودية, تسوق في مصر, توصيل سريع"
+        url="https://emeratis-store.com"
+      />
       <Head>
-        <title>متجر إماراتي - الصفحة الرئيسية</title>
-        <meta name="description" content="متجر إماراتي للتسوق الإلكتروني" />
+        <title>إماراتي ستور - الصفحة الرئيسية</title>
+        <meta name="description" content="إماراتي ستور - مخزونك في جيبك" />
       </Head>
 
-      <div className="bg-gray-1">
-        {/* Header */}
-        <header className="bg-white shadow-1 sticky top-0 z-999">
-          <div className="max-w-[1170px] mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <h1 className="text-2xl font-bold text-dark">متجر إماراتي</h1>
-              <nav className="flex gap-6">
-                <Link href="/" className="text-dark-3 hover:text-blue transition">الرئيسية</Link>
-                <Link href="/shop" className="text-dark-3 hover:text-blue transition">المتجر</Link>
-                <Link href="/cart" className="text-dark-3 hover:text-blue transition">
-                  السلة ({mounted ? items.length : 0})
+      {/* Hero Slider */}
+      <section className="relative bg-gradient-to-l from-primary to-primary-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 py-24">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h2 className="text-6xl font-bold leading-tight">مرحباً بك في إماراتي ستور</h2>
+              <p className="text-2xl opacity-95 font-bold">مخزونك في جيبك</p>
+              <div className="flex gap-4">
+                <Link href="/shop" className="bg-white text-primary px-8 py-4 rounded-md text-lg font-bold hover:bg-light-gray transition shadow-lg">
+                  تسوق الآن
                 </Link>
-              </nav>
+                <Link href="/shop" className="border-2 border-white text-white px-8 py-4 rounded-md text-lg font-bold hover:bg-white hover:text-primary transition">
+                  عرض المنتجات
+                </Link>
+              </div>
             </div>
-          </div>
-        </header>
-
-        {/* Hero */}
-        <section className="bg-gradient-to-r from-blue to-blue-dark text-white py-20">
-          <div className="max-w-[1170px] mx-auto px-4 text-center">
-            <h2 className="text-5xl font-bold mb-4">مرحباً بك في متجر إماراتي</h2>
-            <p className="text-xl opacity-90">أفضل المنتجات بأفضل الأسعار</p>
-          </div>
-        </section>
-
-        {/* Products */}
-        <section className="py-16">
-          <div className="max-w-[1170px] mx-auto px-4">
-            <h2 className="text-3xl font-bold text-dark text-center mb-12">المنتجات المميزة</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {products.slice(0, 6).map((product) => (
-                <div key={product.id} className="bg-white rounded-lg shadow-1 overflow-hidden hover:shadow-2 transition group">
-                  <div className="relative h-64 overflow-hidden cursor-pointer" onClick={() => router.push(`/product/${product.id}`)}>
-                    <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-300" />
-                    {product.salePrice < product.price && (
-                      <span className="absolute top-3 right-3 bg-red text-white px-3 py-1 rounded-full text-sm font-bold">
-                        -{Math.round((1 - product.salePrice / product.price) * 100)}%
-                      </span>
-                    )}
+            <div className="hidden md:block">
+              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+                <div className="grid grid-cols-2 gap-4 text-center">
+                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
+                    <div className="text-4xl font-bold">500+</div>
+                    <div className="text-sm opacity-90">منتج</div>
                   </div>
-                  <div className="p-5">
-                    <h3 className="text-dark font-medium mb-2 h-12 overflow-hidden cursor-pointer hover:text-blue transition" onClick={() => router.push(`/product/${product.id}`)}>
-                      {product.title}
-                    </h3>
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-2xl font-bold text-blue">{product.salePrice} د.إ</span>
-                      <span className="text-gray-5 line-through">{product.price} د.إ</span>
-                    </div>
-                    <button 
-                      onClick={() => handleAddToCart(product)}
-                      className="w-full bg-blue text-white py-3 rounded-md font-medium hover:bg-blue-dark transition"
-                    >
-                      أضف للسلة
-                    </button>
+                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
+                    <div className="text-4xl font-bold">100%</div>
+                    <div className="text-sm opacity-90">ضمان</div>
+                  </div>
+                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
+                    <div className="text-4xl font-bold">مجاني</div>
+                    <div className="text-sm opacity-90">الشحن</div>
+                  </div>
+                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
+                    <div className="text-4xl font-bold">24/7</div>
+                    <div className="text-sm opacity-90">دعم</div>
                   </div>
                 </div>
-              ))}
-            </div>
-            <div className="text-center mt-10">
-              <Link href="/shop" className="inline-block bg-dark text-white px-8 py-3 rounded-md font-medium hover:bg-dark-2 transition">
-                عرض جميع المنتجات
-              </Link>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Footer */}
-        <footer className="bg-dark text-white py-8 mt-16">
-          <div className="max-w-[1170px] mx-auto px-4 text-center">
-            <p>&copy; 2024 متجر إماراتي. جميع الحقوق محفوظة.</p>
+      {/* Features */}
+      <section className="py-8 bg-white border-b">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="flex items-center gap-4">
+              <div className="bg-primary bg-opacity-10 p-4 rounded-full">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-bold text-dark">شحن مجاني</h3>
+                <p className="text-sm text-dark-3">لجميع الطلبات</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="bg-primary bg-opacity-10 p-4 rounded-full">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-bold text-dark">توصيل سريع</h3>
+                <p className="text-sm text-dark-3">1-3 أيام عمل</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="bg-primary bg-opacity-10 p-4 rounded-full">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-bold text-dark">دفع آمن</h3>
+                <p className="text-sm text-dark-3">100% مضمون</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="bg-primary bg-opacity-10 p-4 rounded-full">
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-bold text-dark">إرجاع سهل</h3>
+                <p className="text-sm text-dark-3">14 يوم ضمان</p>
+              </div>
+            </div>
           </div>
-        </footer>
-      </div>
+        </div>
+      </section>
+
+      {/* Products */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-dark mb-4">المنتجات المميزة</h2>
+            <p className="text-dark-3 text-lg">اكتشف أحدث منتجاتنا بأفضل الأسعار</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {products.slice(0, 8).map((product) => (
+              <div key={product.id} className="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-hover transition-all duration-300 group">
+                <div className="relative h-64 overflow-hidden cursor-pointer" onClick={() => router.push(`/product/${product.id}`)}>
+                  <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+                  {product.salePrice < product.price && (
+                    <span className="absolute top-3 right-3 bg-danger text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                      -{Math.round((1 - product.salePrice / product.price) * 100)}%
+                    </span>
+                  )}
+                  <button 
+                    onClick={(e) => { e.stopPropagation(); handleAddToCart(product); }}
+                    className="absolute bottom-3 left-3 right-3 bg-primary text-white py-2 rounded-md font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    أضف للسلة
+                  </button>
+                </div>
+                <div className="p-4">
+                  <h3 className="text-dark font-semibold mb-2 h-12 overflow-hidden cursor-pointer hover:text-primary transition" onClick={() => router.push(`/product/${product.id}`)}>
+                    {product.title}
+                  </h3>
+                  <div className="flex items-center gap-2">
+                    <span className="text-2xl font-bold text-primary">{product.salePrice} د.إ</span>
+                    {product.salePrice < product.price && (
+                      <span className="text-gray-400 line-through">{product.price} د.إ</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link href="/shop" className="inline-block bg-primary text-white px-10 py-4 rounded-md font-bold hover:bg-primary-dark transition shadow-lg text-lg">
+              عرض جميع المنتجات
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="bg-secondary text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-4">احصل على خصم حتى 50%</h2>
+          <p className="text-xl mb-8 opacity-90">على جميع المنتجات المختارة + شحن مجاني</p>
+          <Link href="/shop" className="inline-block bg-primary text-white px-10 py-4 rounded-md font-bold hover:bg-primary-dark transition shadow-lg text-lg">
+            تسوق الآن
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart } from '@/redux/features/cartSlice';
 import { products } from '@/data/products';
 import { toast } from 'react-toastify';
@@ -10,14 +9,9 @@ import { toast } from 'react-toastify';
 export default function Shop() {
   const router = useRouter();
   const dispatch = useDispatch();
-  const { items } = useSelector((state) => state.cart);
   const [searchTerm, setSearchTerm] = useState('');
   const [priceRange, setPriceRange] = useState([0, 1000]);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const [displayCount, setDisplayCount] = useState(12);
 
   const handleAddToCart = (product, e) => {
     e.stopPropagation();
@@ -31,114 +25,111 @@ export default function Shop() {
     return matchesSearch && matchesPrice;
   });
 
+  const displayedProducts = filteredProducts.slice(0, displayCount);
+  const hasMore = displayCount < filteredProducts.length;
+
   return (
     <>
       <Head>
-        <title>المتجر - متجر إماراتي</title>
+        <title>المتجر - إماراتي ستور</title>
       </Head>
 
-      <div className="bg-gray-1 min-h-screen">
-        {/* Header */}
-        <header className="bg-white shadow-1 sticky top-0 z-999">
-          <div className="max-w-[1170px] mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <h1 className="text-2xl font-bold text-dark">متجر إماراتي</h1>
-              <nav className="flex gap-6">
-                <Link href="/" className="text-dark-3 hover:text-blue transition">الرئيسية</Link>
-                <Link href="/shop" className="text-dark-3 hover:text-blue transition">المتجر</Link>
-                <Link href="/cart" className="text-dark-3 hover:text-blue transition">
-                  السلة ({mounted ? items.length : 0})
-                </Link>
-              </nav>
-            </div>
-          </div>
-        </header>
-
-        {/* Shop Content */}
-        <div className="max-w-[1170px] mx-auto px-4 py-10">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-dark mb-2">جميع المنتجات</h2>
-            <p className="text-dark-4">عدد المنتجات: {filteredProducts.length}</p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            {/* Sidebar */}
-            <aside className="lg:col-span-1">
-              <div className="bg-white rounded-lg shadow-1 p-6 sticky top-24">
-                <div className="mb-6">
-                  <h3 className="text-lg font-bold text-dark mb-3">البحث</h3>
-                  <input
-                    type="text"
-                    placeholder="ابحث عن منتج..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue"
-                  />
-                </div>
-
-                <div>
-                  <h3 className="text-lg font-bold text-dark mb-3">نطاق السعر</h3>
-                  <div className="flex gap-2">
-                    <input
-                      type="number"
-                      value={priceRange[0]}
-                      onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
-                      placeholder="من"
-                      className="w-full px-3 py-2 border border-gray-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue"
-                    />
-                    <input
-                      type="number"
-                      value={priceRange[1]}
-                      onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-                      placeholder="إلى"
-                      className="w-full px-3 py-2 border border-gray-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue"
-                    />
-                  </div>
-                </div>
-              </div>
-            </aside>
-
-            {/* Products Grid */}
-            <div className="lg:col-span-3">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredProducts.map((product) => (
-                  <div key={product.id} className="bg-white rounded-lg shadow-1 overflow-hidden hover:shadow-2 transition group cursor-pointer" onClick={() => router.push(`/product/${product.id}`)}>
-                    <div className="relative h-64 overflow-hidden">
-                      <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-300" />
-                      {product.salePrice < product.price && (
-                        <span className="absolute top-3 right-3 bg-red text-white px-3 py-1 rounded-full text-sm font-bold">
-                          -{Math.round((1 - product.salePrice / product.price) * 100)}%
-                        </span>
-                      )}
-                    </div>
-                    <div className="p-5">
-                      <h3 className="text-dark font-medium mb-2 h-12 overflow-hidden">
-                        {product.title}
-                      </h3>
-                      <div className="flex items-center gap-3 mb-4">
-                        <span className="text-2xl font-bold text-blue">{product.salePrice} د.إ</span>
-                        <span className="text-gray-5 line-through">{product.price} د.إ</span>
-                      </div>
-                      <button 
-                        onClick={(e) => handleAddToCart(product, e)}
-                        className="w-full bg-blue text-white py-3 rounded-md font-medium hover:bg-blue-dark transition"
-                      >
-                        أضف للسلة
-                      </button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+      <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-dark mb-2">جميع المنتجات</h2>
+          <p className="text-dark-3">عدد المنتجات: {filteredProducts.length}</p>
         </div>
 
-        {/* Footer */}
-        <footer className="bg-dark text-white py-8 mt-16">
-          <div className="max-w-[1170px] mx-auto px-4 text-center">
-            <p>&copy; 2024 متجر إماراتي. جميع الحقوق محفوظة.</p>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Sidebar */}
+          <aside className="lg:col-span-1">
+            <div className="bg-white rounded-lg shadow-card p-6 sticky top-24">
+              <div className="mb-6">
+                <h3 className="text-lg font-bold text-dark mb-3">البحث</h3>
+                <input
+                  type="text"
+                  placeholder="ابحث عن منتج..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full px-4 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+
+              <div>
+                <h3 className="text-lg font-bold text-dark mb-3">نطاق السعر</h3>
+                <div className="flex gap-2">
+                  <input
+                    type="number"
+                    value={priceRange[0]}
+                    onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
+                    placeholder="من"
+                    className="w-full px-3 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                  <input
+                    type="number"
+                    value={priceRange[1]}
+                    onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
+                    placeholder="إلى"
+                    className="w-full px-3 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          {/* Products Grid */}
+          <div className="lg:col-span-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {displayedProducts.map((product) => (
+                <div key={product.id} className="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-hover transition-all duration-300 group">
+                  <div className="relative h-64 overflow-hidden cursor-pointer" onClick={() => router.push(`/product/${product.id}`)}>
+                    <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+                    {product.salePrice < product.price && (
+                      <span className="absolute top-3 right-3 bg-danger text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                        -{Math.round((1 - product.salePrice / product.price) * 100)}%
+                      </span>
+                    )}
+                    <button 
+                      onClick={(e) => handleAddToCart(product, e)}
+                      className="absolute bottom-3 left-3 right-3 bg-primary text-white py-2 rounded-md font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+                    >
+                      أضف للسلة
+                    </button>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-dark font-semibold mb-2 h-12 overflow-hidden cursor-pointer hover:text-primary transition" onClick={() => router.push(`/product/${product.id}`)}>
+                      {product.title}
+                    </h3>
+                    <div className="flex items-center gap-2">
+                      <span className="text-2xl font-bold text-primary">{product.salePrice} د.إ</span>
+                      {product.salePrice < product.price && (
+                        <span className="text-gray-400 line-through">{product.price} د.إ</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Load More Button */}
+            {hasMore && (
+              <div className="text-center mt-12">
+                <button 
+                  onClick={() => setDisplayCount(displayCount + 12)}
+                  className="bg-gradient-to-r from-primary to-secondary text-white px-12 py-4 rounded-md font-bold hover:opacity-90 transition shadow-lg text-lg"
+                >
+                  مشاهدة المزيد
+                </button>
+              </div>
+            )}
+
+            {!hasMore && filteredProducts.length > 12 && (
+              <div className="text-center mt-12">
+                <p className="text-dark-3 text-lg">تم عرض جميع المنتجات</p>
+              </div>
+            )}
           </div>
-        </footer>
+        </div>
       </div>
     </>
   );

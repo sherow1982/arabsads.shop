@@ -1,0 +1,13 @@
+# Robots.txt for Emeratis Store
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /cart
+
+# Sitemaps
+Sitemap: https://emeratis-store.com/sitemap.xml
+Sitemap: https://emeratis-store.com/product-sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
