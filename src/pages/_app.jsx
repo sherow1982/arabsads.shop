@@ -15,7 +15,9 @@ export default function App({ Component, pageProps }) {
       <GoogleScripts />
       <div className="bg-light-gray min-h-screen">
         <Header />
-        <Component {...pageProps} />
+        <main role="main">
+          <Component {...pageProps} />
+        </main>
         <Footer />
         <WhatsAppButton />
         <FloatingCart />
