@@ -7,14 +7,43 @@ import Link from 'next/link';
 import SEO from '@/components/SEO';
 import { useState } from 'react';
 
-export default function ProductDetail() {
+export async function getStaticPaths() {
+  const paths = products.map((product) => ({
+    params: { id: product.id.toString() },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const product = products.find(p => p.id === parseInt(params.id));
+
+  if (!product) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      product,
+    },
+  };
+}
+
+export default function ProductDetail({ product: initialProduct }) {
   const router = useRouter();
-  const { id } = router.query;
   const dispatch = useDispatch();
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
+  const product = initialProduct;
 
-  const product = products.find(p => p.id === parseInt(id));
+  if (router.isFallback) {
+    return <div className="max-w-7xl mx-auto px-4 py-20 text-center">جاري التحميل...</div>;
+  }
 
   if (!product) {
     return (
