@@ -37,11 +37,14 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 py-3 md:py-4">
           <div className="flex items-center justify-between">
             <Link href="/">
-              <div className="cursor-pointer hover:opacity-90 transition">
-                <h1 className="text-2xl md:text-4xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-                  إماراتي ستور
-                </h1>
-                <p className="text-xs md:text-sm font-bold text-accent mt-1">مخزونك في جيبك</p>
+              <div className="cursor-pointer hover:opacity-90 transition flex items-center gap-3">
+                <img src="/logo.jpg" alt="إماراتي ستور" className="h-12 md:h-16 w-auto object-contain" />
+                <div>
+                  <h1 className="text-xl md:text-3xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                    إماراتي ستور
+                  </h1>
+                  <p className="text-xs md:text-sm font-bold text-accent">مخزونك في جيبك</p>
+                </div>
               </div>
             </Link>
             

@@ -29,7 +29,7 @@ export default function SEO({
     name: 'إماراتي ستور',
     alternateName: 'Emeratis Store',
     url: 'https://emirates.storesads.shop',
-    logo: 'https://emirates.storesads.shop/logo.png',
+    logo: 'https://emirates.storesads.shop/logo.jpg',
     description: 'أفضل متجر إلكتروني في 7 دول عربية',
     address: {
       '@type': 'PostalAddress',

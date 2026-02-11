@@ -32,7 +32,10 @@ export default function Home() {
 
       {/* Hero Slider */}
       <section className="relative bg-gradient-to-l from-primary to-primary-dark text-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 py-12 md:py-24">
+        <div className="absolute inset-0 opacity-20">
+          <img src="/banner.jpg" alt="Banner" className="w-full h-full object-cover" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-24 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-4 md:space-y-6 text-center md:text-right">
               <h2 className="text-3xl md:text-6xl font-bold leading-tight">مرحباً بك في إماراتي ستور</h2>
