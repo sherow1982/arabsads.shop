@@ -1,9 +1,8 @@
 import Script from 'next/script';
 
 export default function GoogleScripts() {
-  // استبدل هذه القيم بمعرفات Google الخاصة بك
-  const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Google Analytics 4 ID
-  const GTM_ID = 'GTM-XXXXXXX'; // Google Tag Manager ID
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-VD4D6DCK58';
+  const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-TB54X82N';
 
   return (
     <>

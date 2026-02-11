@@ -1,10 +1,19 @@
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
+import * as gtag from '@/lib/gtag';
+import { clearCart } from '@/redux/features/cartSlice';
 
 export default function Checkout() {
   const { items, total } = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (items.length > 0) {
+      gtag.beginCheckout(items, total);
+    }
+  }, []);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -50,6 +59,11 @@ export default function Checkout() {
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
+      
+      const orderId = 'ORD-' + Date.now();
+      gtag.purchase(orderId, items, total);
+      
+      dispatch(clearCart());
       toast.success('تم إرسال طلبك بنجاح!');
       setFormData({
         firstName: '', lastName: '', phone: '', email: '', address: '', city: '', country: 'الإمارات', notes: '', paymentMethod: 'cash'

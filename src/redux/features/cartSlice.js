@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import * as gtag from '@/lib/gtag';
 
 const loadCartFromStorage = () => {
   if (typeof window !== 'undefined') {
@@ -36,6 +37,10 @@ const cartSlice = createSlice({
     },
     
     removeFromCart: (state, action) => {
+      const item = state.items.find(item => item.id === action.payload);
+      if (item) {
+        gtag.removeFromCart(item, item.quantity);
+      }
       state.items = state.items.filter(item => item.id !== action.payload);
       state.total = state.items.reduce((sum, item) => sum + (item.salePrice * item.quantity), 0);
       saveCartToStorage(state);

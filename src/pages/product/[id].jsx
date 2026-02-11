@@ -5,7 +5,8 @@ import { products } from '@/data/products';
 import { toast } from 'react-toastify';
 import Link from 'next/link';
 import SEO from '@/components/SEO';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import * as gtag from '@/lib/gtag';
 
 export async function getStaticPaths() {
   const paths = products.map((product) => ({
@@ -41,6 +42,12 @@ export default function ProductDetail({ product: initialProduct }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const product = initialProduct;
 
+  useEffect(() => {
+    if (product) {
+      gtag.viewItem(product);
+    }
+  }, [product]);
+
   if (router.isFallback) {
     return <div className="max-w-7xl mx-auto px-4 py-20 text-center">جاري التحميل...</div>;
   }
@@ -60,6 +67,7 @@ export default function ProductDetail({ product: initialProduct }) {
     for (let i = 0; i < quantity; i++) {
       dispatch(addToCart(product));
     }
+    gtag.addToCart(product, quantity);
     toast.success(`تمت إضافة ${quantity} من ${product.title} إلى السلة`);
   };
 
