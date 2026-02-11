@@ -1,14 +1,6 @@
-# robots.txt for https://emirates.storesads.shop
-
 User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /checkout/success
-Disallow: /checkout/cancel
+Disallow:
 
-# Sitemaps
-Sitemap: https://emirates.storesads.shop/sitemap.xml
+Sitemap: https://emirates.storesads.shop/mass-seo-sitemap.xml
 Sitemap: https://emirates.storesads.shop/product-feed.xml
-
-# Crawl-delay
-Crawl-delay: 1
+Sitemap: https://emirates.storesads.shop/sitemap.xml
