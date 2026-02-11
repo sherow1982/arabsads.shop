@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/redux/features/cartSlice';
 import { products } from '@/data/products';
+import { getProductReviews, getProductFAQs, getAverageRating } from '@/data/productReviews';
 import { toast } from 'react-toastify';
 import Link from 'next/link';
 import SEO from '@/components/SEO';
@@ -40,7 +41,11 @@ export default function ProductDetail({ product: initialProduct }) {
   const dispatch = useDispatch();
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [activeTab, setActiveTab] = useState('description');
   const product = initialProduct;
+  const reviews = getProductReviews(product?.id);
+  const faqs = getProductFAQs(product?.id);
+  const averageRating = getAverageRating(product?.id);
 
   useEffect(() => {
     if (product) {
@@ -171,6 +176,108 @@ export default function ProductDetail({ product: initialProduct }) {
               </button>
             </div>
           </div>
+        </div>
+
+        {/* التقييمات والأسئلة الشائعة */}
+        <div className="mt-12 bg-white rounded-2xl shadow-card p-8">
+          <div className="flex gap-4 border-b mb-6">
+            <button 
+              onClick={() => setActiveTab('description')}
+              className={`pb-4 px-6 font-bold transition ${activeTab === 'description' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
+            >
+              الوصف
+            </button>
+            <button 
+              onClick={() => setActiveTab('reviews')}
+              className={`pb-4 px-6 font-bold transition ${activeTab === 'reviews' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
+            >
+              التقييمات ({reviews.length})
+            </button>
+            <button 
+              onClick={() => setActiveTab('faqs')}
+              className={`pb-4 px-6 font-bold transition ${activeTab === 'faqs' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
+            >
+              الأسئلة الشائعة
+            </button>
+          </div>
+
+          {/* محتوى الوصف */}
+          {activeTab === 'description' && (
+            <div className="prose max-w-none">
+              <p className="text-gray-600 leading-relaxed text-lg">{product.description}</p>
+            </div>
+          )}
+
+          {/* محتوى التقييمات */}
+          {activeTab === 'reviews' && (
+            <div className="space-y-6">
+              {reviews.length > 0 ? (
+                <>
+                  <div className="flex items-center gap-4 pb-6 border-b">
+                    <div className="text-center">
+                      <div className="text-5xl font-bold text-primary">{averageRating}</div>
+                      <div className="flex gap-1 mt-2">
+                        {[...Array(5)].map((_, i) => (
+                          <span key={i} className={`text-2xl ${i < Math.round(averageRating) ? 'text-yellow-400' : 'text-gray-300'}`}>★</span>
+                        ))}
+                      </div>
+                      <div className="text-gray-500 mt-1">{reviews.length} تقييم</div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-6">
+                    {reviews.map((review, index) => (
+                      <div key={index} className="border-b pb-6 last:border-b-0">
+                        <div className="flex items-start justify-between mb-3">
+                          <div>
+                            <div className="flex items-center gap-2">
+                              <h4 className="font-bold text-dark">{review.name}</h4>
+                              {review.verified && (
+                                <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded">✓ مشتري موثق</span>
+                              )}
+                            </div>
+                            <div className="flex gap-1 mt-1">
+                              {[...Array(5)].map((_, i) => (
+                                <span key={i} className={`${i < review.rating ? 'text-yellow-400' : 'text-gray-300'}`}>★</span>
+                              ))}
+                            </div>
+                          </div>
+                          <span className="text-sm text-gray-500">{review.date}</span>
+                        </div>
+                        <p className="text-gray-600 leading-relaxed">{review.comment}</p>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <div className="text-center py-12 text-gray-500">
+                  <p className="text-xl">لا توجد تقييمات بعد</p>
+                  <p className="mt-2">كن أول من يقيم هذا المنتج</p>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* محتوى الأسئلة الشائعة */}
+          {activeTab === 'faqs' && (
+            <div className="space-y-4">
+              {faqs.length > 0 ? (
+                faqs.map((faq, index) => (
+                  <div key={index} className="border rounded-lg p-6 hover:shadow-md transition">
+                    <h4 className="font-bold text-dark mb-3 flex items-start gap-2">
+                      <span className="text-primary text-xl">❓</span>
+                      {faq.q}
+                    </h4>
+                    <p className="text-gray-600 leading-relaxed mr-7">{faq.a}</p>
+                  </div>
+                ))
+              ) : (
+                <div className="text-center py-12 text-gray-500">
+                  <p className="text-xl">لا توجد أسئلة شائعة لهذا المنتج</p>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </>

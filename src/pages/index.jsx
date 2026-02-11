@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/redux/features/cartSlice';
 import { products } from '@/data/products';
+import { getAverageRating, getProductReviews } from '@/data/productReviews';
 import { toast } from 'react-toastify';
 import SEO from '@/components/SEO';
 
@@ -151,6 +152,14 @@ export default function Home() {
                   <h3 className="text-dark font-semibold mb-1 md:mb-2 h-10 md:h-12 overflow-hidden cursor-pointer hover:text-primary transition text-xs md:text-base line-clamp-2" onClick={() => router.push(`/product/${product.id}`)}>
                     {product.title}
                   </h3>
+                  <div className="flex items-center gap-1 mb-1">
+                    <div className="flex gap-0.5">
+                      {[...Array(5)].map((_, i) => (
+                        <span key={i} className={`text-xs ${i < Math.round(getAverageRating(product.id)) ? 'text-yellow-400' : 'text-gray-300'}`}>★</span>
+                      ))}
+                    </div>
+                    <span className="text-xs text-gray-500">({getProductReviews(product.id).length})</span>
+                  </div>
                   <div className="flex items-center gap-1 md:gap-2">
                     <span className="text-lg md:text-2xl font-bold text-primary">{product.salePrice} د.إ</span>
                     {product.salePrice < product.price && (
