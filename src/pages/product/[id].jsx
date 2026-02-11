@@ -179,23 +179,23 @@ export default function ProductDetail({ product: initialProduct }) {
         </div>
 
         {/* التقييمات والأسئلة الشائعة */}
-        <div className="mt-12 bg-white rounded-2xl shadow-card p-8 overflow-hidden">
-          <div className="flex gap-4 border-b mb-6">
+        <div className="mt-12 bg-white rounded-2xl shadow-card p-4 md:p-8 overflow-hidden">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b mb-6 overflow-x-auto">
             <button 
               onClick={() => setActiveTab('description')}
-              className={`pb-4 px-6 font-bold transition ${activeTab === 'description' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
+              className={`pb-4 px-4 sm:px-6 font-bold transition whitespace-nowrap ${activeTab === 'description' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
             >
               الوصف
             </button>
             <button 
               onClick={() => setActiveTab('reviews')}
-              className={`pb-4 px-6 font-bold transition ${activeTab === 'reviews' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
+              className={`pb-4 px-4 sm:px-6 font-bold transition whitespace-nowrap ${activeTab === 'reviews' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
             >
               التقييمات ({reviews.length})
             </button>
             <button 
               onClick={() => setActiveTab('faqs')}
-              className={`pb-4 px-6 font-bold transition ${activeTab === 'faqs' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
+              className={`pb-4 px-4 sm:px-6 font-bold transition whitespace-nowrap ${activeTab === 'faqs' ? 'border-b-4 border-primary text-primary' : 'text-gray-500'}`}
             >
               الأسئلة الشائعة
             </button>
