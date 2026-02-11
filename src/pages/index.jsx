@@ -31,7 +31,7 @@ export default function Home() {
       </Head>
 
       {/* Hero Slider */}
-      <section className="relative bg-gradient-to-l from-primary to-primary-dark text-white">
+      <section className="relative bg-gradient-to-l from-primary to-primary-dark text-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 py-12 md:py-24">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-4 md:space-y-6 text-center md:text-right">
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* Products */}
-      <section className="py-8 md:py-16">
+      <section className="py-8 md:py-16 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-4xl font-bold text-dark mb-2 md:mb-4">المنتجات المميزة</h2>

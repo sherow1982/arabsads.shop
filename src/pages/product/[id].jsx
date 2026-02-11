@@ -90,12 +90,12 @@ export default function ProductDetail({ product: initialProduct }) {
         product={product}
       />
 
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 py-12 overflow-x-hidden">
         <button className="bg-white border border-gray-300 px-6 py-2 rounded-lg mb-8 hover:bg-light-gray transition" onClick={() => router.back()}>
           ← العودة
         </button>
 
-        <div className="bg-white rounded-2xl shadow-card p-8 grid md:grid-cols-2 gap-12">
+        <div className="bg-white rounded-2xl shadow-card p-8 grid md:grid-cols-2 gap-12 overflow-hidden">
           <div className="space-y-4">
             <div className="relative h-96 rounded-xl overflow-hidden bg-light-gray">
               <img src={selectedImage || product.image} alt={product.title} className="w-full h-full object-cover" />
@@ -179,7 +179,7 @@ export default function ProductDetail({ product: initialProduct }) {
         </div>
 
         {/* التقييمات والأسئلة الشائعة */}
-        <div className="mt-12 bg-white rounded-2xl shadow-card p-8">
+        <div className="mt-12 bg-white rounded-2xl shadow-card p-8 overflow-hidden">
           <div className="flex gap-4 border-b mb-6">
             <button 
               onClick={() => setActiveTab('description')}

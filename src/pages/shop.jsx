@@ -35,13 +35,13 @@ export default function Shop() {
         <title>المتجر - إماراتي ستور</title>
       </Head>
 
-      <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="max-w-7xl mx-auto px-4 py-10 overflow-x-hidden">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-dark mb-2">جميع المنتجات</h2>
           <p className="text-dark-3">عدد المنتجات: {filteredProducts.length}</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden">
           {/* Sidebar */}
           <aside className="lg:col-span-1">
             <div className="bg-white rounded-lg shadow-card p-6 sticky top-24">
