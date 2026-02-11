@@ -147,7 +147,7 @@ export default function ProductDetail({ product: initialProduct }) {
             {product.description && (
               <div>
                 <h3 className="text-xl font-bold text-dark mb-3">وصف المنتج</h3>
-                <p className="text-gray-600 leading-relaxed">{product.description}</p>
+                <p className="text-gray-800 leading-relaxed text-base font-medium whitespace-pre-line">{product.description}</p>
               </div>
             )}
 
@@ -204,7 +204,7 @@ export default function ProductDetail({ product: initialProduct }) {
           {/* محتوى الوصف */}
           {activeTab === 'description' && (
             <div className="prose max-w-none">
-              <p className="text-gray-600 leading-relaxed text-lg">{product.description}</p>
+              <p className="text-gray-800 leading-relaxed text-base font-medium whitespace-pre-line">{product.description}</p>
             </div>
           )}
 

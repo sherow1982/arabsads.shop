@@ -104,7 +104,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 py-6">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-gray-400">&copy; 2024 إماراتي ستور. جميع الحقوق محفوظة.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} إماراتي ستور. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>
