@@ -64,4 +64,4 @@ function generateDefaultReviews() {
 
 // تصدير التقييمات والأسئلة الافتراضية
 export const defaultReviews = generateDefaultReviews();
-export const defaultFAQs = defaultFAQs;
+export { defaultFAQs };
