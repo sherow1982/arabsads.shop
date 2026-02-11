@@ -6,8 +6,10 @@ import { getProductReviews, getProductFAQs, getAverageRating } from '@/data/prod
 import { toast } from 'react-toastify';
 import Link from 'next/link';
 import SEO from '@/components/SEO';
+import ProductSEO from '@/components/ProductSEO';
 import { useState, useEffect } from 'react';
 import * as gtag from '@/lib/gtag';
+import seoDataJson from '../../../public/seo-data/products-seo.json';
 
 export async function getStaticPaths() {
   const paths = products.map((product) => ({
@@ -29,14 +31,29 @@ export async function getStaticProps({ params }) {
     };
   }
 
+  // الحصول على بيانات SEO المحسّنة
+  let seoData = null;
+  try {
+    const fs = require('fs');
+    const path = require('path');
+    const seoPath = path.join(process.cwd(), 'public/seo-data/products-seo.json');
+    if (fs.existsSync(seoPath)) {
+      const seoJson = JSON.parse(fs.readFileSync(seoPath, 'utf8'));
+      seoData = seoJson.find(s => s.id === product.id);
+    }
+  } catch (error) {
+    console.log('SEO data not found, using defaults');
+  }
+
   return {
     props: {
       product,
+      seoData,
     },
   };
 }
 
-export default function ProductDetail({ product: initialProduct }) {
+export default function ProductDetail({ product: initialProduct, seoData }) {
   const router = useRouter();
   const dispatch = useDispatch();
   const [quantity, setQuantity] = useState(1);
@@ -52,6 +69,18 @@ export default function ProductDetail({ product: initialProduct }) {
       gtag.viewItem(product);
     }
   }, [product]);
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  const handleQuantityDecrease = () => {
+    setQuantity(Math.max(1, quantity - 1));
+  };
+
+  const handleQuantityIncrease = () => {
+    setQuantity(quantity + 1);
+  };
 
   if (router.isFallback) {
     return <div className="max-w-7xl mx-auto px-4 py-20 text-center">جاري التحميل...</div>;
@@ -80,15 +109,7 @@ export default function ProductDetail({ product: initialProduct }) {
 
   return (
     <>
-      <SEO 
-        title={`${product.title} - إماراتي ستور`}
-        description={`${product.description || product.title} - شحن مجاني. السعر: ${product.salePrice} د.إ بدلاً من ${product.price} د.إ. توصيل سريع 1-3 أيام`}
-        keywords={`${product.title}, ${product.category}, شراء ${product.title}, ${product.sku}`}
-        image={product.image}
-        url={`https://emeratis-store.com/product/${product.id}`}
-        type="product"
-        product={product}
-      />
+      <ProductSEO product={product} seoData={seoData} />
 
       <div className="max-w-7xl mx-auto px-4 py-12 overflow-x-hidden">
         <button className="bg-white border border-gray-300 px-6 py-2 rounded-lg mb-8 hover:bg-light-gray transition" onClick={() => router.back()}>
@@ -109,14 +130,14 @@ export default function ProductDetail({ product: initialProduct }) {
               <img 
                 src={product.image} 
                 alt={product.title}
-                onClick={() => setSelectedImage(product.image)}
+                onClick={() => handleImageClick(product.image)}
                 className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 transition ${selectedImage === product.image || !selectedImage ? 'border-primary' : 'border-transparent'}`}
               />
               {product.additionalImage && product.additionalImage !== product.image && (
                 <img 
                   src={product.additionalImage} 
                   alt={product.title}
-                  onClick={() => setSelectedImage(product.additionalImage)}
+                  onClick={() => handleImageClick(product.additionalImage)}
                   className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 transition ${selectedImage === product.additionalImage ? 'border-primary' : 'border-transparent'}`}
                 />
               )}
@@ -161,11 +182,11 @@ export default function ProductDetail({ product: initialProduct }) {
               <div className="flex items-center gap-4">
                 <label className="font-bold text-dark">الكمية:</label>
                 <div className="flex items-center gap-4 bg-light-gray px-4 py-2 rounded-lg">
-                  <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="w-10 h-10 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition">
+                  <button onClick={handleQuantityDecrease} className="w-10 h-10 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition">
                     -
                   </button>
                   <span className="text-xl font-bold min-w-[40px] text-center">{quantity}</span>
-                  <button onClick={() => setQuantity(quantity + 1)} className="w-10 h-10 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition">
+                  <button onClick={handleQuantityIncrease} className="w-10 h-10 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition">
                     +
                   </button>
                 </div>

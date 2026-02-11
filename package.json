@@ -8,7 +8,10 @@
     "start": "next start -p 4000",
     "lint": "next lint",
     "generate-feed": "node generate-product-feed.js",
-    "prebuild": "node scripts/generate-sitemap.js && node generate-product-feed.js"
+    "seo:optimize": "node scripts/mass-seo-optimizer.js",
+    "seo:report": "node scripts/seo-report.js",
+    "mass-seo": "node scripts/generate-mass-seo-pages.js",
+    "prebuild": "node scripts/generate-mass-seo-pages.js && node scripts/mass-seo-optimizer.js && node scripts/generate-sitemap.js && node generate-product-feed.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
