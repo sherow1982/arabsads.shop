@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/redux/features/cartSlice';
@@ -11,8 +11,15 @@ export default function Shop() {
   const router = useRouter();
   const dispatch = useDispatch();
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [priceRange, setPriceRange] = useState([0, 1000]);
   const [displayCount, setDisplayCount] = useState(12);
+
+  useEffect(() => {
+    if (router.query.category) {
+      setSelectedCategory(router.query.category);
+    }
+  }, [router.query.category]);
 
   const handleAddToCart = (product, e) => {
     e.stopPropagation();
@@ -20,10 +27,16 @@ export default function Shop() {
     toast.success('تمت إضافة المنتج إلى السلة');
   };
 
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+    router.push(`/shop?category=${encodeURIComponent(category)}`, undefined, { shallow: true });
+  };
+
   const filteredProducts = products.filter(product => {
     const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesCategory = !selectedCategory || product.category === selectedCategory;
     const matchesPrice = product.salePrice >= priceRange[0] && product.salePrice <= priceRange[1];
-    return matchesSearch && matchesPrice;
+    return matchesSearch && matchesCategory && matchesPrice;
   });
 
   const displayedProducts = filteredProducts.slice(0, displayCount);
@@ -45,7 +58,7 @@ export default function Shop() {
         <div className="mb-10">
           <h3 className="text-2xl font-bold text-dark mb-6 text-center">تسوق حسب الفئة</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
-            <button onClick={() => router.push('/shop?category=ساعات')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('ساعات')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'ساعات' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -53,7 +66,7 @@ export default function Shop() {
               </div>
               <h4 className="font-bold text-dark text-sm">ساعات</h4>
             </button>
-            <button onClick={() => router.push('/shop?category=حقائب')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('حقائب')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'حقائب' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -61,7 +74,7 @@ export default function Shop() {
               </div>
               <h4 className="font-bold text-dark text-sm">حقائب</h4>
             </button>
-            <button onClick={() => router.push('/shop?category=عطور')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('عطور')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'عطور' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -69,7 +82,7 @@ export default function Shop() {
               </div>
               <h4 className="font-bold text-dark text-sm">عطور</h4>
             </button>
-            <button onClick={() => router.push('/shop?category=أدوات مطبخ')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('أدوات مطبخ')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'أدوات مطبخ' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -77,7 +90,7 @@ export default function Shop() {
               </div>
               <h4 className="font-bold text-dark text-sm">مطبخ</h4>
             </button>
-            <button onClick={() => router.push('/shop?category=إضاءة')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('إضاءة')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'إضاءة' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -85,7 +98,7 @@ export default function Shop() {
               </div>
               <h4 className="font-bold text-dark text-sm">إضاءة</h4>
             </button>
-            <button onClick={() => router.push('/shop?category=صحة وعناية')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('صحة وعناية')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'صحة وعناية' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -93,7 +106,7 @@ export default function Shop() {
               </div>
               <h4 className="font-bold text-dark text-sm">صحة</h4>
             </button>
-            <button onClick={() => router.push('/shop?category=إكسسوارات سيارات')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('إكسسوارات سيارات')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'إكسسوارات سيارات' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
@@ -101,7 +114,7 @@ export default function Shop() {
               </div>
               <h4 className="font-bold text-dark text-sm">سيارات</h4>
             </button>
-            <button onClick={() => router.push('/shop?category=أطفال')} className="group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center">
+            <button onClick={() => handleCategoryClick('أطفال')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'أطفال' ? 'ring-2 ring-primary' : ''}`}>
               <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
                 <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -110,6 +123,13 @@ export default function Shop() {
               <h4 className="font-bold text-dark text-sm">أطفال</h4>
             </button>
           </div>
+          {selectedCategory && (
+            <div className="text-center mt-4">
+              <button onClick={() => { setSelectedCategory(''); router.push('/shop', undefined, { shallow: true }); }} className="text-primary hover:underline font-semibold">
+                إلغاء التصفية ×
+              </button>
+            </div>
+          )}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden">
