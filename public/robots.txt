@@ -3,13 +3,18 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /checkout/success
-Disallow: /checkout/cancel
+Disallow: /checkout/
+Disallow: /_next/
+Disallow: /cart
 
-# Sitemaps
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /checkout/
+
+User-agent: Googlebot-Image
+Allow: /
+
 Sitemap: https://emirates.storesads.shop/sitemap.xml
-Sitemap: https://emirates.storesads.shop/product-feed.xml
 Sitemap: https://emirates.storesads.shop/mass-seo-sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 1
+Sitemap: https://emirates.storesads.shop/product-feed.xml
