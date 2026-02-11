@@ -7,6 +7,12 @@ import { products } from '@/data/products';
 import { getAverageRating, getProductReviews } from '@/data/productReviews';
 import { toast } from 'react-toastify';
 import SEO from '@/components/SEO';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, EffectCoverflow, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
 
 export default function Home() {
   const router = useRouter();
@@ -31,106 +37,77 @@ export default function Home() {
       </Head>
 
       {/* Hero Slider */}
-      <section className="relative bg-gradient-to-l from-primary to-primary-dark text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <img src="/banner.jpg" alt="Banner" className="w-full h-full object-cover" />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 py-12 md:py-24 relative z-10">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div className="space-y-4 md:space-y-6 text-center md:text-right">
-              <h2 className="text-3xl md:text-6xl font-bold leading-tight">مرحباً بك في إماراتي ستور</h2>
-              <p className="text-xl md:text-2xl opacity-95 font-bold">مخزونك في جيبك</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <Link href="/shop" className="bg-white text-primary px-6 md:px-8 py-3 md:py-4 rounded-md text-base md:text-lg font-bold hover:bg-light-gray transition shadow-lg">
-                  تسوق الآن
-                </Link>
-                <Link href="/shop" className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-md text-base md:text-lg font-bold hover:bg-white hover:text-primary transition">
-                  عرض المنتجات
-                </Link>
-              </div>
-            </div>
-            <div className="hidden md:block">
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
-                    <div className="text-4xl font-bold">500+</div>
-                    <div className="text-sm opacity-90">منتج</div>
+      <section className="relative bg-gradient-to-br from-primary via-secondary to-accent py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-6xl font-black text-white mb-4">منتجاتنا المميزة</h2>
+            <p className="text-xl md:text-2xl text-white opacity-90">اكتشف أفضل العروض</p>
+          </div>
+          <Swiper
+            modules={[Autoplay, Pagination, EffectCoverflow, Navigation]}
+            effect="coverflow"
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView="auto"
+            coverflowEffect={{
+              rotate: 30,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            navigation={true}
+            loop={true}
+            className="product-slider"
+            breakpoints={{
+              320: {
+                coverflowEffect: {
+                  rotate: 20,
+                  depth: 80,
+                }
+              },
+              768: {
+                coverflowEffect: {
+                  rotate: 50,
+                  depth: 100,
+                }
+              }
+            }}
+          >
+            {products.slice(0, 12).map((product) => (
+              <SwiperSlide key={product.id}>
+                <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl cursor-pointer transform transition-all hover:scale-105" onClick={() => router.push(`/product/${product.id}`)}>
+                  <div className="relative h-80 md:h-96">
+                    <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                    {product.salePrice < product.price && (
+                      <span className="absolute top-4 right-4 bg-red-600 text-white px-4 py-2 rounded-full text-lg font-bold shadow-lg animate-pulse">
+                        -{Math.round((1 - product.salePrice / product.price) * 100)}%
+                      </span>
+                    )}
                   </div>
-                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
-                    <div className="text-4xl font-bold">100%</div>
-                    <div className="text-sm opacity-90">ضمان</div>
-                  </div>
-                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
-                    <div className="text-4xl font-bold">مجاني</div>
-                    <div className="text-sm opacity-90">الشحن</div>
-                  </div>
-                  <div className="bg-white bg-opacity-20 rounded-xl p-6">
-                    <div className="text-4xl font-bold">24/7</div>
-                    <div className="text-sm opacity-90">دعم</div>
+                  <div className="p-6 bg-gradient-to-t from-white to-gray-50">
+                    <h3 className="text-xl font-bold text-dark mb-3 line-clamp-2">{product.title}</h3>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <span className="text-3xl font-black text-primary">{product.salePrice} د.إ</span>
+                        {product.salePrice < product.price && (
+                          <span className="text-lg text-gray-400 line-through ml-2">{product.price} د.إ</span>
+                        )}
+                      </div>
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); handleAddToCart(product); }}
+                        className="bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary-dark transition shadow-lg"
+                      >
+                        أضف للسلة
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="py-6 md:py-8 bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-right">
-              <div className="bg-primary bg-opacity-10 p-3 md:p-4 rounded-full">
-                <svg className="w-6 h-6 md:w-8 md:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-bold text-dark text-sm md:text-base">شحن مجاني</h3>
-                <p className="text-xs md:text-sm text-dark-3">لجميع الطلبات</p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-right">
-              <div className="bg-primary bg-opacity-10 p-3 md:p-4 rounded-full">
-                <svg className="w-6 h-6 md:w-8 md:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-bold text-dark text-sm md:text-base">توصيل سريع</h3>
-                <p className="text-xs md:text-sm text-dark-3">1-3 أيام</p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-right">
-              <div className="bg-primary bg-opacity-10 p-3 md:p-4 rounded-full">
-                <svg className="w-6 h-6 md:w-8 md:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-bold text-dark text-sm md:text-base">دفع آمن</h3>
-                <p className="text-xs md:text-sm text-dark-3">100% مضمون</p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-right">
-              <div className="bg-primary bg-opacity-10 p-3 md:p-4 rounded-full">
-                <svg className="w-6 h-6 md:w-8 md:h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="font-bold text-dark text-sm md:text-base">إرجاع سهل</h3>
-                <p className="text-xs md:text-sm text-dark-3">14 يوم</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Banner Before Categories */}
-      <section className="py-4 md:py-6">
-        <div className="max-w-7xl mx-auto px-4">
-          <img src="/banner.jpg" alt="Banner" className="w-full rounded-lg shadow-lg" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
 
@@ -269,13 +246,6 @@ export default function Home() {
               عرض جميع المنتجات
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Banner Before Footer */}
-      <section className="py-4 md:py-6">
-        <div className="max-w-7xl mx-auto px-4">
-          <img src="/banner.jpg" alt="Banner" className="w-full rounded-lg shadow-lg" />
         </div>
       </section>
 

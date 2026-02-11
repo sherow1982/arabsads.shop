@@ -35,3 +35,112 @@
     scrollbar-width: none;
   }
 }
+
+/* Hero Slider Styles */
+.hero-slider .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: white;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+  width: 40px;
+  border-radius: 10px;
+}
+
+.hero-slider .swiper-pagination {
+  bottom: 40px;
+}
+
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.hero-slider .swiper-button-next:hover,
+.hero-slider .swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+}
+
+.hero-slider .swiper-button-next::after,
+.hero-slider .swiper-button-prev::after {
+  font-size: 20px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+/* Product Slider Styles */
+.product-slider {
+  padding: 40px 0;
+}
+
+.product-slider .swiper-slide {
+  width: 280px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .product-slider .swiper-slide {
+    width: 350px;
+  }
+}
+
+.product-slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: white;
+  opacity: 0.7;
+}
+
+.product-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.product-slider .swiper-button-next,
+.product-slider .swiper-button-prev {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+  .product-slider .swiper-button-next,
+  .product-slider .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.product-slider .swiper-button-next:hover,
+.product-slider .swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
