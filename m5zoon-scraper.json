@@ -1,0 +1,71 @@
+{
+  "_id": "m5zoon-products",
+  "startUrl": [
+    "https://m5zoon.com/profile/products?page=[1-100]"
+  ],
+  "selectors": [
+    {
+      "id": "product-link",
+      "type": "SelectorLink",
+      "parentSelectors": [
+        "_root"
+      ],
+      "selector": "a[href*='/product/']",
+      "multiple": true,
+      "delay": 0
+    },
+    {
+      "id": "product-name",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "product-link"
+      ],
+      "selector": "h3.product-description__header-title",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "product-price",
+      "type": "SelectorText",
+      "parentSelectors": [
+        "product-link"
+      ],
+      "selector": "span.price-item-header-desc",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    },
+    {
+      "id": "main-image",
+      "type": "SelectorImage",
+      "parentSelectors": [
+        "product-link"
+      ],
+      "selector": "img.main-image#mainImage",
+      "multiple": false,
+      "delay": 0
+    },
+    {
+      "id": "gallery-images",
+      "type": "SelectorImage",
+      "parentSelectors": [
+        "product-link"
+      ],
+      "selector": "div.thumbnail-container img.thumbnail",
+      "multiple": true,
+      "delay": 0
+    },
+    {
+      "id": "product-description",
+      "type": "SelectorHTML",
+      "parentSelectors": [
+        "product-link"
+      ],
+      "selector": "div.product-description, div.description-content",
+      "multiple": false,
+      "regex": "",
+      "delay": 0
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
+import SearchBar from '@/components/SearchBar';
 
 export default function Header() {
   const { items } = useSelector((state) => state.cart);
@@ -102,6 +103,11 @@ export default function Header() {
               <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="block text-dark hover:text-primary transition font-medium py-2">من نحن</Link>
             </nav>
           )}
+        </div>
+
+        {/* Search Bar */}
+        <div className="max-w-7xl mx-auto px-4 py-3 border-t">
+          <SearchBar />
         </div>
       </header>
     </>
