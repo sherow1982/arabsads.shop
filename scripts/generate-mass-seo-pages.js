@@ -12,38 +12,29 @@ console.log(`📦 عدد المنتجات: ${products.length}`);
 console.log(`📄 عدد الصفحات لكل منتج: 5`);
 console.log(`📊 إجمالي الصفحات: ${products.length * 5}\n`);
 
+// دالة لتوليد محتوى ثري واحترافي
+function generateRichDescription(product, type, discount) {
+  const descriptions = {
+    buy: `هل تبحث عن ${product.title}؟ نوفر لك أفضل فرصة لشراء ${product.title} بسعر مميز ${product.salePrice} درهم فقط بدلاً من ${product.price} درهم. يمكنك الآن اقتناء ${product.title} من فئة ${product.category} بخصم يصل إلى ${discount}% مع ضمان الجودة العالية. نحن نقدم خدمة شحن مجاني لجميع إمارات الدولة سواء في دبي، أبوظبي، الشارقة، أو أي إمارة أخرى. عملية الشراء سهلة وآمنة، والتوصيل سريع خلال 1-3 أيام عمل. اطلب ${product.title} الآن واستمتع بأفضل تجربة تسوق إلكتروني في الإمارات.`,
+    
+    price: `كم سعر ${product.title} في الإمارات؟ السعر الحالي لـ ${product.title} هو ${product.salePrice} درهم فقط بعد الخصم، مقارنة بالسعر الأصلي ${product.price} درهم. هذا يعني أنك توفر ${discount}% من قيمة المنتج الأصلية. ${product.title} من فئة ${product.category} يتميز بجودة عالية وسعر تنافسي. نحن نضمن لك أفضل الأسعار في السوق الإماراتي مع توفير شحن مجاني لجميع المناطق. لا تفوت هذه الفرصة للحصول على ${product.title} بهذا السعر المميز. التوصيل متاح لجميع الإمارات بما فيها دبي وأبوظبي والشارقة.`,
+    
+    dubai: `${product.title} متوفر الآن في دبي بسعر ${product.salePrice} درهم. إذا كنت تبحث عن ${product.title} في دبي، نحن نوفر لك خدمة توصيل سريعة ومجانية لجميع مناطق دبي بما في ذلك دبي مارينا، داون تاون دبي، جميرا، ديرة، بر دبي، وجميع المناطق الأخرى. ${product.title} من فئة ${product.category} يأتي بخصم ${discount}% ويمكن توصيله خلال 24 ساعة فقط داخل دبي. نحن نضمن جودة المنتج وسرعة التوصيل. اطلب ${product.title} الآن واستمتع بأفضل خدمة توصيل في دبي.`,
+    
+    abudhabi: `احصل على ${product.title} في أبوظبي بسعر مميز ${product.salePrice} درهم. نوفر لك ${product.title} مع خدمة شحن مجاني لجميع مناطق أبوظبي والعين والمناطق المحيطة. ${product.title} من فئة ${product.category} متاح بخصم ${discount}% مع ضمان الجودة والتوصيل السريع. سواء كنت في جزيرة ياس، الكورنيش، المصفح، أو أي منطقة في أبوظبي، نضمن لك وصول ${product.title} بأمان وسرعة. التوصيل يتم خلال 1-3 أيام عمل. اطلب الآن واستفد من العرض الخاص على ${product.title} في أبوظبي.`,
+    
+    offer: `عرض خاص ومحدود على ${product.title}! وفر ${discount}% واحصل على ${product.title} بسعر ${product.salePrice} درهم فقط بدلاً من ${product.price} درهم. هذا العرض الحصري على ${product.title} من فئة ${product.category} لن يدوم طويلاً. نقدم لك فرصة ذهبية لاقتناء ${product.title} بأفضل سعر في الإمارات مع شحن مجاني لجميع الإمارات. العرض يشمل ضمان الجودة والاستبدال والتوصيل السريع خلال 1-3 أيام. لا تفوت هذه الفرصة المميزة، اطلب ${product.title} الآن قبل انتهاء العرض واستمتع بالتوفير والجودة العالية.`
+  };
+  return descriptions[type];
+}
+
 // الكلمات المفتاحية لكل صفحة
 const pageTypes = [
-  {
-    slug: 'buy',
-    title: 'شراء {product} في الإمارات',
-    keywords: ['شراء', 'اشتري', 'طلب', 'الإمارات', 'دبي', 'أبوظبي'],
-    description: 'اشتري {product} بأفضل سعر في الإمارات. خصم {discount}% - {price} درهم. شحن مجاني لجميع الإمارات. توصيل سريع 1-3 أيام.'
-  },
-  {
-    slug: 'price',
-    title: 'سعر {product} في الإمارات',
-    keywords: ['سعر', 'أسعار', 'كم سعر', 'تكلفة', 'الإمارات'],
-    description: 'سعر {product} في الإمارات {price} درهم بدلاً من {oldPrice} درهم. وفر {discount}%. شحن مجاني وتوصيل سريع لجميع الإمارات.'
-  },
-  {
-    slug: 'dubai',
-    title: '{product} دبي - توصيل سريع',
-    keywords: ['دبي', 'توصيل دبي', 'شحن دبي', 'دبي مول'],
-    description: '{product} في دبي بسعر {price} درهم. توصيل مجاني لجميع مناطق دبي خلال 24 ساعة. خصم {discount}% على جميع المنتجات.'
-  },
-  {
-    slug: 'abudhabi',
-    title: '{product} أبوظبي - شحن مجاني',
-    keywords: ['أبوظبي', 'توصيل أبوظبي', 'شحن أبوظبي', 'العاصمة'],
-    description: '{product} في أبوظبي بسعر {price} درهم. شحن مجاني لجميع مناطق أبوظبي. خصم {discount}%. توصيل سريع وآمن.'
-  },
-  {
-    slug: 'offer',
-    title: 'عرض خاص {product} - خصم {discount}%',
-    keywords: ['عرض', 'خصم', 'تخفيض', 'أوفر', 'عروض'],
-    description: 'عرض خاص على {product}! خصم {discount}% - السعر {price} درهم فقط. عرض محدود. اطلب الآن واحصل على شحن مجاني لجميع الإمارات.'
-  }
+  { slug: 'buy', title: 'شراء {product} في الإمارات', keywords: ['شراء', 'اشتري', 'طلب', 'الإمارات', 'دبي', 'أبوظبي'] },
+  { slug: 'price', title: 'سعر {product} في الإمارات', keywords: ['سعر', 'أسعار', 'كم سعر', 'تكلفة', 'الإمارات'] },
+  { slug: 'dubai', title: '{product} دبي - توصيل سريع', keywords: ['دبي', 'توصيل دبي', 'شحن دبي', 'دبي مول'] },
+  { slug: 'abudhabi', title: '{product} أبوظبي - شحن مجاني', keywords: ['أبوظبي', 'توصيل أبوظبي', 'شحن أبوظبي', 'العاصمة'] },
+  { slug: 'offer', title: 'عرض خاص {product} - خصم {discount}%', keywords: ['عرض', 'خصم', 'تخفيض', 'أوفر', 'عروض'] }
 ];
 
 // توليد بيانات الصفحات
@@ -55,24 +46,9 @@ products.forEach(product => {
   
   pageTypes.forEach(pageType => {
     const slug = `${pageType.slug}-${product.id}`;
-    const title = pageType.title
-      .replace('{product}', product.title)
-      .replace('{discount}', discount);
-    
-    const description = pageType.description
-      .replace(/{product}/g, product.title)
-      .replace(/{price}/g, product.salePrice)
-      .replace(/{oldPrice}/g, product.price)
-      .replace(/{discount}/g, discount);
-    
-    const keywords = [
-      product.title,
-      ...pageType.keywords,
-      product.category,
-      'شحن مجاني',
-      'توصيل سريع',
-      'الإمارات'
-    ].join(', ');
+    const title = pageType.title.replace('{product}', product.title).replace('{discount}', discount);
+    const description = generateRichDescription(product, pageType.slug, discount);
+    const keywords = [product.title, ...pageType.keywords, product.category, 'شحن مجاني', 'توصيل سريع', 'الإمارات'].join(', ');
 
     massPages.push({
       id: pageId++,
