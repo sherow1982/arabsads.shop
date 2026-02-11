@@ -127,6 +127,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Banner Before Categories */}
+      <section className="py-4 md:py-6">
+        <div className="max-w-7xl mx-auto px-4">
+          <img src="/banner.jpg" alt="Banner" className="w-full rounded-lg shadow-lg" />
+        </div>
+      </section>
+
       {/* Categories */}
       <section className="py-8 md:py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -262,6 +269,13 @@ export default function Home() {
               عرض جميع المنتجات
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Banner Before Footer */}
+      <section className="py-4 md:py-6">
+        <div className="max-w-7xl mx-auto px-4">
+          <img src="/banner.jpg" alt="Banner" className="w-full rounded-lg shadow-lg" />
         </div>
       </section>
 

@@ -10,6 +10,13 @@ export default function Footer() {
 
   return (
     <footer className="bg-secondary text-white">
+      {/* Banner Before Footer */}
+      <div className="py-4 md:py-6 bg-light-gray">
+        <div className="max-w-7xl mx-auto px-4">
+          <img src="/banner.jpg" alt="Banner" className="w-full rounded-lg shadow-lg" />
+        </div>
+      </div>
+
       {/* Newsletter */}
       <div className="bg-primary py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
