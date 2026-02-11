@@ -65,9 +65,9 @@ export default function Checkout() {
       
       dispatch(clearCart());
       toast.success('تم إرسال طلبك بنجاح!');
-      setFormData({
-        firstName: '', lastName: '', phone: '', email: '', address: '', city: '', country: 'الإمارات', notes: '', paymentMethod: 'cash'
-      });
+      
+      // Redirect to thank you page
+      window.location.href = '/thank-you';
     } catch (error) {
       toast.error('حدث خطأ في إرسال الطلب');
     }
@@ -350,9 +350,9 @@ export default function Checkout() {
               {/* زر إتمام الطلب */}
               <button
                 type="submit"
-                className="w-full flex justify-center font-medium text-white bg-blue py-3 px-6 rounded-md ease-out duration-200 hover:bg-blue-dark mt-7.5"
+                className="w-full flex justify-center font-bold text-white text-lg bg-success hover:bg-green-600 py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 mt-7.5"
               >
-                إتمام الطلب
+                ✓ إتمام الطلب
               </button>
             </div>
 
