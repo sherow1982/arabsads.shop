@@ -4,8 +4,8 @@ export default function SEO({
   title = 'إماراتي ستور - مخزونك في جيبك',
   description = 'أفضل متجر إلكتروني في 7 دول عربية. شحن مجاني لجميع الطلبات. توصيل سريع من 1-3 أيام. منتجات أصلية 100%',
   keywords = 'متجر إلكتروني, تسوق أونلاين, شحن مجاني, إماراتي ستور, تسوق في الإمارات, تسوق في السعودية, تسوق في مصر',
-  image = 'https://emeratis-store.com/og-image.jpg',
-  url = 'https://emeratis-store.com',
+  image = 'https://emirates.storesads.shop/og-image.jpg',
+  url = 'https://emirates.storesads.shop',
   type = 'website',
   product = null
 }) {
@@ -14,11 +14,11 @@ export default function SEO({
     '@type': 'WebSite',
     name: 'إماراتي ستور',
     alternateName: 'Emeratis Store',
-    url: 'https://emeratis-store.com',
+    url: 'https://emirates.storesads.shop',
     description: description,
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://emeratis-store.com/shop?search={search_term_string}',
+      target: 'https://emirates.storesads.shop/shop?search={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };
@@ -28,8 +28,8 @@ export default function SEO({
     '@type': 'Organization',
     name: 'إماراتي ستور',
     alternateName: 'Emeratis Store',
-    url: 'https://emeratis-store.com',
-    logo: 'https://emeratis-store.com/logo.png',
+    url: 'https://emirates.storesads.shop',
+    logo: 'https://emirates.storesads.shop/logo.png',
     description: 'أفضل متجر إلكتروني في 7 دول عربية',
     address: {
       '@type': 'PostalAddress',
@@ -62,7 +62,7 @@ export default function SEO({
     },
     offers: {
       '@type': 'Offer',
-      url: `https://emeratis-store.com/product/${product.id}`,
+      url: `https://emirates.storesads.shop/product/${product.id}`,
       priceCurrency: 'AED',
       price: product.salePrice,
       priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],

@@ -6,8 +6,8 @@ Disallow: /checkout/
 Disallow: /cart
 
 # Sitemaps
-Sitemap: https://emeratis-store.com/sitemap.xml
-Sitemap: https://emeratis-store.com/product-sitemap.xml
+Sitemap: https://emirates.storesads.shop/sitemap.xml
+Sitemap: https://emirates.storesads.shop/product-sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
