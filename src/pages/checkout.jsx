@@ -99,7 +99,6 @@ export default function Checkout() {
       console.error('❌ خطأ في إرسال الطلب:', error);
       toast.error('حدث خطأ في إرسال الطلب. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة');
     }
-  }
   };
 
   const handleChange = (e) => {
