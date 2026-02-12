@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 4000",
     "build": "next build",
+    "fix-sitemap": "node scripts/fix-sitemap.js",
     "start": "next start -p 4000",
     "lint": "next lint",
     "google-categories": "node scripts/google-categories.js",
