@@ -50,7 +50,8 @@
     "fix:sitemap-dates": "node scripts/fix-sitemap-dates.js",
     "fix:package": "node scripts/fix-package-json.js",
     "fix:sitemap-final": "node scripts/fix-sitemap-final.js",
-    "prebuild": "node scripts/enhance-content.js && node scripts/add-buy-now-button.js && node scripts/google-categories.js && node scripts/generate-content.js && node scripts/enhance-seo.js && node scripts/update-reviews.js && node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js && node scripts/fix-mass-seo-paths.js && node scripts/fix-require-issue.js"
+    "prebuild": "node scripts/enhance-content.js && node scripts/add-buy-now-button.js && node scripts/google-categories.js && node scripts/generate-content.js && node scripts/enhance-seo.js && node scripts/update-reviews.js && node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js && node scripts/fix-mass-seo-paths.js && node scripts/fix-require-issue.js",
+    "postbuild": "node scripts/add-og-tags.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
