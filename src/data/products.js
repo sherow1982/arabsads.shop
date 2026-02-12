@@ -10,7 +10,7 @@ export const products = productsData.map(product => ({
   additionalImage: product.gallery && product.gallery.length > 0 ? product.gallery[0] : product.mainImage,
   gallery: product.gallery || [],
   description: product.description || product.name,
-  category: 'منتجات متنوعة',
+  category: product.category,
   inStock: true,
   sku: `OM-${product.id}`,
   rating: 4.5,

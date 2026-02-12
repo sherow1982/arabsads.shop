@@ -26,7 +26,7 @@ export default function Footer() {
             <input 
               type="email" 
               required 
-              placeholder="بريدك الإلكتروني" 
+               
               className="flex-1 px-4 py-3 rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-accent" 
             />
             <button type="submit" className="bg-secondary text-white px-6 py-3 rounded-md font-bold hover:bg-secondary-dark transition">

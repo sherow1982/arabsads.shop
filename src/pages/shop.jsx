@@ -140,7 +140,7 @@ export default function Shop() {
                 <h3 className="text-lg font-bold text-dark mb-3">البحث</h3>
                 <input
                   type="text"
-                  placeholder="ابحث عن منتج..."
+                  
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full px-4 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
@@ -154,14 +154,14 @@ export default function Shop() {
                     type="number"
                     value={priceRange[0]}
                     onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
-                    placeholder="من"
+                    
                     className="w-full px-3 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <input
                     type="number"
                     value={priceRange[1]}
                     onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-                    placeholder="إلى"
+                    
                     className="w-full px-3 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                 </div>
