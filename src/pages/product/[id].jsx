@@ -165,10 +165,21 @@ export default function ProductDetail({ product: initialProduct, seoData }) {
               )}
             </div>
 
-            {product.description && (
+            {product.specs?.description && (
               <div>
                 <h3 className="text-xl font-bold text-dark mb-3">وصف المنتج</h3>
-                <p className="text-gray-800 leading-relaxed text-base font-medium whitespace-pre-line">{product.description}</p>
+                <div className="text-gray-800 leading-relaxed text-base font-medium" dangerouslySetInnerHTML={{ __html: product.specs.description.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br/>') }} />
+              </div>
+            )}
+
+            {product.specs?.features && (
+              <div className="bg-light-gray p-4 rounded-lg">
+                <h4 className="font-bold text-dark mb-3">مميزات المنتج</h4>
+                <ul className="space-y-2">
+                  {product.specs.features.map((feature, i) => (
+                    <li key={i} className="text-gray-700" dangerouslySetInnerHTML={{ __html: feature.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') }} />
+                  ))}
+                </ul>
               </div>
             )}
 
@@ -246,7 +257,11 @@ export default function ProductDetail({ product: initialProduct, seoData }) {
           {/* محتوى الوصف */}
           {activeTab === 'description' && (
             <div className="prose max-w-none">
-              <p className="text-gray-800 leading-relaxed text-base font-medium whitespace-pre-line">{product.description}</p>
+              {product.specs?.description ? (
+                <div dangerouslySetInnerHTML={{ __html: product.specs.description.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br/>') }} />
+              ) : (
+                <p className="text-gray-800 leading-relaxed text-base font-medium whitespace-pre-line">{product.description}</p>
+              )}
             </div>
           )}
 

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 export default function ProductSEO({ product, seoData }) {
   const router = useRouter();
-  const canonicalUrl = `https://omany.storesads.shop${router.asPath}`;
+  const canonicalUrl = `https://oman-makhzoonk.shop${router.asPath}`;
   
   // استخدام بيانات SEO المُحسّنة إذا كانت متوفرة
   const seo = seoData || {
@@ -13,7 +13,22 @@ export default function ProductSEO({ product, seoData }) {
     canonicalUrl: canonicalUrl
   };
 
-  const discount = Math.round((1 - product.salePrice / product.price) * 100);
+  // استخدام richSchema من المنتج إذا كانت متوفرة
+  const structuredData = product.richSchema || seo.structuredData || {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.title,
+    description: product.description,
+    image: product.image,
+    brand: { '@type': 'Brand', name: 'عماني ستور' },
+    offers: {
+      '@type': 'Offer',
+      url: canonicalUrl,
+      priceCurrency: 'OMR',
+      price: product.salePrice,
+      availability: 'https://schema.org/InStock'
+    }
+  };
 
   return (
     <Head>
@@ -60,12 +75,10 @@ export default function ProductSEO({ product, seoData }) {
       <meta name="format-detection" content="telephone=no" />
       
       {/* Structured Data - Product */}
-      {seo.structuredData && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(seo.structuredData) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       
       {/* Structured Data - BreadcrumbList */}
       {seo.breadcrumbs && (

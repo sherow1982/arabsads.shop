@@ -60,7 +60,7 @@ export default function MassSEOPage({ page, product }) {
         <meta property="og:image" content={product.mainImage} />
         <meta property="og:url" content={page.canonicalUrl} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: JSON.stringify(product.richSchema || {
             '@context': 'https://schema.org',
             '@type': 'Product',
             name: product.name,
