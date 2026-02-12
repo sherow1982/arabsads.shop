@@ -8,6 +8,8 @@ import Link from 'next/link';
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import * as gtag from '@/lib/gtag';
+import Header from '@/components/Layout/Header';
+import Footer from '@/components/Layout/Footer';
 
 export async function getStaticPaths() {
   return {
@@ -765,6 +767,7 @@ export default function MassSEOPage({ page, product }) {
 
   return (
     <>
+      <Header />
       <Head>
         <title>{page.title}</title>
         <meta name="description" content={page.description} />
@@ -904,7 +907,8 @@ export default function MassSEOPage({ page, product }) {
             </div>
           )}
         </div>
-      </div>
+            </div>
+      <Footer />
     </>
   );
 }
