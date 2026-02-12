@@ -26,7 +26,6 @@ export default function Home() {
   
   return (
     <>
-      <div id="fb-root"></div>
       <SEO 
         title="عماني ستور - مخزونك في جيبك | شحن مجاني"
         description="أفضل متجر إلكتروني في سلطنة عمان. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%. تسوق في مسقط وصلالة"
@@ -272,49 +271,29 @@ export default function Home() {
               href="https://www.facebook.com/arabads.me/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 transition shadow-lg text-lg"
+              className="inline-flex items-center gap-3 bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 transition shadow-lg text-lg animate-pulse"
             >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
               </svg>
               تابعنا على فيسبوك
             </a>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden p-4">
-            <div className="flex justify-center">
-              <div 
-                className="fb-page" 
-                data-href="https://www.facebook.com/arabads.me/" 
-                data-tabs="timeline" 
-                data-width="500" 
-                data-height="600" 
-                data-small-header="false" 
-                data-adapt-container-width="true" 
-                data-hide-cover="false" 
-                data-show-facepile="true"
-              >
-                <blockquote cite="https://www.facebook.com/arabads.me/" className="fb-xfbml-parse-ignore">
-                  <a href="https://www.facebook.com/arabads.me/">Arab Ads</a>
-                </blockquote>
-              </div>
-            </div>
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <iframe 
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farabads.me%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+              width="100%" 
+              height="600" 
+              style={{ border: 'none', overflow: 'hidden' }} 
+              scrolling="no" 
+              frameBorder="0" 
+              allowFullScreen={true} 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
           </div>
         </div>
       </section>
-
-      {/* Facebook SDK */}
-      <Script id="facebook-sdk" strategy="afterInteractive">
-        {`
-          (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v18.0";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));
-        `}
-      </Script>
     </>
   );
 }
