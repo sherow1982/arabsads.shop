@@ -26,14 +26,14 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="إماراتي ستور - مخزونك في جيبك | شحن مجاني"
-        description="أفضل متجر إلكتروني في 7 دول عربية. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%. تسوق في الإمارات والسعودية ومصر"
-        keywords="متجر إلكتروني, تسوق أونلاين, شحن مجاني, إماراتي ستور, تسوق في الإمارات, تسوق في السعودية, تسوق في مصر, توصيل سريع"
-        url="https://emeratis-store.com"
+        title="عماني ستور - مخزونك في جيبك | شحن مجاني"
+        description="أفضل متجر إلكتروني في سلطنة عمان. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%. تسوق في مسقط وصلالة"
+        keywords="متجر إلكتروني عمان, تسوق أونلاين عمان, شحن مجاني عمان, عماني ستور, تسوق في مسقط, تسوق في صلالة, توصيل سريع"
+        url="https://omany.storesads.shop"
       />
       <Head>
-        <title>إماراتي ستور - الصفحة الرئيسية</title>
-        <meta name="description" content="إماراتي ستور - مخزونك في جيبك" />
+        <title>عماني ستور - الصفحة الرئيسية</title>
+        <meta name="description" content="عماني ستور - مخزونك في جيبك" />
       </Head>
 
       {/* Hero Slider */}
@@ -91,9 +91,9 @@ export default function Home() {
                     <h3 className="text-xl font-bold text-dark mb-3 line-clamp-2">{product.title}</h3>
                     <div className="flex items-center justify-between">
                       <div>
-                        <span className="text-3xl font-black text-primary">{product.salePrice} د.إ</span>
+                        <span className="text-3xl font-black text-primary">{product.salePrice} ر.ع</span>
                         {product.salePrice < product.price && (
-                          <span className="text-lg text-gray-400 line-through ml-2">{product.price} د.إ</span>
+                          <span className="text-lg text-gray-400 line-through ml-2">{product.price} ر.ع</span>
                         )}
                       </div>
                       <button 
@@ -232,9 +232,9 @@ export default function Home() {
                     <span className="text-xs text-gray-500">({getProductReviews(product.id).length})</span>
                   </div>
                   <div className="flex items-center gap-1 md:gap-2">
-                    <span className="text-lg md:text-2xl font-bold text-primary">{product.salePrice} د.إ</span>
+                    <span className="text-lg md:text-2xl font-bold text-primary">{product.salePrice} ر.ع</span>
                     {product.salePrice < product.price && (
-                      <span className="text-gray-400 line-through text-xs md:text-base">{product.price} د.إ</span>
+                      <span className="text-gray-400 line-through text-xs md:text-base">{product.price} ر.ع</span>
                     )}
                   </div>
                 </div>

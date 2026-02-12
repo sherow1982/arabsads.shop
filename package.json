@@ -1,6 +1,6 @@
 {
-  "name": "emeratis-store",
-  "version": "0.1.0",
+  "name": "omany-store",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 4000",
@@ -10,8 +10,9 @@
     "generate-feed": "node generate-product-feed.js",
     "seo:optimize": "node scripts/mass-seo-optimizer.js",
     "seo:report": "node scripts/seo-report.js",
+    "seo:update-oman": "node scripts/update-oman-seo.js",
     "mass-seo": "node scripts/generate-mass-seo-pages.js",
-    "prebuild": "node scripts/generate-mass-seo-pages.js && node scripts/mass-seo-optimizer.js && node scripts/generate-sitemap.js && node generate-product-feed.js"
+    "prebuild": "node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js && node scripts/generate-sitemap.js && node generate-product-feed.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

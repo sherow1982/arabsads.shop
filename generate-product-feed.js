@@ -46,9 +46,9 @@ function generateProductFeed() {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>إماراتي ستور - مخزونك في جيبك</title>
-    <link>https://emirates.storesads.shop</link>
-    <description>أفضل متجر إلكتروني في الإمارات - شحن مجاني لجميع الطلبات</description>
+    <title>عماني ستور - مخزونك في جيبك</title>
+    <link>https://omany.storesads.shop</link>
+    <description>أفضل متجر إلكتروني في سلطنة عمان - شحن مجاني لجميع الطلبات</description>
 `;
 
   products.forEach(product => {
@@ -59,7 +59,7 @@ function generateProductFeed() {
       <g:id>${product.id}</g:id>
       <g:title>${escapeXml(product.title)}</g:title>
       <g:description>${description}</g:description>
-      <g:link>https://emirates.storesads.shop/product/${product.id}</g:link>
+      <g:link>https://omany.storesads.shop/product/${product.id}</g:link>
       <g:image_link>${escapeXml(product.image)}</g:image_link>`;
     
     if (product.additionalImage) {
@@ -69,9 +69,9 @@ function generateProductFeed() {
     
     xml += `
       <g:availability>${product.inStock ? 'in stock' : 'out of stock'}</g:availability>
-      <g:price>${product.price} AED</g:price>
-      <g:sale_price>${product.salePrice} AED</g:sale_price>
-      <g:brand>إماراتي ستور</g:brand>
+      <g:price>${product.price} OMR</g:price>
+      <g:sale_price>${product.salePrice} OMR</g:sale_price>
+      <g:brand>عماني ستور</g:brand>
       <g:condition>${product.condition}</g:condition>
       <g:google_product_category>${escapeXml(googleCategory)}</g:google_product_category>
       <g:product_type>${escapeXml(product.category)}</g:product_type>
@@ -79,9 +79,9 @@ function generateProductFeed() {
       <g:mpn>SKU-${product.sku}</g:mpn>
       <g:identifier_exists>yes</g:identifier_exists>
       <g:shipping>
-        <g:country>AE</g:country>
+        <g:country>OM</g:country>
         <g:service>Standard</g:service>
-        <g:price>0 AED</g:price>
+        <g:price>0 OMR</g:price>
       </g:shipping>
     </item>
 `;

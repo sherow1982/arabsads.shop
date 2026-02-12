@@ -7,12 +7,10 @@ import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import WhatsAppButton from '@/components/Layout/WhatsAppButton';
 import FloatingCart from '@/components/Layout/FloatingCart';
-import GoogleScripts from '@/components/GoogleScripts';
 
 export default function App({ Component, pageProps }) {
   return (
     <Provider store={store}>
-      <GoogleScripts />
       <div className="bg-light-gray min-h-screen">
         <Header />
         <main role="main">

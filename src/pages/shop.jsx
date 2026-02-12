@@ -45,7 +45,7 @@ export default function Shop() {
   return (
     <>
       <Head>
-        <title>المتجر - إماراتي ستور</title>
+        <title>المتجر - عماني ستور</title>
       </Head>
 
       <div className="max-w-7xl mx-auto px-4 py-10 overflow-x-hidden">
@@ -201,9 +201,9 @@ export default function Shop() {
                       <span className="text-xs text-gray-500">({getProductReviews(product.id).length})</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-primary">{product.salePrice} د.إ</span>
+                      <span className="text-2xl font-bold text-primary">{product.salePrice} ر.ع</span>
                       {product.salePrice < product.price && (
-                        <span className="text-gray-400 line-through">{product.price} د.إ</span>
+                        <span className="text-gray-400 line-through">{product.price} ر.ع</span>
                       )}
                     </div>
                   </div>

@@ -8,32 +8,32 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#E85A2A',
-          dark: '#C74820',
-          light: '#FF6B35',
+          DEFAULT: '#83B735',
+          dark: '#5F8A28',
+          light: '#9FD149',
         },
         secondary: {
-          DEFAULT: '#003A66',
-          dark: '#002847',
-          light: '#004E89',
+          DEFAULT: '#2D2A2A',
+          dark: '#1A1818',
+          light: '#3E3B3B',
         },
         accent: {
-          DEFAULT: '#E6BD2F',
-          dark: '#CCA820',
+          DEFAULT: '#FFA500',
+          dark: '#E69500',
         },
         dark: {
-          DEFAULT: '#1A1A1A',
-          2: '#2D2D2D',
-          3: '#4D4D4D',
+          DEFAULT: '#242424',
+          2: '#333333',
+          3: '#4A4A4A',
         },
         light: {
           DEFAULT: '#FFFFFF',
           gray: '#F5F5F5',
-          border: '#D0D0D0',
+          border: '#E0E0E0',
         },
-        success: '#00A843',
-        danger: '#D32F00',
-        warning: '#E6BD2F',
+        success: '#83B735',
+        danger: '#E74C3C',
+        warning: '#FFA500',
       },
       boxShadow: {
         'card': '0 1px 3px rgba(0,0,0,0.08)',

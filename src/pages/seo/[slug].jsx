@@ -68,7 +68,7 @@ export default function MassSEOPage({ page, product }) {
             name: product.title,
             image: product.image,
             description: page.description,
-            offers: { '@type': 'Offer', price: product.salePrice, priceCurrency: 'AED', availability: 'https://schema.org/InStock' }
+            offers: { '@type': 'Offer', price: product.salePrice, priceCurrency: 'OMR', availability: 'https://schema.org/InStock' }
           })
         }} />
       </Head>
@@ -96,9 +96,9 @@ export default function MassSEOPage({ page, product }) {
               {product.inStock ? <span className="bg-green-100 text-success px-3 py-1 rounded-lg text-sm">متوفر</span> : <span className="bg-red-100 text-danger px-3 py-1 rounded-lg text-sm">غير متوفر</span>}
             </div>
             <div className="flex items-center gap-4 pb-6 border-b">
-              <span className="text-5xl font-bold text-primary">{product.salePrice} د.إ</span>
-              <span className="text-2xl text-gray-400 line-through">{product.price} د.إ</span>
-              {discount > 0 && <span className="bg-warning bg-opacity-20 text-yellow-800 px-3 py-1 rounded-lg font-bold">وفر {product.price - product.salePrice} د.إ</span>}
+              <span className="text-5xl font-bold text-primary">{product.salePrice} ر.ع</span>
+              <span className="text-2xl text-gray-400 line-through">{product.price} ر.ع</span>
+              {discount > 0 && <span className="bg-warning bg-opacity-20 text-yellow-800 px-3 py-1 rounded-lg font-bold">وفر {product.price - product.salePrice} ر.ع</span>}
             </div>
             {page.description && (
               <div>

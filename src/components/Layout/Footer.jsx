@@ -41,9 +41,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-4">إماراتي ستور</h3>
+              <h3 className="text-2xl font-bold text-primary mb-4">عماني ستور</h3>
               <p className="text-gray-300 mb-2 font-bold text-accent">مخزونك في جيبك</p>
-              <p className="text-gray-300 mb-4">أفضل متجر إلكتروني في 7 دول عربية</p>
+              <p className="text-gray-300 mb-4">أفضل متجر إلكتروني في سلطنة عمان</p>
               <div className="space-y-2 text-gray-300">
                 <p className="flex items-center gap-2">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -111,7 +111,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 py-6">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} إماراتي ستور. جميع الحقوق محفوظة.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} عماني ستور. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>

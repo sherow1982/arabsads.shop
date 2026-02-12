@@ -21,7 +21,7 @@ export default function Checkout() {
     email: '',
     address: '',
     city: '',
-    country: 'الإمارات',
+    country: 'عمان',
     notes: '',
     paymentMethod: 'cash'
   });
@@ -36,7 +36,7 @@ export default function Checkout() {
     }
 
     const productsText = items.map(item => 
-      `${item.title} × ${item.quantity} = ${(item.salePrice * item.quantity).toFixed(2)} د.إ`
+      `${item.title} × ${item.quantity} = ${(item.salePrice * item.quantity).toFixed(2)} ر.ع`
     ).join('\n');
 
     const templateParams = {
@@ -136,9 +136,9 @@ export default function Checkout() {
                         onChange={handleChange}
                         className="w-full bg-gray-1 rounded-md border border-gray-3 text-dark-4 py-3 pl-5 pr-9 duration-200 appearance-none outline-none focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                       >
-                        <option value="الإمارات">الإمارات</option>
+                        <option value="عمان">عمان</option>
                         <option value="السعودية">السعودية</option>
-                        <option value="مصر">مصر</option>
+                        <option value="الإمارات">الإمارات</option>
                       </select>
                     </div>
                   </div>
@@ -274,7 +274,7 @@ export default function Checkout() {
                   {items.map((item, index) => (
                     <div key={index} className="flex items-center justify-between py-5 border-b border-gray-3">
                       <div><p className="text-dark">{item.title} × {item.quantity}</p></div>
-                      <div><p className="text-dark text-right">{(item.salePrice * item.quantity).toFixed(2)} د.إ</p></div>
+                      <div><p className="text-dark text-right">{(item.salePrice * item.quantity).toFixed(2)} ر.ع</p></div>
                     </div>
                   ))}
 
@@ -285,7 +285,7 @@ export default function Checkout() {
 
                   <div className="flex items-center justify-between pt-5">
                     <div><p className="font-medium text-lg text-dark">الإجمالي</p></div>
-                    <div><p className="font-medium text-lg text-dark text-right">{total.toFixed(2)} د.إ</p></div>
+                    <div><p className="font-medium text-lg text-dark text-right">{total.toFixed(2)} ر.ع</p></div>
                   </div>
                 </div>
               </div>

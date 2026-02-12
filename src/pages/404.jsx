@@ -5,7 +5,7 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>الصفحة غير موجودة - متجر إماراتي</title>
+        <title>الصفحة غير موجودة - عماني ستور</title>
       </Head>
 
       <main className="error-page">

@@ -1,7 +1,36 @@
+# Dependencies
 node_modules/
+package-lock.json
+
+# Next.js
 .next/
 out/
+build/
+dist/
+
+# Environment
+.env
 .env.local
-.DS_Store
+.env*.local
+
+# Logs
 *.log
-*.md
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+*.pyc
+__pycache__/
+
+# Temporary
+*.tmp
+.temp/

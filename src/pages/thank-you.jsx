@@ -19,7 +19,7 @@ export default function ThankYou() {
   return (
     <>
       <SEO 
-        title="شكراً لك - إماراتي ستور"
+        title="شكراً لك - عماني ستور"
         description="تم استلام طلبك بنجاح"
       />
       
@@ -62,7 +62,7 @@ export default function ThankYou() {
               <div className="text-center p-4 bg-gray-50 rounded-xl">
                 <div className="text-3xl mb-2">🚚</div>
                 <h3 className="font-bold text-dark mb-1">شحن مجاني</h3>
-                <p className="text-sm text-dark-3">لجميع الإمارات</p>
+                <p className="text-sm text-dark-3">لجميع محافظات عمان</p>
               </div>
               <div className="text-center p-4 bg-gray-50 rounded-xl">
                 <div className="text-3xl mb-2">⏱️</div>

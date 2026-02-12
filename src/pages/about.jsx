@@ -4,13 +4,13 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>من نحن - إماراتي ستور</title>
+        <title>من نحن - عماني ستور</title>
       </Head>
 
       <main className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent mb-4">
-            إماراتي ستور
+            عماني ستور
           </h1>
           <p className="text-2xl font-bold text-accent">مخزونك في جيبك</p>
         </div>
@@ -20,7 +20,7 @@ export default function About() {
           <section className="bg-white rounded-2xl shadow-card p-8">
             <h2 className="text-3xl font-bold text-primary mb-6">من نحن</h2>
             <p className="text-gray-700 leading-relaxed text-lg mb-4">
-              إماراتي ستور هو أحد أكبر المتاجر الإلكترونية في الوطن العربي، نفخر بتقديم أفضل المنتجات بأعلى جودة وأفضل الأسعار لعملائنا الكرام.
+              عماني ستور هو أحد أكبر المتاجر الإلكترونية في سلطنة عمان، نفخر بتقديم أفضل المنتجات بأعلى جودة وأفضل الأسعار لعملائنا الكرام.
             </p>
             <p className="text-gray-700 leading-relaxed text-lg">
               نؤمن بأن التسوق الإلكتروني يجب أن يكون سهلاً وآمناً وممتعاً، لذلك نعمل جاهدين لتوفير تجربة تسوق استثنائية لجميع عملائنا.
@@ -31,7 +31,7 @@ export default function About() {
           <section className="bg-gradient-to-r from-primary to-secondary text-white rounded-2xl shadow-card p-8">
             <h2 className="text-3xl font-bold mb-6">رؤيتنا</h2>
             <p className="text-lg leading-relaxed">
-              أن نكون المتجر الإلكتروني الأول والأكثر ثقة في الوطن العربي، ونوفر لعملائنا تجربة تسوق لا مثيل لها من خلال منتجات عالية الجودة وخدمة عملاء متميزة.
+              أن نكون المتجر الإلكتروني الأول والأكثر ثقة في سلطنة عمان، ونوفر لعملائنا تجربة تسوق لا مثيل لها.
             </p>
           </section>
 
@@ -39,41 +39,41 @@ export default function About() {
           <section className="bg-white rounded-2xl shadow-card p-8">
             <h2 className="text-3xl font-bold text-primary mb-6">انتشارنا الجغرافي</h2>
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
-              نفخر بتواجدنا في <span className="font-bold text-primary text-2xl">7 دول عربية</span> مع متاجر محلية في كل دولة لضمان أسرع توصيل وأفضل خدمة:
+              نخدم عملاءنا في <span className="font-bold text-primary text-2xl">سلطنة عمان</span> مع توصيل سريع لجميع المحافظات:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇦🇪</span>
-                <span className="font-bold text-dark">الإمارات العربية المتحدة</span>
-              </div>
-              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇸🇦</span>
-                <span className="font-bold text-dark">المملكة العربية السعودية</span>
-              </div>
-              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇪🇬</span>
-                <span className="font-bold text-dark">جمهورية مصر العربية</span>
-              </div>
-              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇰🇼</span>
-                <span className="font-bold text-dark">دولة الكويت</span>
-              </div>
-              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇶🇦</span>
-                <span className="font-bold text-dark">دولة قطر</span>
+                <span className="text-3xl">🇴🇲</span>
+                <span className="font-bold text-dark">محافظة مسقط</span>
               </div>
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
                 <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">سلطنة عمان</span>
+                <span className="font-bold text-dark">محافظة ظفار</span>
               </div>
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇧🇭</span>
-                <span className="font-bold text-dark">مملكة البحرين</span>
+                <span className="text-3xl">🇴🇲</span>
+                <span className="font-bold text-dark">محافظة مسندم</span>
+              </div>
+              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
+                <span className="text-3xl">🇴🇲</span>
+                <span className="font-bold text-dark">محافظة البريمي</span>
+              </div>
+              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
+                <span className="text-3xl">🇴🇲</span>
+                <span className="font-bold text-dark">محافظة الداخلية</span>
+              </div>
+              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
+                <span className="text-3xl">🇴🇲</span>
+                <span className="font-bold text-dark">محافظة شمال الباطنة</span>
+              </div>
+              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
+                <span className="text-3xl">🇴🇲</span>
+                <span className="font-bold text-dark">محافظة جنوب الباطنة</span>
               </div>
             </div>
             <div className="mt-6 bg-accent bg-opacity-10 p-6 rounded-lg border-r-4 border-accent">
               <p className="text-gray-700 text-lg">
-                <span className="font-bold text-accent">ميزة خاصة:</span> يتم الشحن من داخل كل دولة لضمان أسرع توصيل وتجنب رسوم الجمارك!
+                <span className="font-bold text-accent">ميزة خاصة:</span> شحن مجاني لجميع الطلبات داخل سلطنة عمان!
               </p>
             </div>
           </section>
@@ -88,9 +88,9 @@ export default function About() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-dark mb-3">مصر - مدينة 6 أكتوبر</h3>
+                <h3 className="text-2xl font-bold text-dark mb-3">عمان - محافظة مسقط</h3>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  يقع مقر إدارتنا الرئيسي في مدينة 6 أكتوبر بجمهورية مصر العربية، حيث يعمل فريقنا على مدار الساعة لضمان أفضل خدمة لعملائنا في جميع الدول.
+                  يقع مقر إدارتنا الرئيسي في محافظة مسقط بسلطنة عمان، حيث يعمل فريقنا على مدار الساعة لضمان أفضل خدمة لعملائنا.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function About() {
 
           {/* مميزاتنا */}
           <section className="bg-white rounded-2xl shadow-card p-8">
-            <h2 className="text-3xl font-bold text-primary mb-6">لماذا إماراتي ستور؟</h2>
+            <h2 className="text-3xl font-bold text-primary mb-6">لماذا عماني ستور؟</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-light-gray rounded-xl">
                 <div className="text-5xl mb-4">🚚</div>

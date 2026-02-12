@@ -4,7 +4,7 @@ export default function ShippingPolicy() {
   return (
     <>
       <Head>
-        <title>سياسة الشحن - متجر إماراتي</title>
+        <title>سياسة الشحن - عماني ستور</title>
       </Head>
 
       <main className="max-w-4xl mx-auto px-4 py-16">
@@ -22,9 +22,9 @@ export default function ShippingPolicy() {
             <h2 className="text-2xl font-bold text-dark mb-4">مناطق الشحن</h2>
             <p className="text-gray-700 leading-relaxed mb-3">نقوم بالشحن إلى جميع المناطق التالية:</p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>جميع إمارات دولة الإمارات العربية المتحدة</li>
-              <li>دبي وأبوظبي والشارقة</li>
-              <li>عجمان وأم القيوين ورأس الخيمة والفجيرة</li>
+              <li>جميع محافظات سلطنة عمان</li>
+              <li>مسقط وصلالة ومسندم</li>
+              <li>البريمي والداخلية والباطنة</li>
             </ul>
           </section>
 
@@ -56,7 +56,7 @@ export default function ShippingPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-dark mb-4">التوصيل السريع</h2>
             <p className="text-gray-700 leading-relaxed">
-              نوفر خدمة التوصيل السريع في نفس اليوم لبعض المناطق في دبي وأبوظبي مجاناً.
+              نوفر خدمة التوصيل السريع في نفس اليوم لبعض المناطق في مسقط وصلالة مجاناً.
             </p>
           </section>
 

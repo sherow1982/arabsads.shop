@@ -4,7 +4,7 @@ export default function Privacy() {
   return (
     <>
       <Head>
-        <title>سياسة الخصوصية - متجر إماراتي</title>
+        <title>سياسة الخصوصية - عماني ستور</title>
       </Head>
 
       <main className="max-w-4xl mx-auto px-4 py-16">
@@ -14,7 +14,7 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-bold text-dark mb-4">المقدمة</h2>
               <p className="text-gray-700 leading-relaxed">
-                نحن في متجر إماراتي نلتزم بحماية خصوصيتك. توضح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك الشخصية.
+                نحن في عماني ستور نلتزم بحماية خصوصيتك. توضح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك الشخصية.
               </p>
             </section>
 

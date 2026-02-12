@@ -1,6 +1,6 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://emirates.storesads.shop/mass-seo-sitemap.xml
-Sitemap: https://emirates.storesads.shop/product-feed.xml
-Sitemap: https://emirates.storesads.shop/sitemap.xml
+Sitemap: https://oman-makhzoonk.shop/sitemap.xml
+Sitemap: https://oman-makhzoonk.shop/mass-seo-sitemap.xml
+Sitemap: https://oman-makhzoonk.shop/product-feed.xml

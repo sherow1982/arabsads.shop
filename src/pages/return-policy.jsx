@@ -4,7 +4,7 @@ export default function ReturnPolicy() {
   return (
     <>
       <Head>
-        <title>سياسة الإرجاع والاستبدال - متجر إماراتي</title>
+        <title>سياسة الإرجاع والاستبدال - عماني ستور</title>
       </Head>
 
       <main className="max-w-4xl mx-auto px-4 py-16">

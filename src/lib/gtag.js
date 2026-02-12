@@ -6,12 +6,12 @@ export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-VD4D6DCK58'
 export const viewItem = (product) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'view_item', {
-      currency: 'AED',
+      currency: 'OMR',
       value: product.salePrice,
       items: [{
         item_id: product.id.toString(),
         item_name: product.title,
-        item_brand: 'إماراتي ستور',
+        item_brand: 'عماني ستور',
         item_category: product.category,
         price: product.salePrice,
         quantity: 1
@@ -24,12 +24,12 @@ export const viewItem = (product) => {
 export const addToCart = (product, quantity = 1) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'add_to_cart', {
-      currency: 'AED',
+      currency: 'OMR',
       value: product.salePrice * quantity,
       items: [{
         item_id: product.id.toString(),
         item_name: product.title,
-        item_brand: 'إماراتي ستور',
+        item_brand: 'عماني ستور',
         item_category: product.category,
         price: product.salePrice,
         quantity: quantity
@@ -44,12 +44,12 @@ export const purchase = (orderId, items, total) => {
     window.gtag('event', 'purchase', {
       transaction_id: orderId,
       value: total,
-      currency: 'AED',
+      currency: 'OMR',
       shipping: 0,
       items: items.map(item => ({
         item_id: item.id.toString(),
         item_name: item.title,
-        item_brand: 'إماراتي ستور',
+        item_brand: 'عماني ستور',
         item_category: item.category,
         price: item.salePrice,
         quantity: item.quantity
@@ -62,12 +62,12 @@ export const purchase = (orderId, items, total) => {
 export const beginCheckout = (items, total) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'begin_checkout', {
-      currency: 'AED',
+      currency: 'OMR',
       value: total,
       items: items.map(item => ({
         item_id: item.id.toString(),
         item_name: item.title,
-        item_brand: 'إماراتي ستور',
+        item_brand: 'عماني ستور',
         item_category: item.category,
         price: item.salePrice,
         quantity: item.quantity
@@ -80,12 +80,12 @@ export const beginCheckout = (items, total) => {
 export const removeFromCart = (product, quantity = 1) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'remove_from_cart', {
-      currency: 'AED',
+      currency: 'OMR',
       value: product.salePrice * quantity,
       items: [{
         item_id: product.id.toString(),
         item_name: product.title,
-        item_brand: 'إماراتي ستور',
+        item_brand: 'عماني ستور',
         item_category: product.category,
         price: product.salePrice,
         quantity: quantity

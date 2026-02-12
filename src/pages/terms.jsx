@@ -4,7 +4,7 @@ export default function Terms() {
   return (
     <>
       <Head>
-        <title>الشروط والأحكام - متجر إماراتي</title>
+        <title>الشروط والأحكام - عماني ستور</title>
       </Head>
 
       <main className="max-w-4xl mx-auto px-4 py-16">
@@ -14,7 +14,7 @@ export default function Terms() {
             <section>
               <h2 className="text-2xl font-bold text-dark mb-4">قبول الشروط</h2>
               <p className="text-gray-700 leading-relaxed">
-                باستخدامك لموقع متجر إماراتي، فإنك توافق على الالتزام بهذه الشروط والأحكام. إذا كنت لا توافق على أي من هذه الشروط، يرجى عدم استخدام الموقع.
+                باستخدامك لموقع عماني ستور، فإنك توافق على الالتزام بهذه الشروط والأحكام. إذا كنت لا توافق على أي من هذه الشروط، يرجى عدم استخدام الموقع.
               </p>
             </section>
 
@@ -32,7 +32,7 @@ export default function Terms() {
               <h2 className="text-2xl font-bold text-dark mb-4">الطلبات والدفع</h2>
               <p className="text-gray-700 leading-relaxed mb-3">شروط الطلب والدفع:</p>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>جميع الأسعار معروضة بالدرهم الإماراتي</li>
+                <li>جميع الأسعار معروضة بالريال العماني</li>
                 <li>نحتفظ بالحق في رفض أي طلب</li>
                 <li>الدفع يتم عند تأكيد الطلب</li>
                 <li>نقبل بطاقات الائتمان والدفع عند الاستلام</li>
@@ -42,24 +42,23 @@ export default function Terms() {
             <section>
               <h2 className="text-2xl font-bold text-dark mb-4">الشحن والتسليم</h2>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>نقوم بالشحن إلى جميع أنحاء الإمارات</li>
-                <li>مدة التوصيل من 2-5 أيام عمل</li>
-                <li>رسوم الشحن تحسب حسب الموقع</li>
-                <li>الشحن مجاني للطلبات فوق 200 درهم</li>
+                <li>نقوم بالشحن إلى جميع أنحاء سلطنة عمان</li>
+                <li>مدة التوصيل من 1-3 أيام عمل</li>
+                <li>شحن مجاني لجميع الطلبات</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-dark mb-4">الملكية الفكرية</h2>
               <p className="text-gray-700 leading-relaxed">
-                جميع المحتويات على هذا الموقع، بما في ذلك النصوص والصور والشعارات، هي ملكية لمتجر إماراتي ومحمية بموجب قوانين حقوق النشر.
+                جميع المحتويات على هذا الموقع، بما في ذلك النصوص والصور والشعارات، هي ملكية لعماني ستور ومحمية بموجب قوانين حقوق النشر.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-dark mb-4">المسؤولية</h2>
               <p className="text-gray-700 leading-relaxed">
-                متجر إماراتي غير مسؤول عن أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدام الموقع أو عدم القدرة على استخدامه.
+                عماني ستور غير مسؤول عن أي أضرار مباشرة أو غير مباشرة ناتجة عن استخدام الموقع أو عدم القدرة على استخدامه.
               </p>
             </section>
 
@@ -73,7 +72,7 @@ export default function Terms() {
             <section>
               <h2 className="text-2xl font-bold text-dark mb-4">القانون الحاكم</h2>
               <p className="text-gray-700 leading-relaxed">
-                تخضع هذه الشروط والأحكام لقوانين دولة الإمارات العربية المتحدة.
+                تخضع هذه الشروط والأحكام لقوانين سلطنة عمان.
               </p>
             </section>
           </div>

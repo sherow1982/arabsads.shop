@@ -19,7 +19,7 @@ console.log(`✅ تم العثور على ${products.length} منتج`);
 // دالة لتوليد meta description محسّن
 function generateMetaDescription(product) {
   const discount = Math.round((1 - product.salePrice / product.price) * 100);
-  return `اشتري ${product.title} بأفضل سعر في الإمارات. خصم ${discount}% - السعر ${product.salePrice} درهم بدلاً من ${product.price} درهم. شحن مجاني وتوصيل سريع 1-3 أيام. ${product.category}`;
+  return `اشتري ${product.title} بأفضل سعر في سلطنة عمان. خصم ${discount}% - السعر ${product.salePrice} ريال بدلاً من ${product.price} ريال. شحن مجاني وتوصيل سريع 1-3 أيام. ${product.category}`;
 }
 
 // دالة لتوليد keywords محسّنة
@@ -28,9 +28,9 @@ function generateKeywords(product) {
     product.title,
     product.category,
     `شراء ${product.title}`,
-    `${product.title} الإمارات`,
-    `${product.title} دبي`,
-    `${product.title} أبوظبي`,
+    `${product.title} عمان`,
+    `${product.title} مسقط`,
+    `${product.title} صلالة`,
     `${product.category} أونلاين`,
     `متجر ${product.category}`,
     'شحن مجاني',
@@ -54,30 +54,30 @@ function generateStructuredData(product) {
     mpn: product.sku.toString(),
     brand: {
       '@type': 'Brand',
-      name: 'إماراتي ستور'
+      name: 'عماني ستور'
     },
     offers: {
       '@type': 'Offer',
-      url: `https://emirates.storesads.shop/product/${product.id}`,
-      priceCurrency: 'AED',
+      url: `https://omany.storesads.shop/product/${product.id}`,
+      priceCurrency: 'OMR',
       price: product.salePrice,
       priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       availability: product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
       itemCondition: 'https://schema.org/NewCondition',
       seller: {
         '@type': 'Organization',
-        name: 'إماراتي ستور'
+        name: 'عماني ستور'
       },
       shippingDetails: {
         '@type': 'OfferShippingDetails',
         shippingRate: {
           '@type': 'MonetaryAmount',
           value: '0',
-          currency: 'AED'
+          currency: 'OMR'
         },
         shippingDestination: {
           '@type': 'DefinedRegion',
-          addressCountry: 'AE'
+          addressCountry: 'OM'
         },
         deliveryTime: {
           '@type': 'ShippingDeliveryTime',
@@ -113,19 +113,19 @@ const seoData = products.map(product => {
   
   return {
     id: product.id,
-    title: `${product.title} - خصم ${discount}% | إماراتي ستور`,
+    title: `${product.title} - خصم ${discount}% | عماني ستور`,
     metaDescription: generateMetaDescription(product),
     keywords: generateKeywords(product),
-    canonicalUrl: `https://emirates.storesads.shop/product/${product.id}`,
+    canonicalUrl: `https://omany.storesads.shop/product/${product.id}`,
     ogTitle: `${product.title} - وفر ${discount}%`,
-    ogDescription: `احصل على ${product.title} بسعر ${product.salePrice} درهم بدلاً من ${product.price} درهم. شحن مجاني لجميع الإمارات`,
+    ogDescription: `احصل على ${product.title} بسعر ${product.salePrice} ريال بدلاً من ${product.price} ريال. شحن مجاني لجميع محافظات عمان`,
     ogImage: product.image,
     structuredData: generateStructuredData(product),
     breadcrumbs: [
-      { name: 'الرئيسية', url: 'https://emirates.storesads.shop' },
-      { name: 'المتجر', url: 'https://emirates.storesads.shop/shop' },
-      { name: product.category, url: `https://emirates.storesads.shop/shop?category=${encodeURIComponent(product.category)}` },
-      { name: product.title, url: `https://emirates.storesads.shop/product/${product.id}` }
+      { name: 'الرئيسية', url: 'https://omany.storesads.shop' },
+      { name: 'المتجر', url: 'https://omany.storesads.shop/shop' },
+      { name: product.category, url: `https://omany.storesads.shop/shop?category=${encodeURIComponent(product.category)}` },
+      { name: product.title, url: `https://omany.storesads.shop/product/${product.id}` }
     ]
   };
 });
@@ -141,7 +141,7 @@ console.log(`✅ تم إنشاء بيانات SEO لـ ${seoData.length} منت�
 
 // إنشاء sitemap.xml محسّن
 function generateSitemap() {
-  const baseUrl = 'https://emirates.storesads.shop';
+  const baseUrl = 'https://omany.storesads.shop';
   const today = new Date().toISOString().split('T')[0];
   
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -191,7 +191,7 @@ generateSitemap();
 
 // إنشاء robots.txt محسّن
 function generateRobotsTxt() {
-  const robotsTxt = `# robots.txt for https://emirates.storesads.shop
+  const robotsTxt = `# robots.txt for https://omany.storesads.shop
 
 User-agent: *
 Allow: /
@@ -200,8 +200,8 @@ Disallow: /checkout/success
 Disallow: /checkout/cancel
 
 # Sitemaps
-Sitemap: https://emirates.storesads.shop/sitemap.xml
-Sitemap: https://emirates.storesads.shop/product-feed.xml
+Sitemap: https://omany.storesads.shop/sitemap.xml
+Sitemap: https://omany.storesads.shop/product-feed.xml
 
 # Crawl-delay
 Crawl-delay: 1
@@ -218,9 +218,9 @@ function generateProductFeed() {
   let feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>إماراتي ستور - منتجات</title>
-    <link>https://emirates.storesads.shop</link>
-    <description>أفضل متجر إلكتروني في الإمارات</description>
+    <title>عماني ستور - منتجات</title>
+    <link>https://omany.storesads.shop</link>
+    <description>أفضل متجر إلكتروني في سلطنة عمان</description>
 `;
 
   products.forEach(product => {
@@ -230,20 +230,20 @@ function generateProductFeed() {
       <g:id>${product.id}</g:id>
       <g:title>${product.title}</g:title>
       <g:description>${(product.description || product.title).substring(0, 500)}</g:description>
-      <g:link>https://emirates.storesads.shop/product/${product.id}</g:link>
+      <g:link>https://omany.storesads.shop/product/${product.id}</g:link>
       <g:image_link>${product.image}</g:image_link>
       ${product.additionalImage ? `<g:additional_image_link>${product.additionalImage}</g:additional_image_link>` : ''}
       <g:condition>${product.condition || 'new'}</g:condition>
       <g:availability>${product.inStock ? 'in stock' : 'out of stock'}</g:availability>
-      <g:price>${product.salePrice} AED</g:price>
-      <g:sale_price>${product.salePrice} AED</g:sale_price>
-      <g:brand>إماراتي ستور</g:brand>
+      <g:price>${product.salePrice} OMR</g:price>
+      <g:sale_price>${product.salePrice} OMR</g:sale_price>
+      <g:brand>عماني ستور</g:brand>
       <g:product_type>${product.category}</g:product_type>
       <g:google_product_category>Home &amp; Garden</g:google_product_category>
       <g:shipping>
-        <g:country>AE</g:country>
+        <g:country>OM</g:country>
         <g:service>Standard</g:service>
-        <g:price>0 AED</g:price>
+        <g:price>0 OMR</g:price>
       </g:shipping>
       <g:identifier_exists>no</g:identifier_exists>
     </item>

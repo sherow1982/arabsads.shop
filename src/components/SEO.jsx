@@ -1,24 +1,24 @@
 import Head from 'next/head';
 
 export default function SEO({ 
-  title = 'إماراتي ستور - مخزونك في جيبك',
-  description = 'أفضل متجر إلكتروني في 7 دول عربية. شحن مجاني لجميع الطلبات. توصيل سريع من 1-3 أيام. منتجات أصلية 100%',
-  keywords = 'متجر إلكتروني, تسوق أونلاين, شحن مجاني, إماراتي ستور, تسوق في الإمارات, تسوق في السعودية, تسوق في مصر',
-  image = 'https://emirates.storesads.shop/og-image.jpg',
-  url = 'https://emirates.storesads.shop',
+  title = 'عماني ستور - مخزونك في جيبك',
+  description = 'أفضل متجر إلكتروني في سلطنة عمان. شحن مجاني لجميع الطلبات. توصيل سريع من 1-3 أيام. منتجات أصلية 100%. تسوق الآن واحصل على أفضل العروض',
+  keywords = 'متجر إلكتروني عمان, تسوق أونلاين عمان, شحن مجاني عمان, عماني ستور, تسوق في مسقط, تسوق في صلالة, منتجات عمانية',
+  image = 'https://omany.storesads.shop/og-image.jpg',
+  url = 'https://omany.storesads.shop',
   type = 'website',
   product = null
 }) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'إماراتي ستور',
-    alternateName: 'Emeratis Store',
-    url: 'https://emirates.storesads.shop',
+    name: 'عماني ستور',
+    alternateName: 'Omany Store',
+    url: 'https://omany.storesads.shop',
     description: description,
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://emirates.storesads.shop/shop?search={search_term_string}',
+      target: 'https://omany.storesads.shop/shop?search={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };
@@ -26,16 +26,16 @@ export default function SEO({
   const organizationData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'إماراتي ستور',
-    alternateName: 'Emeratis Store',
-    url: 'https://emirates.storesads.shop',
-    logo: 'https://emirates.storesads.shop/logo.jpg',
-    description: 'أفضل متجر إلكتروني في 7 دول عربية',
+    name: 'عماني ستور',
+    alternateName: 'Omany Store',
+    url: 'https://omany.storesads.shop',
+    logo: 'https://omany.storesads.shop/logo.jpg',
+    description: 'أفضل متجر إلكتروني في سلطنة عمان',
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'EG',
-      addressLocality: '6 أكتوبر',
-      addressRegion: 'الجيزة'
+      addressCountry: 'OM',
+      addressLocality: 'مسقط',
+      addressRegion: 'محافظة مسقط'
     },
     contactPoint: {
       '@type': 'ContactPoint',
@@ -58,12 +58,12 @@ export default function SEO({
     sku: product.sku,
     brand: {
       '@type': 'Brand',
-      name: 'إماراتي ستور'
+      name: 'عماني ستور'
     },
     offers: {
       '@type': 'Offer',
-      url: `https://emirates.storesads.shop/product/${product.id}`,
-      priceCurrency: 'AED',
+      url: `https://omany.storesads.shop/product/${product.id}`,
+      priceCurrency: 'OMR',
       price: product.salePrice,
       priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
       availability: product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
@@ -73,7 +73,7 @@ export default function SEO({
         shippingRate: {
           '@type': 'MonetaryAmount',
           value: '0',
-          currency: 'AED'
+          currency: 'OMR'
         },
         deliveryTime: {
           '@type': 'ShippingDeliveryTime',
@@ -99,7 +99,7 @@ export default function SEO({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="author" content="إماراتي ستور" />
+      <meta name="author" content="عماني ستور" />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <link rel="canonical" href={url} />
 
@@ -109,8 +109,8 @@ export default function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
-      <meta property="og:site_name" content="إماراتي ستور" />
-      <meta property="og:locale" content="ar_AE" />
+      <meta property="og:site_name" content="عماني ستور" />
+      <meta property="og:locale" content="ar_OM" />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
