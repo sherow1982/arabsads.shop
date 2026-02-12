@@ -36,6 +36,7 @@
     "fix:main-images": "node scripts/fix-main-images-gallery.js",
     "fix:placeholder-categories": "node scripts/fix-placeholder-categories.js",
     "fix:checkout": "node scripts/fix-checkout.js",
+    "disable:emailjs": "node scripts/disable-emailjs.js",
     "task:complete-update-plus": "node scripts/big-tasks.js complete-update-plus",
     "enhance-content": "node scripts/enhance-content.js",
     "add-buy-now": "node scripts/add-buy-now-button.js",

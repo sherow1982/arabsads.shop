@@ -31,24 +31,13 @@ export default function Checkout() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // التحقق من الحقول المطلوبة
     if (!formData.firstName || !formData.phone || !formData.address) {
       toast.error('يرجى ملء جميع الحقول المطلوبة');
       return;
     }
 
-    // التحقق من وجود منتجات في السلة
     if (!items || items.length === 0) {
       toast.error('السلة فارغة! يرجى إضافة منتجات أولاً');
-      return;
-    }
-
-    // التحقق من إعدادات EmailJS
-    if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 
-        !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 
-        !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
-      console.error('❌ إعدادات EmailJS غير موجودة في .env.local');
-      toast.error('حدث خطأ في النظام. يرجى المحاولة لاحقاً');
       return;
     }
 
@@ -56,18 +45,37 @@ export default function Checkout() {
       `${item.title} × ${item.quantity} = ${(item.salePrice * item.quantity).toFixed(2)} ر.ع`
     ).join('\n');
 
-    const templateParams = {
-      customer_name: `${formData.firstName} ${formData.lastName}`,
-      phone: formData.phone,
-      email: formData.email || 'لا يوجد',
-      address: formData.address,
-      city: formData.city || 'غير محدد',
-      country: formData.country,
-      notes: formData.notes || 'لا توجد',
-      payment_method: formData.paymentMethod === 'cash' ? 'الدفع عند الاستلام' : 'تحويل بنكي',
-      products: productsText,
-      total: total.toFixed(2),
-    };
+    const message = `
+🛍️ *طلب جديد من عماني ستور*
+
+👤 *معلومات العميل:*
+الاسم: ${formData.firstName} ${formData.lastName}
+الهاتف: ${formData.phone}
+البريد: ${formData.email || 'لا يوجد'}
+العنوان: ${formData.address}
+المدينة: ${formData.city || 'غير محدد'}
+الدولة: ${formData.country}
+
+💳 *طريقة الدفع:* ${formData.paymentMethod === 'cash' ? 'الدفع عند الاستلام' : 'تحويل بنكي'}
+
+📦 *المنتجات:*
+${productsText}
+
+💰 *الإجمالي:* ${total.toFixed(2)} ر.ع
+
+📝 *ملاحظات:* ${formData.notes || 'لا توجد'}
+    `.trim();
+
+    const whatsappUrl = `https://wa.me/201110760081?text=${encodeURIComponent(message)}`;
+    
+    dispatch(clearCart());
+    toast.success('سيتم تحويلك لواتساب لإتمام الطلب');
+    
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+      window.location.href = '/thank-you';
+    }, 1000);
+  };
 
     try {
       // إرسال الطلب عبر EmailJS
