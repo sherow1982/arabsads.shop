@@ -1,42 +1,37 @@
 const fs = require('fs');
 const path = require('path');
 
-// قراءة ملف المنتجات
-const productsPath = path.join(__dirname, '../src/data/products.js');
-const productsContent = fs.readFileSync(productsPath, 'utf8');
+// قراءة ملف المنتجات JSON
+const productsData = require('../src/data/products-data.json');
 
-// استخراج المنتجات
-const productsMatch = productsContent.match(/export const products = (\[[\s\S]*\]);/);
-if (!productsMatch) {
-  console.error('❌ لم يتم العثور على المنتجات');
-  process.exit(1);
+if (!productsData || productsData.length === 0) {
+  console.log('❌ لم يتم العثور على المنتجات');
+  process.exit(0);
 }
 
-const products = eval(productsMatch[1]);
+const products = productsData;
 
 console.log(`✅ تم العثور على ${products.length} منتج`);
 
 // دالة لتوليد meta description محسّن
 function generateMetaDescription(product) {
-  const discount = Math.round((1 - product.salePrice / product.price) * 100);
-  return `اشتري ${product.title} بأفضل سعر في سلطنة عمان. خصم ${discount}% - السعر ${product.salePrice} ريال بدلاً من ${product.price} ريال. شحن مجاني وتوصيل سريع 1-3 أيام. ${product.category}`;
+  return `اشتري ${product.name} بأفضل سعر في سلطنة عمان. السعر ${product.price} ريال. شحن مجاني وتوصيل سريع 1-3 أيام. ${product.category}`;
 }
 
 // دالة لتوليد keywords محسّنة
 function generateKeywords(product) {
   const baseKeywords = [
-    product.title,
+    product.name,
     product.category,
-    `شراء ${product.title}`,
-    `${product.title} عمان`,
-    `${product.title} مسقط`,
-    `${product.title} صلالة`,
+    `شراء ${product.name}`,
+    `${product.name} عمان`,
+    `${product.name} مسقط`,
+    `${product.name} صلالة`,
     `${product.category} أونلاين`,
     `متجر ${product.category}`,
     'شحن مجاني',
     'توصيل سريع',
-    'منتجات أصلية',
-    `SKU ${product.sku}`
+    'منتجات أصلية'
   ];
   
   return baseKeywords.join(', ');
@@ -47,11 +42,9 @@ function generateStructuredData(product) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: product.title,
-    image: [product.image, product.additionalImage].filter(Boolean),
-    description: product.description?.substring(0, 200) || product.title,
-    sku: product.sku.toString(),
-    mpn: product.sku.toString(),
+    name: product.name,
+    image: [product.mainImage].filter(Boolean),
+    description: product.description?.substring(0, 200) || product.name,
     brand: {
       '@type': 'Brand',
       name: 'عماني ستور'
@@ -60,42 +53,13 @@ function generateStructuredData(product) {
       '@type': 'Offer',
       url: `https://omany.storesads.shop/product/${product.id}`,
       priceCurrency: 'OMR',
-      price: product.salePrice,
-      priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-      availability: product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+      price: product.price,
+      availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       seller: {
         '@type': 'Organization',
         name: 'عماني ستور'
-      },
-      shippingDetails: {
-        '@type': 'OfferShippingDetails',
-        shippingRate: {
-          '@type': 'MonetaryAmount',
-          value: '0',
-          currency: 'OMR'
-        },
-        shippingDestination: {
-          '@type': 'DefinedRegion',
-          addressCountry: 'OM'
-        },
-        deliveryTime: {
-          '@type': 'ShippingDeliveryTime',
-          handlingTime: {
-            '@type': 'QuantitativeValue',
-            minValue: 1,
-            maxValue: 3,
-            unitCode: 'DAY'
-          }
-        }
       }
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '127',
-      bestRating: '5',
-      worstRating: '1'
     },
     category: product.category
   };
@@ -109,24 +73,16 @@ if (!fs.existsSync(seoDataDir)) {
 
 // توليد بيانات SEO لكل منتج
 const seoData = products.map(product => {
-  const discount = Math.round((1 - product.salePrice / product.price) * 100);
-  
   return {
     id: product.id,
-    title: `${product.title} - خصم ${discount}% | عماني ستور`,
+    title: `${product.name} | عماني ستور`,
     metaDescription: generateMetaDescription(product),
     keywords: generateKeywords(product),
     canonicalUrl: `https://omany.storesads.shop/product/${product.id}`,
-    ogTitle: `${product.title} - وفر ${discount}%`,
-    ogDescription: `احصل على ${product.title} بسعر ${product.salePrice} ريال بدلاً من ${product.price} ريال. شحن مجاني لجميع محافظات عمان`,
-    ogImage: product.image,
-    structuredData: generateStructuredData(product),
-    breadcrumbs: [
-      { name: 'الرئيسية', url: 'https://omany.storesads.shop' },
-      { name: 'المتجر', url: 'https://omany.storesads.shop/shop' },
-      { name: product.category, url: `https://omany.storesads.shop/shop?category=${encodeURIComponent(product.category)}` },
-      { name: product.title, url: `https://omany.storesads.shop/product/${product.id}` }
-    ]
+    ogTitle: product.name,
+    ogDescription: product.description?.substring(0, 150) || product.name,
+    ogImage: product.mainImage,
+    structuredData: generateStructuredData(product)
   };
 });
 
@@ -174,8 +130,8 @@ function generateSitemap() {
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>${product.image}</image:loc>
-      <image:title>${product.title}</image:title>
+      <image:loc>${product.mainImage}</image:loc>
+      <image:title>${product.name}</image:title>
     </image:image>
   </url>
 `;
@@ -224,19 +180,15 @@ function generateProductFeed() {
 `;
 
   products.forEach(product => {
-    const discount = Math.round((1 - product.salePrice / product.price) * 100);
-    
     feed += `    <item>
       <g:id>${product.id}</g:id>
-      <g:title>${product.title}</g:title>
-      <g:description>${(product.description || product.title).substring(0, 500)}</g:description>
+      <g:title>${product.name}</g:title>
+      <g:description>${(product.description || product.name).substring(0, 500)}</g:description>
       <g:link>https://omany.storesads.shop/product/${product.id}</g:link>
-      <g:image_link>${product.image}</g:image_link>
-      ${product.additionalImage ? `<g:additional_image_link>${product.additionalImage}</g:additional_image_link>` : ''}
-      <g:condition>${product.condition || 'new'}</g:condition>
-      <g:availability>${product.inStock ? 'in stock' : 'out of stock'}</g:availability>
-      <g:price>${product.salePrice} OMR</g:price>
-      <g:sale_price>${product.salePrice} OMR</g:sale_price>
+      <g:image_link>${product.mainImage}</g:image_link>
+      <g:condition>new</g:condition>
+      <g:availability>in stock</g:availability>
+      <g:price>${product.price} OMR</g:price>
       <g:brand>عماني ستور</g:brand>
       <g:product_type>${product.category}</g:product_type>
       <g:google_product_category>Home &amp; Garden</g:google_product_category>
@@ -272,6 +224,4 @@ console.log('══════════════════════�
 // إحصائيات إضافية
 const categories = [...new Set(products.map(p => p.category))];
 console.log(`📁 عدد الفئات: ${categories.length}`);
-console.log(`📦 المنتجات المتوفرة: ${products.filter(p => p.inStock).length}`);
-console.log(`💰 متوسط الخصم: ${Math.round(products.reduce((sum, p) => sum + (1 - p.salePrice / p.price) * 100, 0) / products.length)}%`);
 console.log('\n✨ تم تحسين SEO لجميع المنتجات بنجاح!');

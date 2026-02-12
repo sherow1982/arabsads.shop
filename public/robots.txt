@@ -1,6 +1,14 @@
+# robots.txt for https://omany.storesads.shop
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /checkout/success
+Disallow: /checkout/cancel
 
-Sitemap: https://oman-makhzoonk.shop/sitemap.xml
-Sitemap: https://oman-makhzoonk.shop/mass-seo-sitemap.xml
-Sitemap: https://oman-makhzoonk.shop/product-feed.xml
+# Sitemaps
+Sitemap: https://omany.storesads.shop/sitemap.xml
+Sitemap: https://omany.storesads.shop/product-feed.xml
+
+# Crawl-delay
+Crawl-delay: 1

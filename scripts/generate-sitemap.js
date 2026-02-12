@@ -1,6 +1,11 @@
 const fs = require('fs');
 const productsData = require('../src/data/products-data.json');
 
+if (!productsData || productsData.length === 0) {
+  console.log('❌ لم يتم العثور على المنتجات');
+  process.exit(0);
+}
+
 const baseUrl = 'https://omany.storesads.shop';
 
 // فلترة المنتجات العمانية فقط (من 1 إلى 142)

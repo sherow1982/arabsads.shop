@@ -10,12 +10,7 @@ import { useState, useEffect } from 'react';
 import * as gtag from '@/lib/gtag';
 
 export async function getStaticPaths() {
-  const fs = require('fs');
-  const path = require('path');
-  const pagesPath = path.join(process.cwd(), 'public/mass-seo-data/pages.json');
-  if (!fs.existsSync(pagesPath)) return { paths: [], fallback: false };
-  const pages = JSON.parse(fs.readFileSync(pagesPath, 'utf8'));
-  return { paths: pages.map(page => ({ params: { slug: page.slug } })), fallback: false };
+  return { paths: [], fallback: 'blocking' };
 }
 
 export async function getStaticProps({ params }) {
@@ -25,7 +20,11 @@ export async function getStaticProps({ params }) {
   const pages = JSON.parse(fs.readFileSync(pagesPath, 'utf8'));
   const page = pages.find(p => p.slug === params.slug);
   if (!page) return { notFound: true };
-  const product = products.find(p => p.id === page.product.id);
+  
+  const productsData = require(path.join(process.cwd(), 'src/data/products-data.json'));
+  const product = productsData.find(p => p.id === page.productId);
+  if (!product) return { notFound: true };
+  
   return { props: { page, product } };
 }
 
@@ -38,7 +37,6 @@ export default function MassSEOPage({ page, product }) {
   const reviews = getProductReviews(product?.id);
   const faqs = getProductFAQs(product?.id);
   const averageRating = getAverageRating(product?.id);
-  const discount = Math.round((1 - product.salePrice / product.price) * 100);
 
   useEffect(() => {
     if (product) gtag.viewItem(product);
@@ -47,7 +45,7 @@ export default function MassSEOPage({ page, product }) {
   const handleAddToCart = () => {
     for (let i = 0; i < quantity; i++) dispatch(addToCart(product));
     gtag.addToCart(product, quantity);
-    toast.success(`تمت إضافة ${quantity} من ${product.title} إلى السلة`);
+    toast.success(`تمت إضافة ${quantity} من ${product.name} إلى السلة`);
   };
 
   return (
@@ -59,16 +57,16 @@ export default function MassSEOPage({ page, product }) {
         <link rel="canonical" href={page.canonicalUrl} />
         <meta property="og:title" content={page.title} />
         <meta property="og:description" content={page.description} />
-        <meta property="og:image" content={product.image} />
+        <meta property="og:image" content={product.mainImage} />
         <meta property="og:url" content={page.canonicalUrl} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Product',
-            name: product.title,
-            image: product.image,
+            name: product.name,
+            image: product.mainImage,
             description: page.description,
-            offers: { '@type': 'Offer', price: product.salePrice, priceCurrency: 'OMR', availability: 'https://schema.org/InStock' }
+            offers: { '@type': 'Offer', price: product.price, priceCurrency: 'OMR', availability: 'https://schema.org/InStock' }
           })
         }} />
       </Head>
@@ -79,12 +77,10 @@ export default function MassSEOPage({ page, product }) {
         <div className="bg-white rounded-2xl shadow-card p-8 grid md:grid-cols-2 gap-12 overflow-hidden">
           <div className="space-y-4">
             <div className="relative h-96 rounded-xl overflow-hidden bg-light-gray">
-              <img src={selectedImage || product.image} alt={product.title} className="w-full h-full object-cover" />
-              {discount > 0 && <span className="absolute top-4 right-4 bg-danger text-white px-4 py-2 rounded-full font-bold">-{discount}%</span>}
+              <img src={selectedImage || product.mainImage} alt={product.name} className="w-full h-full object-cover" />
             </div>
             <div className="flex gap-3">
-              <img src={product.image} alt={product.title} onClick={() => setSelectedImage(product.image)} className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 transition ${selectedImage === product.image || !selectedImage ? 'border-primary' : 'border-transparent'}`} />
-              {product.additionalImage && product.additionalImage !== product.image && <img src={product.additionalImage} alt={product.title} onClick={() => setSelectedImage(product.additionalImage)} className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 transition ${selectedImage === product.additionalImage ? 'border-primary' : 'border-transparent'}`} />}
+              <img src={product.mainImage} alt={product.name} onClick={() => setSelectedImage(product.mainImage)} className={`w-24 h-24 object-cover rounded-lg cursor-pointer border-2 transition ${selectedImage === product.mainImage || !selectedImage ? 'border-primary' : 'border-transparent'}`} />
             </div>
           </div>
 
@@ -92,13 +88,10 @@ export default function MassSEOPage({ page, product }) {
             <h1 className="text-4xl font-bold text-dark">{page.title}</h1>
             <div className="flex gap-3 flex-wrap">
               <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-lg text-sm">{product.category}</span>
-              <span className="bg-light-gray text-gray-600 px-3 py-1 rounded-lg text-sm">رقم المنتج: {product.sku}</span>
-              {product.inStock ? <span className="bg-green-100 text-success px-3 py-1 rounded-lg text-sm">متوفر</span> : <span className="bg-red-100 text-danger px-3 py-1 rounded-lg text-sm">غير متوفر</span>}
+              <span className="bg-green-100 text-success px-3 py-1 rounded-lg text-sm">متوفر</span>
             </div>
             <div className="flex items-center gap-4 pb-6 border-b">
-              <span className="text-5xl font-bold text-primary">{product.salePrice} ر.ع</span>
-              <span className="text-2xl text-gray-400 line-through">{product.price} ر.ع</span>
-              {discount > 0 && <span className="bg-warning bg-opacity-20 text-yellow-800 px-3 py-1 rounded-lg font-bold">وفر {product.price - product.salePrice} ر.ع</span>}
+              <span className="text-5xl font-bold text-primary">{product.price} ر.ع</span>
             </div>
             {page.description && (
               <div>

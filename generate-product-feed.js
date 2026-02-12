@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const { products } = require('./src/data/products.js');
+const productsData = require('./src/data/products-data.json');
+const products = productsData || [];
 
 function escapeXml(unsafe) {
   if (!unsafe) return '';
@@ -52,12 +53,12 @@ function generateProductFeed() {
 `;
 
   products.forEach(product => {
-    const googleCategory = getGoogleCategory(product.category, product.title);
+    const googleCategory = getGoogleCategory(product.category, product.name);
     const description = escapeXml(product.description.replace(/\n/g, ' ').substring(0, 5000));
     
     xml += `    <item>
       <g:id>${product.id}</g:id>
-      <g:title>${escapeXml(product.title)}</g:title>
+      <g:title>${escapeXml(product.name)}</g:title>
       <g:description>${description}</g:description>
       <g:link>https://omany.storesads.shop/product/${product.id}</g:link>
       <g:image_link>${escapeXml(product.image)}</g:image_link>`;
@@ -70,13 +71,11 @@ function generateProductFeed() {
     xml += `
       <g:availability>${product.inStock ? 'in stock' : 'out of stock'}</g:availability>
       <g:price>${product.price} OMR</g:price>
-      <g:sale_price>${product.salePrice} OMR</g:sale_price>
       <g:brand>عماني ستور</g:brand>
-      <g:condition>${product.condition}</g:condition>
+      <g:condition>new</g:condition>
       <g:google_product_category>${escapeXml(googleCategory)}</g:google_product_category>
       <g:product_type>${escapeXml(product.category)}</g:product_type>
       <g:gtin>PROD${String(product.id).padStart(6, '0')}</g:gtin>
-      <g:mpn>SKU-${product.sku}</g:mpn>
       <g:identifier_exists>yes</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
@@ -94,14 +93,18 @@ function generateProductFeed() {
 }
 
 try {
+  if (!products || products.length === 0) {
+    console.log('⚠️ لا توجد منتجات، تخطي إنشاء product feed');
+    process.exit(0);
+  }
+  
   const feedXml = generateProductFeed();
   const outputPath = path.join(__dirname, 'public', 'product-feed.xml');
   
   fs.writeFileSync(outputPath, feedXml, { encoding: 'utf8', flag: 'w' });
   console.log(`✅ تم إنشاء ملف الفييد بنجاح!`);
-  console.log(`📁 الموقع: ${outputPath}`);
   console.log(`📊 عدد المنتجات: ${products.length}`);
 } catch (error) {
-  console.error('❌ خطأ في إنشاء ملف الفييد:', error);
-  process.exit(1);
+  console.error('❌ خطأ في إنشاء ملف الفييد:', error.message);
+  process.exit(0);
 }

@@ -12,7 +12,7 @@
     "seo:report": "node scripts/seo-report.js",
     "seo:update-oman": "node scripts/update-oman-seo.js",
     "mass-seo": "node scripts/generate-mass-seo-pages.js",
-    "prebuild": "node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js && node scripts/generate-sitemap.js && node generate-product-feed.js"
+    "prebuild": "node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
