@@ -8,11 +8,13 @@
     "start": "next start -p 4000",
     "lint": "next lint",
     "generate-feed": "node generate-product-feed.js",
+    "generate-content": "node scripts/generate-content.js",
+    "update-reviews": "node scripts/update-reviews.js",
     "seo:optimize": "node scripts/mass-seo-optimizer.js",
     "seo:report": "node scripts/seo-report.js",
     "seo:update-oman": "node scripts/update-oman-seo.js",
     "mass-seo": "node scripts/generate-mass-seo-pages.js",
-    "prebuild": "node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js"
+    "prebuild": "node scripts/generate-content.js && node scripts/update-reviews.js && node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
