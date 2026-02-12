@@ -80,18 +80,49 @@ export default function About() {
 
           {/* مقرنا */}
           <section className="bg-white rounded-2xl shadow-card p-8">
-            <h2 className="text-3xl font-bold text-primary mb-6">مقر الإدارة</h2>
-            <div className="flex items-start gap-6">
+            <h2 className="text-3xl font-bold text-primary mb-6">مقر الإدارة والشحن</h2>
+            
+            {/* الإدارة */}
+            <div className="flex items-start gap-6 mb-8 pb-8 border-b-2 border-gray-100">
               <div className="bg-primary bg-opacity-10 p-6 rounded-full">
                 <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-dark mb-3">عمان - محافظة مسقط</h3>
+                <h3 className="text-2xl font-bold text-dark mb-3">🇪🇬 الإدارة - مصر</h3>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  يقع مقر إدارتنا الرئيسي في محافظة مسقط بسلطنة عمان، حيث يعمل فريقنا على مدار الساعة لضمان أفضل خدمة لعملائنا.
+                  يقع مقر إدارتنا الرئيسي في <span className="font-bold text-primary">السادس من أكتوبر، مصر</span>، حيث يعمل فريقنا على مدار الساعة لإدارة العمليات وضمان أفضل خدمة لعملائنا.
                 </p>
+              </div>
+            </div>
+            
+            {/* الشحن */}
+            <div className="flex items-start gap-6">
+              <div className="bg-secondary bg-opacity-10 p-6 rounded-full">
+                <svg className="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-dark mb-3">🇴🇲 الشحن - سلطنة عمان</h3>
+                <p className="text-gray-700 leading-relaxed text-lg mb-4">
+                  جميع منتجاتنا يتم شحنها من <span className="font-bold text-secondary">داخل سلطنة عمان</span> لضمان:
+                </p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-center gap-2">
+                    <span className="text-green-500 text-xl">✓</span>
+                    <span>توصيل سريع (1-3 أيام)</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-green-500 text-xl">✓</span>
+                    <span>شحن مجاني لجميع المحافظات</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-green-500 text-xl">✓</span>
+                    <span>لا رسوم جمركية</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </section>

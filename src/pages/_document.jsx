@@ -5,6 +5,15 @@ export default function Document() {
   return (
     <Html lang="ar" dir="rtl">
       <Head>
+        {/* Basic Meta */}
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Open Graph Default */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="عماني ستور" />
+        <meta property="og:locale" content="ar_OM" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
