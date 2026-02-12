@@ -41,6 +41,7 @@
     "task:complete-update-plus": "node scripts/big-tasks.js complete-update-plus",
     "enhance-content": "node scripts/enhance-content.js",
     "add-buy-now": "node scripts/add-buy-now-button.js",
+    "add-facebook": "node scripts/add-facebook-section.js",
     "fix-dev": "node scripts/fix-dev-errors.js",
     "big-task:update-all": "node scripts/big-tasks.js update-all",
     "big-task:fix-build": "node scripts/big-tasks.js fix-build",
