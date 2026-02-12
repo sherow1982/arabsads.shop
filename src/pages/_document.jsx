@@ -13,6 +13,13 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="عماني ستور" />
         <meta property="og:locale" content="ar_OM" />
+        <meta property="og:title" content="عماني ستور - مخزونك في جيبك | شحن مجاني" />
+        <meta property="og:description" content="أفضل متجر إلكتروني في سلطنة عمان. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%" />
+        <meta property="og:image" content="https://omany.storesads.shop/og-image.jpg" />
+        <meta property="og:image:secure_url" content="https://omany.storesads.shop/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://omany.storesads.shop" />
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
