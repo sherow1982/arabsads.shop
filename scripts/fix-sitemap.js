@@ -30,7 +30,7 @@ ${productsData.map(product => `  <url>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>${product.image}</image:loc>
+      <image:loc>${product.mainImage}</image:loc>
       <image:title>${product.name}</image:title>
     </image:image>
   </url>`).join('\n')}
