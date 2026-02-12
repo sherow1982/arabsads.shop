@@ -30,8 +30,25 @@ export default function Checkout() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // التحقق من الحقول المطلوبة
     if (!formData.firstName || !formData.phone || !formData.address) {
       toast.error('يرجى ملء جميع الحقول المطلوبة');
+      return;
+    }
+
+    // التحقق من وجود منتجات في السلة
+    if (!items || items.length === 0) {
+      toast.error('السلة فارغة! يرجى إضافة منتجات أولاً');
+      return;
+    }
+
+    // التحقق من إعدادات EmailJS
+    if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 
+        !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 
+        !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
+      console.error('❌ إعدادات EmailJS غير موجودة في .env.local');
+      toast.error('حدث خطأ في النظام. يرجى المحاولة لاحقاً');
       return;
     }
 
@@ -42,9 +59,9 @@ export default function Checkout() {
     const templateParams = {
       customer_name: `${formData.firstName} ${formData.lastName}`,
       phone: formData.phone,
-      email: formData.email,
+      email: formData.email || 'لا يوجد',
       address: formData.address,
-      city: formData.city,
+      city: formData.city || 'غير محدد',
       country: formData.country,
       notes: formData.notes || 'لا توجد',
       payment_method: formData.paymentMethod === 'cash' ? 'الدفع عند الاستلام' : 'تحويل بنكي',
@@ -53,6 +70,7 @@ export default function Checkout() {
     };
 
     try {
+      // إرسال الطلب عبر EmailJS
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
@@ -60,17 +78,28 @@ export default function Checkout() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
       
+      // تتبع Google Analytics
       const orderId = 'ORD-' + Date.now();
-      gtag.purchase(orderId, items, total);
+      if (typeof gtag !== 'undefined' && gtag.purchase) {
+        gtag.purchase(orderId, items, total);
+      }
       
+      // مسح السلة
       dispatch(clearCart());
-      toast.success('تم إرسال طلبك بنجاح!');
       
-      // Redirect to thank you page
-      window.location.href = '/thank-you';
+      // رسالة نجاح
+      toast.success('تم إرسال طلبك بنجاح! سنتواصل معك قريباً');
+      
+      // الانتقال لصفحة الشكر
+      setTimeout(() => {
+        window.location.href = '/thank-you';
+      }, 1500);
+      
     } catch (error) {
-      toast.error('حدث خطأ في إرسال الطلب');
+      console.error('❌ خطأ في إرسال الطلب:', error);
+      toast.error('حدث خطأ في إرسال الطلب. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة');
     }
+  }
   };
 
   const handleChange = (e) => {
@@ -166,6 +195,7 @@ export default function Checkout() {
                       type="text"
                       name="city"
                       id="city"
+                      placeholder="مسقط، صلالة، صحار..."
                       value={formData.city}
                       onChange={handleChange}
                       className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
@@ -180,6 +210,7 @@ export default function Checkout() {
                       type="text"
                       name="phone"
                       id="phone"
+                      placeholder="+968 9XXXXXXX"
                       value={formData.phone}
                       onChange={handleChange}
                       className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
@@ -188,12 +219,13 @@ export default function Checkout() {
 
                   <div className="mb-5.5">
                     <label htmlFor="email" className="block mb-2.5">
-                      البريد الإلكتروني <span className="text-red">*</span>
+                      البريد الإلكتروني (اختياري)
                     </label>
                     <input
                       type="email"
                       name="email"
                       id="email"
+                      placeholder="example@email.com (اختياري)"
                       value={formData.email}
                       onChange={handleChange}
                       className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
