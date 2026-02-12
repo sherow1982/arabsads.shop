@@ -185,9 +185,9 @@ export default function Shop() {
                       <span className="text-xs text-gray-500">({getProductReviews(product.id).length})</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-primary">{product.salePrice} ر.ع</span>
+                      <span className="text-2xl font-bold text-primary">{product.salePrice.toFixed(1)} ر.ع</span>
                       {product.salePrice < product.price && (
-                        <span className="text-gray-400 line-through">{product.price} ر.ع</span>
+                        <span className="text-gray-400 line-through">{product.price.toFixed(1)} ر.ع</span>
                       )}
                     </div>
                   </div>

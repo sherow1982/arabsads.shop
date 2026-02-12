@@ -36,7 +36,7 @@ export default function Cart() {
                   <img src={item.image} alt={item.title} />
                   <div className="item-details">
                     <h3>{item.title}</h3>
-                    <p className="price">{item.salePrice} ر.ع</p>
+                    <p className="price">{item.salePrice.toFixed(1)} ر.ع</p>
                   </div>
                   <div className="item-quantity">
                     <button onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}>-</button>
@@ -52,7 +52,7 @@ export default function Cart() {
               <h2>ملخص الطلب</h2>
               <div className="summary-row">
                 <span>المجموع الفرعي</span>
-                <span>{total.toFixed(2)} ر.ع</span>
+                <span>{total.toFixed(1)} ر.ع</span>
               </div>
               <div className="summary-row">
                 <span>التوصيل</span>
@@ -60,7 +60,7 @@ export default function Cart() {
               </div>
               <div className="summary-total">
                 <span>الإجمالي</span>
-                <span>{total.toFixed(2)} ر.ع</span>
+                <span>{total.toFixed(1)} ر.ع</span>
               </div>
               <button className="checkout-btn" onClick={() => router.push('/checkout')}>
                 إتمام الطلب

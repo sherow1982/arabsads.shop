@@ -158,10 +158,10 @@ export default function ProductDetail({ product: initialProduct, seoData }) {
             </div>
 
             <div className="flex items-center gap-4 pb-6 border-b">
-              <span className="text-5xl font-bold text-primary">{product.salePrice} ر.ع</span>
-              <span className="text-2xl text-gray-400 line-through">{product.price} ر.ع</span>
+              <span className="text-5xl font-bold text-primary">{product.salePrice.toFixed(1)} ر.ع</span>
+              <span className="text-2xl text-gray-400 line-through">{product.price.toFixed(1)} ر.ع</span>
               {discount > 0 && (
-                <span className="bg-warning bg-opacity-20 text-yellow-800 px-3 py-1 rounded-lg font-bold">وفر {product.price - product.salePrice} ر.ع</span>
+                <span className="bg-warning bg-opacity-20 text-yellow-800 px-3 py-1 rounded-lg font-bold">وفر {(product.price - product.salePrice).toFixed(1)} ر.ع</span>
               )}
             </div>
 
@@ -214,9 +214,9 @@ export default function ProductDetail({ product: initialProduct, seoData }) {
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-2xl z-50">
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
             <div className="flex flex-col">
-              <span className="text-2xl md:text-3xl font-bold text-primary">{product.salePrice} ر.ع</span>
+              <span className="text-2xl md:text-3xl font-bold text-primary">{product.salePrice.toFixed(1)} ر.ع</span>
               {discount > 0 && (
-                <span className="text-sm text-gray-400 line-through">{product.price} ر.ع</span>
+                <span className="text-sm text-gray-400 line-through">{product.price.toFixed(1)} ر.ع</span>
               )}
             </div>
             <button 
