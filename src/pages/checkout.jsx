@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
-import emailjs from '@emailjs/browser';
 import * as gtag from '@/lib/gtag';
 import { clearCart } from '@/redux/features/cartSlice';
 
@@ -14,6 +13,7 @@ export default function Checkout() {
       gtag.beginCheckout(items, total);
     }
   }, []);
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -28,7 +28,7 @@ export default function Checkout() {
 
   const [shipToDifferent, setShipToDifferent] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     
     if (!formData.firstName || !formData.phone || !formData.address) {
@@ -77,38 +77,6 @@ ${productsText}
     }, 1000);
   };
 
-    try {
-      // إرسال الطلب عبر EmailJS
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      );
-      
-      // تتبع Google Analytics
-      const orderId = 'ORD-' + Date.now();
-      if (typeof gtag !== 'undefined' && gtag.purchase) {
-        gtag.purchase(orderId, items, total);
-      }
-      
-      // مسح السلة
-      dispatch(clearCart());
-      
-      // رسالة نجاح
-      toast.success('تم إرسال طلبك بنجاح! سنتواصل معك قريباً');
-      
-      // الانتقال لصفحة الشكر
-      setTimeout(() => {
-        window.location.href = '/thank-you';
-      }, 1500);
-      
-    } catch (error) {
-      console.error('❌ خطأ في إرسال الطلب:', error);
-      toast.error('حدث خطأ في إرسال الطلب. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة');
-    }
-  };
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -119,10 +87,8 @@ ${productsText}
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col lg:flex-row gap-7.5 xl:gap-11">
             
-            {/* القسم الأيمن - النموذج */}
             <div className="lg:max-w-[670px] w-full">
               
-              {/* بيانات الفواتير */}
               <div className="mt-9">
                 <h2 className="font-medium text-dark text-xl sm:text-2xl mb-5.5">
                   بيانات الفواتير
@@ -241,7 +207,6 @@ ${productsText}
                 </div>
               </div>
 
-              {/* عنوان شحن مختلف */}
               <div className="bg-white shadow-1 rounded-[10px] mt-7.5">
                 <div
                   onClick={() => setShipToDifferent(!shipToDifferent)}
@@ -278,7 +243,6 @@ ${productsText}
                 )}
               </div>
 
-              {/* ملاحظات */}
               <div className="bg-white shadow-1 rounded-[10px] p-4 sm:p-8.5 mt-7.5">
                 <label htmlFor="notes" className="block mb-2.5">
                   ملاحظات أخرى (اختياري)
@@ -295,10 +259,8 @@ ${productsText}
               </div>
             </div>
 
-            {/* القسم الأيسر - الطلب */}
             <div className="max-w-[455px] w-full">
               
-              {/* ملخص الطلب */}
               <div className="bg-white shadow-1 rounded-[10px]">
                 <div className="border-b border-gray-3 py-5 px-4 sm:px-8.5">
                   <h3 className="font-medium text-xl text-dark">طلبك</h3>
@@ -329,7 +291,6 @@ ${productsText}
                 </div>
               </div>
 
-              {/* طريقة الدفع */}
               <div className="bg-white shadow-1 rounded-[10px] mt-7.5">
                 <div className="border-b border-gray-3 py-5 px-4 sm:px-8.5">
                   <h3 className="font-medium text-xl text-dark">طريقة الدفع</h3>
@@ -386,7 +347,6 @@ ${productsText}
                 </div>
               </div>
 
-              {/* زر إتمام الطلب */}
               <button
                 type="submit"
                 className="w-full flex justify-center font-bold text-white text-lg bg-success hover:bg-green-600 py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 mt-7.5"
