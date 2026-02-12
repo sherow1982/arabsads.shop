@@ -7,12 +7,12 @@
     "build": "next build",
     "start": "next start -p 4000",
     "lint": "next lint",
+    "google-categories": "node scripts/google-categories.js",
     "enhance-seo": "node scripts/enhance-seo.js",
-    "categorize": "node scripts/fix-categories.js",
     "generate-content": "node scripts/generate-content.js",
     "update-reviews": "node scripts/update-reviews.js",
     "seo:update-oman": "node scripts/update-oman-seo.js",
-    "prebuild": "node scripts/fix-categories.js && node scripts/generate-content.js && node scripts/enhance-seo.js && node scripts/update-reviews.js && node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js"
+    "prebuild": "node scripts/google-categories.js && node scripts/generate-content.js && node scripts/enhance-seo.js && node scripts/update-reviews.js && node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
