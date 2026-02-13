@@ -55,7 +55,6 @@ function generateProductFeed() {
 
   products.filter(p => p.category !== 'ساعات وإكسسوارات').forEach(product => {
     const googleCategory = getGoogleCategory(product.category, product.name);
-    // تنظيف الوصف من الأحرف الخاصة والمسافات الزائدة
     const cleanDesc = (product.description || '')
       .replace(/[\r\n]+/g, ' ')
       .replace(/\s+/g, ' ')
@@ -63,21 +62,39 @@ function generateProductFeed() {
       .substring(0, 5000);
     const description = escapeXml(cleanDesc);
     
+    const priceStr = String(product.price).replace(/[^\d.]/g, '');
+    const price = parseFloat(priceStr);
+    const originalPrice = product.originalPrice ? parseFloat(String(product.originalPrice).replace(/[^\d.]/g, '')) : null;
+    
     xml += `    <item>
       <g:id>${product.id}</g:id>
       <g:title>${escapeXml(product.name)}</g:title>
       <g:description>${description}</g:description>
       <g:link>https://omany.storesads.shop/product/${product.id}</g:link>
-      <g:image_link>${escapeXml(product.image)}</g:image_link>`;
+      <g:image_link>${escapeXml(product.mainImage || product.image)}</g:image_link>`;
     
-    if (product.additionalImage) {
-      xml += `
-      <g:additional_image_link>${escapeXml(product.additionalImage)}</g:additional_image_link>`;
+    // إضافة صور الجاليري
+    if (product.gallery && Array.isArray(product.gallery) && product.gallery.length > 0) {
+      product.gallery.slice(0, 10).forEach(img => {
+        if (img) xml += `
+      <g:additional_image_link>${escapeXml(img)}</g:additional_image_link>`;
+      });
     }
     
     xml += `
-      <g:availability>${product.inStock ? 'in stock' : 'out of stock'}</g:availability>
-      <g:price>${product.price} OMR</g:price>
+      <g:availability>in stock</g:availability>`;
+    
+    // السعر قبل وبعد الخصم
+    if (originalPrice && originalPrice > price) {
+      xml += `
+      <g:price>${originalPrice} OMR</g:price>
+      <g:sale_price>${price} OMR</g:sale_price>`;
+    } else {
+      xml += `
+      <g:price>${price} OMR</g:price>`;
+    }
+    
+    xml += `
       <g:brand>عماني ستور</g:brand>
       <g:condition>new</g:condition>
       <g:google_product_category>${escapeXml(googleCategory)}</g:google_product_category>

@@ -52,6 +52,7 @@
     "fix:sitemap-final": "node scripts/fix-sitemap-final.js",
     "feed:fix": "node scripts/fix-feed-xml.js",
     "feed:generate": "node generate-product-feed.js",
+    "feed:enhance": "node scripts/enhance-feed-data.js && node generate-product-feed.js",
     "task:run": "node scripts/task-runner.js",
     "task:all": "node scripts/task-runner.js all",
     "task:validate": "node scripts/task-runner.js validate-products",

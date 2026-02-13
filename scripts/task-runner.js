@@ -105,6 +105,21 @@ const tasks = {
     }
   },
 
+  // 2.5. تحسين بيانات الفيد
+  'enhance-feed': {
+    name: 'تحسين بيانات الفيد',
+    description: 'إضافة الأسعار والصور والمخزون',
+    run: async () => {
+      try {
+        logInfo('جاري تحسين بيانات الفيد...');
+        execSync('node scripts/enhance-feed-data.js', { stdio: 'inherit' });
+        logSuccess('تم تحسين البيانات بنجاح!');
+      } catch (error) {
+        logError(`فشل في تحسين البيانات: ${error.message}`);
+      }
+    }
+  },
+
   // 3. تحسين الصور
   'optimize-images': {
     name: 'تحسين صور المنتجات',
@@ -205,7 +220,7 @@ const tasks = {
     name: 'تشغيل جميع المهام',
     description: 'تنفيذ جميع المهام بالترتيب',
     run: async () => {
-      const taskOrder = ['clean', 'validate-products', 'fix-feed', 'update-history'];
+      const taskOrder = ['clean', 'validate-products', 'enhance-feed', 'fix-feed', 'update-history'];
       
       for (const taskName of taskOrder) {
         if (tasks[taskName] && taskName !== 'all') {
