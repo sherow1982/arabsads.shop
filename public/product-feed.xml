@@ -17,8 +17,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات البناء</g:product_type>
-      <g:gtin>PROD000001</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -38,8 +37,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات البناء</g:product_type>
-      <g:gtin>PROD000002</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -60,8 +58,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000003</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -82,8 +79,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000004</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -104,8 +100,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000005</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -125,8 +120,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000006</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -147,8 +141,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000007</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -175,8 +168,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات التنظيف</g:product_type>
-      <g:gtin>PROD000010</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -201,8 +193,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000011</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -223,8 +214,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أجهزة منزلية</g:product_type>
-      <g:gtin>PROD000012</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -249,8 +239,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستحضرات التجميل</g:product_type>
-      <g:gtin>PROD000013</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -278,8 +267,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات التنظيف</g:product_type>
-      <g:gtin>PROD000014</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -305,8 +293,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات الأطفال</g:product_type>
-      <g:gtin>PROD000015</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -328,8 +315,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Cosmetics &gt; Perfume &amp; Cologne</g:google_product_category>
       <g:product_type>مستحضرات الجسم</g:product_type>
-      <g:gtin>PROD000016</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -352,8 +338,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Health &amp; Beauty &gt; Personal Care &gt; Cosmetics &gt; Perfume &amp; Cologne</g:google_product_category>
       <g:product_type>مستحضرات الجسم</g:product_type>
-      <g:gtin>PROD000017</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -376,8 +361,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>العناية بالبشرة</g:product_type>
-      <g:gtin>PROD000019</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -400,8 +384,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>إزالة الشعر</g:product_type>
-      <g:gtin>PROD000020</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -431,8 +414,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أجهزة التدليك</g:product_type>
-      <g:gtin>PROD000021</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -459,8 +441,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أجهزة التدليك</g:product_type>
-      <g:gtin>PROD000022</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -489,8 +470,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أجهزة التدليك</g:product_type>
-      <g:gtin>PROD000023</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -518,8 +498,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>إلكترونيات</g:product_type>
-      <g:gtin>PROD000024</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -548,8 +527,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>إلكترونيات</g:product_type>
-      <g:gtin>PROD000025</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -575,8 +553,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>إلكترونيات</g:product_type>
-      <g:gtin>PROD000026</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -602,8 +579,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>إلكترونيات</g:product_type>
-      <g:gtin>PROD000027</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -628,8 +604,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000028</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -650,8 +625,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات تصفيف الشعر</g:product_type>
-      <g:gtin>PROD000029</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -671,8 +645,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>إلكترونيات السيارات</g:product_type>
-      <g:gtin>PROD000030</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -697,8 +670,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>ألعاب الأطفال</g:product_type>
-      <g:gtin>PROD000031</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -722,8 +694,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>إلكترونيات ذكية</g:product_type>
-      <g:gtin>PROD000032</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -753,8 +724,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أجهزة مطبخ</g:product_type>
-      <g:gtin>PROD000033</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -781,8 +751,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Kitchen &amp; Dining &gt; Kitchen Tools &amp; Utensils</g:google_product_category>
       <g:product_type>أدوات مطبخ</g:product_type>
-      <g:gtin>PROD000034</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -806,8 +775,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات غسيل</g:product_type>
-      <g:gtin>PROD000035</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -836,8 +804,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أدوات حمام</g:product_type>
-      <g:gtin>PROD000036</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -858,8 +825,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>علاجات الشعر</g:product_type>
-      <g:gtin>PROD000037</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -889,8 +855,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>العناية بالبشرة</g:product_type>
-      <g:gtin>PROD000063</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -910,8 +875,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>العناية بالبشرة</g:product_type>
-      <g:gtin>PROD000064</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -941,8 +905,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>شواحن ومحولات</g:product_type>
-      <g:gtin>PROD000065</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -963,8 +926,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000066</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -992,8 +954,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000067</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1017,8 +978,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000068</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1041,8 +1001,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000069</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1064,8 +1023,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000070</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1094,8 +1052,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000071</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1115,8 +1072,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000072</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1136,8 +1092,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>العناية بالبشرة</g:product_type>
-      <g:gtin>PROD000073</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1157,8 +1112,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000074</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1178,8 +1132,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000075</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1205,8 +1158,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000076</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1229,8 +1181,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000077</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1258,8 +1209,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000078</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1279,8 +1229,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000079</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1303,8 +1252,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000080</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1328,8 +1276,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000081</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1355,8 +1302,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000082</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1378,8 +1324,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000083</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1404,8 +1349,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000084</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1427,8 +1371,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000085</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1448,8 +1391,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000086</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1469,8 +1411,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000087</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1493,8 +1434,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000088</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1514,8 +1454,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000089</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1541,8 +1480,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>العناية بالبشرة</g:product_type>
-      <g:gtin>PROD000090</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1566,8 +1504,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000091</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1593,8 +1530,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000092</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1619,8 +1555,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000093</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1643,8 +1578,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000094</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1670,8 +1604,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000095</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1700,8 +1633,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000096</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1726,8 +1658,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000097</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1757,8 +1688,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000098</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1783,8 +1713,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000099</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1812,8 +1741,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000100</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1833,8 +1761,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000101</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1857,8 +1784,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000102</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1882,8 +1808,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000103</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1908,8 +1833,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000104</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1932,8 +1856,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000105</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1955,8 +1878,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>علاجات الشعر</g:product_type>
-      <g:gtin>PROD000106</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -1986,8 +1908,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000107</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2007,8 +1928,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000108</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2028,8 +1948,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000109</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2059,8 +1978,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000110</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2080,8 +1998,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000111</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2108,8 +2025,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000112</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2134,8 +2050,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000113</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2159,8 +2074,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000114</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2185,8 +2099,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000115</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2211,8 +2124,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000116</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2238,8 +2150,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000117</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2267,8 +2178,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000118</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2297,8 +2207,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000119</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2326,8 +2235,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000120</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2356,8 +2264,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000121</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2381,8 +2288,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000122</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2406,8 +2312,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000123</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2432,8 +2337,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000124</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2457,8 +2361,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000125</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2479,8 +2382,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000126</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2507,8 +2409,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000127</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2528,8 +2429,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000128</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2551,8 +2451,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000129</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2574,8 +2473,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000130</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2597,8 +2495,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000131</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2621,8 +2518,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000132</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2646,8 +2542,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000133</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2676,8 +2571,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000134</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2699,8 +2593,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000135</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2724,8 +2617,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000136</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2752,8 +2644,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000137</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2775,8 +2666,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أجهزة منزلية</g:product_type>
-      <g:gtin>PROD000138</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2800,8 +2690,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>أجهزة منزلية</g:product_type>
-      <g:gtin>PROD000139</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2821,8 +2710,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000140</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2848,8 +2736,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000141</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
@@ -2877,8 +2764,7 @@
       <g:condition>new</g:condition>
       <g:google_product_category>Home &amp; Garden &gt; Household Supplies</g:google_product_category>
       <g:product_type>مستلزمات منزلية</g:product_type>
-      <g:gtin>PROD000142</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>

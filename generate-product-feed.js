@@ -99,8 +99,7 @@ function generateProductFeed() {
       <g:condition>new</g:condition>
       <g:google_product_category>${escapeXml(googleCategory)}</g:google_product_category>
       <g:product_type>${escapeXml(product.category)}</g:product_type>
-      <g:gtin>PROD${String(product.id).padStart(6, '0')}</g:gtin>
-      <g:identifier_exists>yes</g:identifier_exists>
+      <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
