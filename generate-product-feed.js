@@ -103,7 +103,6 @@ function generateProductFeed() {
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
-        <g:price>0 OMR</g:price>
       </g:shipping>
     </item>
 `;
