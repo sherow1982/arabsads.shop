@@ -62,9 +62,11 @@ function generateProductFeed() {
       .substring(0, 5000);
     const description = escapeXml(cleanDesc);
     
-    const priceStr = String(product.price).replace(/[^\d.]/g, '');
-    const price = parseFloat(priceStr);
-    const originalPrice = product.originalPrice ? parseFloat(String(product.originalPrice).replace(/[^\d.]/g, '')) : null;
+    // استخراج الأسعار الصحيحة
+    const priceStr = String(product.price || '').split(/\s/)[0];
+    const price = parseFloat(priceStr) || 0;
+    const salePriceStr = product.sale_price ? String(product.sale_price).split(/\s/)[0] : null;
+    const salePrice = salePriceStr ? parseFloat(salePriceStr) : null;
     
     xml += `    <item>
       <g:id>${product.id}</g:id>
@@ -85,10 +87,10 @@ function generateProductFeed() {
       <g:availability>in stock</g:availability>`;
     
     // السعر قبل وبعد الخصم
-    if (originalPrice && originalPrice > price) {
+    if (salePrice && salePrice < price) {
       xml += `
-      <g:price>${originalPrice} OMR</g:price>
-      <g:sale_price>${price} OMR</g:sale_price>`;
+      <g:price>${price} OMR</g:price>
+      <g:sale_price>${salePrice} OMR</g:sale_price>`;
     } else {
       xml += `
       <g:price>${price} OMR</g:price>`;
