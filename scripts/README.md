@@ -1,271 +1,237 @@
-# 📚 دليل السكريبتات - عماني ستور
+# 🛠️ Scripts - عماني ستور
 
-## 🎯 المهام التلقائية الكبيرة
-
-### 1. تحديث شامل كامل مع إصلاح الصور
-```bash
-npm run task:complete-update-plus
-```
-**يشمل:**
-- إصلاح الصور المكسورة + إصلاح الصور الرئيسية من الجاليري
-- تصنيف المنتجات + تحسين المحتوى
-- إضافة زر اشتري الآن + تحسين SEO
-- تحديث SEO العماني + التقييمات + Sitemap
-
-### 2. تحديث شامل كامل
-```bash
-npm run task:complete-update
-```
-**يشمل:**
-- تصنيف المنتجات + تحسين المحتوى
-- إضافة زر اشتري الآن + تحسين SEO
-- تحديث SEO العماني + التقييمات + Sitemap
-
-### 2. إصلاح شامل
-```bash
-npm run task:complete-fix
-```
-**يشمل:**
-- إصلاح Export + Mass-SEO + require
-- إصلاح Development + التصنيفات
-
-### 3. تحسين متقدم
-```bash
-npm run task:advanced-optimization
-```
-**يشمل:**
-- تحسين Mass-SEO المتقدم + تقرير SEO
-- إصلاح Product Feed
-
-### 4. الاستعداد للنشر
-```bash
-npm run task:deploy-ready
-```
-**يشمل:**
-- فحص جاهزية Cloudflare + البناء + رفع GitHub
+مجموعة من السكريبتات المساعدة لإدارة وصيانة المشروع
 
 ---
 
-## 🔧 السكريبتات الفردية
+## 📋 قائمة السكريبتات
 
-### إدارة الملفات الكبيرة
+### 1. 🔧 `fix-feed-xml.js`
+**الوظيفة:** إصلاح سريع لأخطاء XML في ملف product-feed.xml
 
-#### مراقبة الملفات الكبيرة
-```bash
-npm run monitor:large-files
-```
-- فحص الملفات أكبر من 1MB
-- إنشاء سكريبتات معالجة تلقائية
-- إحصائيات مفصلة
+**الاستخدام:**
+\`\`\`bash
+node scripts/fix-feed-xml.js
+\`\`\`
 
-#### فحص المساحة
-```bash
-npm run cleanup:check
-```
-- فحص استخدام المساحة لكل مجلد
-- عرض أحجام المجلدات
+**ما يقوم به:**
+- إصلاح الرموز الخاصة غير المُشفّرة (`&`, `<`, `>`, `"`, `'`)
+- تنظيف المسافات الزائدة
+- استرجاع XML tags الصحيحة
+- حفظ الملف المُصلح
 
-#### تنظيف الملفات
-```bash
-npm run cleanup:clean
-```
-- حذف .next و node_modules و out
-- حذف الملفات المؤقتة
-- حذف سكريبتات المعالجة المولدة
-
-#### إصلاح الصور الرئيسية من الجاليري
-```bash
-npm run fix:main-images
-```
-- فحص الصور الرئيسية المكسورة
-- استبدال بصور من الجاليري
-- إزالة صور placeholder من الجاليري
-- تنظيف الملفات من placeholder
-
-#### إصلاح الصور المكسورة
-```bash
-npm run fix:images
-```
-- فحص وإصلاح الصور المكسورة
-- استبدال بصور عالية الجودة
-- مسح العناصر النائبة
-- إنشاء تقرير مفصل
-
-### حفظ الهيستوري
-
-#### حفظ تلقائي
-```bash
-npm run history:auto "الموضوع" "الطلب" "النتيجة" "الملفات"
-```
-
-**مثال:**
-```bash
-npm run history:auto "إضافة ميزة" "تم بنجاح" "src/pages/index.jsx"
-```
+**متى تستخدمه:**
+- عند وجود أخطاء XML في الـ feed
+- بعد تعديل يدوي على الملف
+- كإصلاح سريع قبل الرفع
 
 ---
 
-### المحتوى والتحسين
+### 2. 🚀 `task-runner.js`
+**الوظيفة:** سكريبت شامل لإدارة جميع المهام الكبيرة
 
-#### تحسين المحتوى
-```bash
-npm run enhance-content
-```
-- أوصاف غنية بالكلمات المفتاحية
-- ذكر 8 مدن عمانية
-- 7 مميزات لكل منتج
+**الاستخدام:**
+\`\`\`bash
+# عرض القائمة
+node scripts/task-runner.js
 
-#### إضافة زر اشتري الآن
-```bash
-npm run add-buy-now
-```
-- زر ثابت في أسفل الشاشة
-- يظهر في جميع صفحات المنتجات
+# تشغيل مهمة واحدة
+node scripts/task-runner.js <task-name>
 
-#### توليد المحتوى
-```bash
-npm run generate-content
-```
-- أوصاف SEO للمنتجات
-- تقييمات (3-5 لكل منتج)
-- أسئلة شائعة (5 لكل منتج)
+# تشغيل جميع المهام
+node scripts/task-runner.js all
+\`\`\`
 
-#### تحديث التقييمات
-```bash
-npm run update-reviews
-```
-- تحديث ملف التقييمات
-- أسماء عمانية
-- تقييمات 4-5 نجوم
+**المهام المتاحة:**
 
----
+#### `fix-feed`
+إصلاح وتوليد Product Feed
+\`\`\`bash
+node scripts/task-runner.js fix-feed
+\`\`\`
 
-### التصنيف والـ SEO
+#### `validate-products`
+فحص بيانات المنتجات والتحقق من صحتها
+\`\`\`bash
+node scripts/task-runner.js validate-products
+\`\`\`
 
-#### تصنيف Google
-```bash
-npm run google-categories
-```
-- 22 فئة دقيقة
-- فئات Google Merchant Center 2026
-- جاهز لـ Google Shopping
+#### `update-history`
+تحديث ملف HISTORY.md بآخر التغييرات
+\`\`\`bash
+node scripts/task-runner.js update-history
+\`\`\`
 
-#### تحسين SEO
-```bash
-npm run enhance-seo
-```
-- مواصفات مع اسم بولد
-- سكيما غنية 2026
-- كلمات مفتاحية في السياق
+#### `optimize-images`
+تحسين وضغط صور المنتجات (يتطلب sharp)
+\`\`\`bash
+npm install sharp --save-dev
+node scripts/task-runner.js optimize-images
+\`\`\`
 
-#### تحديث SEO العماني
-```bash
-npm run seo:update-oman
-```
-- تحديث sitemap.xml
-- تحديث mass-seo-sitemap.xml
-- تحديث robots.txt
+#### `clean`
+تنظيف الملفات المؤقتة والـ cache
+\`\`\`bash
+node scripts/task-runner.js clean
+\`\`\`
 
----
+#### `all`
+تشغيل جميع المهام بالترتيب
+\`\`\`bash
+node scripts/task-runner.js all
+\`\`\`
 
-### إصلاح المشاكل
-
-#### إصلاح Static Export
-```bash
-npm run fix-export
-```
-- تغيير fallback من blocking إلى false
-- توافق مع Cloudflare Pages
-
-#### إصلاح Mass-SEO
-```bash
-npm run fix-mass-seo
-```
-- توليد 710 path تلقائياً
-- حل مشكلة 404
-
-#### إصلاح require
-```bash
-npm run fix-require
-```
-- استبدال require بـ fs.readFileSync
-- حل مشكلة webpack
-
-#### إصلاح Development Errors
-```bash
-npm run fix-dev
-```
-- تحسين إعدادات development mode
-- حل أخطاء 404 في Console
+**المميزات:**
+- 🎨 واجهة ملونة وواضحة
+- ⚡ تنفيذ سريع ومنظم
+- 📊 إحصائيات تفصيلية
+- ⏱️ قياس وقت التنفيذ
+- ✅ معالجة الأخطاء
+- 📝 تقارير شاملة
 
 ---
 
-## 📝 حفظ الهيستوري
+## 🔄 سير العمل الموصى به
 
-### حفظ يدوي
-```bash
-npm run history:save "الموضوع" "الطلب" "النتيجة" "الملفات"
-```
+### للتطوير اليومي
+\`\`\`bash
+# 1. تحديث بيانات المنتجات
+# تعديل src/data/products-data.json
 
-**مثال:**
-```bash
-npm run history:save "إضافة ميزة" "تم بنجاح" "src/pages/index.jsx"
-```
+# 2. توليد الـ feed
+node generate-product-feed.js
 
----
+# 3. التحقق من الصحة
+node scripts/task-runner.js validate-products
+\`\`\`
 
-## 🚀 الأوامر الأساسية
+### قبل الرفع للإنتاج
+\`\`\`bash
+# تشغيل جميع المهام
+node scripts/task-runner.js all
+\`\`\`
 
-### التطوير
-```bash
-npm run dev          # تشغيل المشروع (localhost:4000)
-npm run build        # بناء المشروع
-npm run start        # تشغيل الإنتاج
-```
+### عند وجود مشاكل
+\`\`\`bash
+# إصلاح سريع للـ feed
+node scripts/fix-feed-xml.js
 
-### التنظيف
-```bash
-restart.bat          # تنظيف وإعادة تشغيل
-```
-
----
-
-## 📊 إحصائيات المشروع
-
-- **142 منتج** عماني
-- **710 صفحة SEO** (142 × 5 كلمات مفتاحية)
-- **22 فئة** Google Merchant Center
-- **426-710 تقييم** (3-5 لكل منتج)
-- **710 سؤال شائع** (5 لكل منتج)
-- **8 مدن عمانية** في كل وصف
-- **110 ملف** في المشروع
-- **14 ملف كبير** (أكبر من 1MB)
-- **100 صورة مُصلحة** من أصل 142 منتج
-- **4 عناصر نائبة** تم مسحها
+# أو إعادة توليد كاملة
+node scripts/task-runner.js fix-feed
+\`\`\`
 
 ---
 
-## 🎨 المميزات
+## 📊 مثال على الإخراج
 
-- ✅ ثيم WoodMart احترافي
-- ✅ سكيما غنية 2026
-- ✅ SEO محسّن 300%
-- ✅ زر اشتري الآن ثابت
-- ✅ محتوى عربي 100%
-- ✅ جاهز لـ Cloudflare Pages
-- ✅ جاهز لـ Google Shopping
-- ✅ نظام مراقبة الملفات الكبيرة
-- ✅ سكريبتات تلقائية للمهام الكبيرة
-- ✅ حفظ هيستوري تلقائي
+\`\`\`
+============================================================
+🔧 إصلاح وتوليد Product Feed
+============================================================
+ℹ️  جاري إصلاح ملف الـ feed...
+
+✅ تم إنشاء ملف الفييد بنجاح!
+📊 عدد المنتجات: 142
+
+✅ تم إصلاح وتوليد الـ feed بنجاح!
+ℹ️  حجم الملف: 186 KB
+
+============================================================
+✅ تم إنجاز المهمة في 0.85 ثانية ⚡
+============================================================
+\`\`\`
+
+---
+
+## ⚙️ المتطلبات
+
+### أساسية
+- Node.js >= 14.0.0
+- npm >= 6.0.0
+
+### اختيارية
+- sharp (لتحسين الصور)
+  \`\`\`bash
+  npm install sharp --save-dev
+  \`\`\`
+
+---
+
+## 🐛 معالجة الأخطاء
+
+### خطأ: "Permission denied"
+\`\`\`bash
+# على Windows، قم بإغلاق المشروع أولاً
+# ثم شغل السكريبت
+\`\`\`
+
+### خطأ: "Module not found"
+\`\`\`bash
+# تأكد من تثبيت dependencies
+npm install
+\`\`\`
+
+### خطأ: "Invalid XML"
+\`\`\`bash
+# استخدم سكريبت الإصلاح
+node scripts/fix-feed-xml.js
+\`\`\`
+
+---
+
+## 📝 إضافة سكريبت جديد
+
+### 1. إنشاء الملف
+\`\`\`javascript
+// scripts/my-script.js
+const fs = require('fs');
+
+function myTask() {
+  console.log('🚀 تشغيل المهمة...');
+  // الكود هنا
+  console.log('✅ تم بنجاح!');
+}
+
+myTask();
+\`\`\`
+
+### 2. إضافته لـ task-runner
+\`\`\`javascript
+// في scripts/task-runner.js
+const tasks = {
+  // ...
+  'my-task': {
+    name: 'اسم المهمة',
+    description: 'وصف المهمة',
+    run: async () => {
+      // الكود هنا
+    }
+  }
+};
+\`\`\`
+
+### 3. الاستخدام
+\`\`\`bash
+node scripts/task-runner.js my-task
+\`\`\`
+
+---
+
+## 🔗 روابط مفيدة
+
+- [Node.js Documentation](https://nodejs.org/docs/)
+- [Google Merchant Center](https://merchants.google.com/)
+- [XML Validation](https://www.xmlvalidation.com/)
 
 ---
 
 ## 📞 الدعم
 
+إذا واجهت أي مشاكل:
 - 📧 sherow1982@gmail.com
 - 📱 +201110760081
-- 🌐 https://omany.storesads.shop
+- 💬 https://wa.me/201110760081
 
 ---
 
-**آخر تحديث:** 2026-02-12
+**آخر تحديث:** ${new Date().toLocaleDateString('ar-EG')}

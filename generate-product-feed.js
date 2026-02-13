@@ -11,7 +11,8 @@ function escapeXml(unsafe) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
-    .replace(/'/g, '&apos;');
+    .replace(/'/g, '&apos;')
+    .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, ''); // إزالة الأحرف غير الصالحة
 }
 
 function getGoogleCategory(arabicCategory, productTitle) {
@@ -52,9 +53,15 @@ function generateProductFeed() {
     <description>أفضل متجر إلكتروني في سلطنة عمان - شحن مجاني لجميع الطلبات</description>
 `;
 
-  products.forEach(product => {
+  products.filter(p => p.category !== 'ساعات وإكسسوارات').forEach(product => {
     const googleCategory = getGoogleCategory(product.category, product.name);
-    const description = escapeXml(product.description.replace(/\n/g, ' ').substring(0, 5000));
+    // تنظيف الوصف من الأحرف الخاصة والمسافات الزائدة
+    const cleanDesc = (product.description || '')
+      .replace(/[\r\n]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .substring(0, 5000);
+    const description = escapeXml(cleanDesc);
     
     xml += `    <item>
       <g:id>${product.id}</g:id>
@@ -98,12 +105,13 @@ try {
     process.exit(0);
   }
   
+  const filteredProducts = products.filter(p => p.category !== 'ساعات وإكسسوارات');
   const feedXml = generateProductFeed();
   const outputPath = path.join(__dirname, 'public', 'product-feed.xml');
   
   fs.writeFileSync(outputPath, feedXml, { encoding: 'utf8', flag: 'w' });
   console.log(`✅ تم إنشاء ملف الفييد بنجاح!`);
-  console.log(`📊 عدد المنتجات: ${products.length}`);
+  console.log(`📊 عدد المنتجات: ${filteredProducts.length}`);
 } catch (error) {
   console.error('❌ خطأ في إنشاء ملف الفييد:', error.message);
   process.exit(0);

@@ -50,6 +50,12 @@
     "fix:sitemap-dates": "node scripts/fix-sitemap-dates.js",
     "fix:package": "node scripts/fix-package-json.js",
     "fix:sitemap-final": "node scripts/fix-sitemap-final.js",
+    "feed:fix": "node scripts/fix-feed-xml.js",
+    "feed:generate": "node generate-product-feed.js",
+    "task:run": "node scripts/task-runner.js",
+    "task:all": "node scripts/task-runner.js all",
+    "task:validate": "node scripts/task-runner.js validate-products",
+    "task:clean": "node scripts/task-runner.js clean",
     "prebuild": "node scripts/enhance-content.js && node scripts/add-buy-now-button.js && node scripts/google-categories.js && node scripts/generate-content.js && node scripts/enhance-seo.js && node scripts/update-reviews.js && node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js && node scripts/fix-mass-seo-paths.js && node scripts/fix-require-issue.js",
     "postbuild": "node scripts/add-og-tags.js"
   },
