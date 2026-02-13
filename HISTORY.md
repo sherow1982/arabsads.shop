@@ -407,3 +407,59 @@ npm run feed:enhance
 - ✅ **0 خطأ**
 
 **الحالة:** ✅ **جميع الأسعار مظبوطة 100%**
+
+
+---
+
+## 📅 ${new Date().toLocaleString('ar-EG')}
+
+### ✅ تصدير المنتجات إلى Wuilt
+
+**التصدير:**
+- ✅ تم تصدير **114 منتج** إلى CSV
+- ✅ الملف: `C:\Users\sherow\Desktop\wuilt-bulk-upload.csv`
+- ✅ التنسيق: Wuilt Bulk Upload
+
+**البيانات المُصدّرة:**
+- العنوان والوصف
+- الأسعار (قبل وبعد الخصم)
+- الصور (الرئيسية + الجاليري)
+- الفئات والروابط
+
+**الاستخدام:**
+\`\`\`bash
+node scripts/export-to-wuilt.js
+\`\`\`
+
+
+---
+
+## 📅 ${new Date().toLocaleString('ar-EG')}
+
+### ✅ تصدير جميع المنتجات (مع الساعات)
+
+**التصدير:**
+- ✅ تم تصدير **142 منتج** (بما فيها 28 ساعة)
+- ✅ الملف: `C:\Users\sherow\Desktop\wuilt-bulk-upload.csv`
+
+**الحالة:** ✅ **جميع المنتجات تم تصديرها**
+
+
+---
+
+## 📅 ${new Date().toLocaleString('ar-EG')}
+
+### ✅ إنشاء Sitemap بالصيغة المقبولة
+
+**التحديث:**
+- ✅ تم إنشاء sitemap بنفس صيغة الموقع المقبول
+- ✅ **145 صفحة** (3 صفحات رئيسية + 142 منتج)
+- ✅ مسافات وأسطر جديدة بين العناصر
+- ✅ `lastmod`, `changefreq`, `priority`
+
+**الاستخدام:**
+\`\`\`bash
+node scripts/generate-sitemap.js
+\`\`\`
+
+**الملف:** `public/sitemap.xml`

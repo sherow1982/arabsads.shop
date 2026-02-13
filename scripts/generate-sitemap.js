@@ -1,40 +1,60 @@
 const fs = require('fs');
-const path = require('path');
-
-const productsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/products-data.json'), 'utf8'));
-const products = productsData.products;
+const data = require('../src/data/products-data.json');
 
 const baseUrl = 'https://omany.storesads.shop';
-const lastmod = '2024-12-15';
+const now = new Date().toISOString();
 
-let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>${baseUrl}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>${baseUrl}/shop</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
+let xml = `<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>${baseUrl}/</loc>
+
+<lastmod>${now}</lastmod>
+
+<changefreq>weekly</changefreq>
+
+<priority>1</priority>
+
+</url>
+<url>
+
+<loc>${baseUrl}/shop</loc>
+
+<lastmod>${now}</lastmod>
+
+<changefreq>weekly</changefreq>
+
+<priority>1</priority>
+
+</url>
+
+<url>
+<loc>${baseUrl}/contact-us</loc>
+
+<lastmod>${now}</lastmod>
+<changefreq>weekly</changefreq>
+
+<priority>1</priority>
+</url>
+
 `;
 
-products.forEach(product => {
-  sitemap += `  <url>
-    <loc>${baseUrl}/product/${product.id}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+data.forEach(p => {
+  xml += `<url>
+
+<loc>${baseUrl}/product/${p.id}</loc>
+
+<lastmod>${now}</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+
+</url>
+
 `;
 });
 
-sitemap += `</urlset>
-`;
+xml += `</urlset>`;
 
-fs.writeFileSync(path.join(__dirname, '../public/sitemap.xml'), sitemap, 'utf8');
-console.log('✅ sitemap.xml تم إنشاؤه بنجاح');
+fs.writeFileSync('./public/sitemap.xml', xml, 'utf-8');
+console.log(`✅ تم إنشاء sitemap بـ ${data.length + 3} صفحة`);
