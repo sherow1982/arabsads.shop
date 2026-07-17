@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p 4001",
     "lint": "next lint",
-    "prebuild": "node scripts/enhance-content.js && node scripts/add-buy-now-button.js && node scripts/google-categories.js && node scripts/generate-content.js && node scripts/enhance-seo.js && node scripts/update-reviews.js && node scripts/update-oman-seo.js && node scripts/mass-seo-optimizer.js && node scripts/fix-mass-seo-paths.js && node scripts/fix-require-issue.js",
+    "prebuild": "echo skip",
     "postbuild": "node scripts/add-og-tags.js",
     "build:fast": "next build"
   },

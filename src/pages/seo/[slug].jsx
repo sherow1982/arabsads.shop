@@ -11,7 +11,7 @@ import * as gtag from '@/lib/gtag';
 export async function getStaticPaths() {
   return {
     paths: [],
-    fallback: 'blocking',
+    fallback: 'blocking'
   };
 }
 
@@ -9538,13 +9538,12 @@ export async function getStaticProps({ params }) {
   const pages = JSON.parse(fs.readFileSync(pagesPath, 'utf8'));
   const page = pages.find(p => p.slug === params.slug);
   if (!page) return { notFound: true };
-
-  const productsFile = fs.readFileSync(path.join(process.cwd(), 'src/data/products.js'), 'utf8');
-  const match = productsFile.match(/export const products = (\[[\s\S]*\]);/);
-  const products = JSON.parse(match[1]);
-  const product = products.find(p => p.id === page.productId);
+  
+  const productsPath = path.join(process.cwd(), 'src/data/products-data.json');
+  const productsData = JSON.parse(fs.readFileSync(productsPath, 'utf8'));
+  const product = productsData.find(p => p.id === page.productId);
   if (!product) return { notFound: true };
-
+  
   return { props: { page, product } };
 }
 
