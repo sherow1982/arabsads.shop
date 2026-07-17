@@ -12,7 +12,7 @@ export async function getStaticPaths() {
   const fs = require('fs');
   const path = require('path');
   const pagesPath = path.join(process.cwd(), 'public/mass-seo-data/pages.json');
-  const pages = JSON.parse(fs.readFileSync(pagesPath, 'utf8'));
+  const pages = JSON.parse(fs.readFileSync(pagesPath, 'utf8')).slice(0, 200);
   const paths = pages.map(p => ({ params: { slug: p.slug } }));
   return { paths, fallback: false };
 }
