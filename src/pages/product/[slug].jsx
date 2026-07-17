@@ -10,10 +10,8 @@ import { useState, useEffect } from 'react';
 import * as gtag from '@/lib/gtag';
 
 export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: 'blocking',
-  };
+  const paths = products.map(p => ({ params: { slug: p.slug } }));
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {

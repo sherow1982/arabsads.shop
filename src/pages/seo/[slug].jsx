@@ -9,10 +9,12 @@ import { useRouter } from 'next/router';
 import * as gtag from '@/lib/gtag';
 
 export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: 'blocking'
-  };
+  const fs = require('fs');
+  const path = require('path');
+  const pagesPath = path.join(process.cwd(), 'public/mass-seo-data/pages.json');
+  const pages = JSON.parse(fs.readFileSync(pagesPath, 'utf8'));
+  const paths = pages.map(p => ({ params: { slug: p.slug } }));
+  return { paths, fallback: false };
 }
 
 // DISABLED - was causing build timeout
