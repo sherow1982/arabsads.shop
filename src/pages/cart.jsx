@@ -1,3 +1,5 @@
+import Head from 'next/head';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateQuantity } from '@/redux/features/cartSlice';
@@ -19,248 +21,81 @@ export default function Cart() {
   };
 
   return (
-    <div className="cart-page">
-      <div className="container">
-        <h1>سلة التسوق</h1>
+    <>
+      <Head>
+        <title>سلة التسوق - إعلانات العرب الكويت</title>
+      </Head>
 
-        {items.length === 0 ? (
-          <div className="empty-cart">
-            <p>سلة التسوق فارغة</p>
-            <button onClick={() => router.push('/shop')}>تصفح المنتجات</button>
-          </div>
-        ) : (
-          <div className="cart-content">
-            <div className="cart-items">
-              {items.map(item => (
-                <div key={item.id} className="cart-item">
-                  <img src={item.image} alt={item.title} />
-                  <div className="item-details">
-                    <h3>{item.title}</h3>
-                    <p className="price">{item.salePrice.toFixed(1)} ر.ع</p>
+      <div className="min-h-screen bg-gray-50 py-10">
+        <div className="max-w-7xl mx-auto px-4">
+          <h1 className="text-3xl font-bold text-dark text-center mb-10">سلة التسوق</h1>
+
+          {items.length === 0 ? (
+            <div className="bg-white rounded-2xl shadow-card p-16 text-center">
+              <div className="text-6xl mb-4">🛒</div>
+              <p className="text-xl text-gray-500 mb-6">سلة التسوق فارغة</p>
+              <Link href="/shop" className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-primary-dark transition">
+                تصفح المنتجات
+              </Link>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Cart Items */}
+              <div className="lg:col-span-2 bg-white rounded-2xl shadow-card p-6 space-y-4">
+                {items.map(item => (
+                  <div key={item.id} className="flex items-center gap-4 pb-4 border-b border-gray-100 last:border-b-0 last:pb-0">
+                    <img src={item.image} alt={item.title} className="w-20 h-20 object-cover rounded-lg flex-shrink-0" />
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-dark text-sm line-clamp-2 mb-1">{item.title}</h3>
+                      <p className="text-primary font-bold">{item.salePrice.toFixed(3)} د.ك</p>
+                    </div>
+                    <div className="flex items-center gap-2 bg-gray-100 rounded-xl px-2 py-1">
+                      <button onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
+                        className="w-7 h-7 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition text-lg leading-none">−</button>
+                      <span className="text-sm font-bold min-w-[24px] text-center">{item.quantity}</span>
+                      <button onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}
+                        className="w-7 h-7 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition text-lg leading-none">+</button>
+                    </div>
+                    <p className="font-bold text-dark text-sm min-w-[70px] text-center">{(item.salePrice * item.quantity).toFixed(3)} د.ك</p>
+                    <button onClick={() => handleRemove(item.id)}
+                      className="text-danger hover:text-red-700 transition p-1 flex-shrink-0" aria-label="حذف">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                      </svg>
+                    </button>
                   </div>
-                  <div className="item-quantity">
-                    <button onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}>-</button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}>+</button>
+                ))}
+              </div>
+
+              {/* Summary */}
+              <div className="bg-white rounded-2xl shadow-card p-6 h-fit sticky top-24">
+                <h2 className="text-xl font-bold text-dark mb-6 pb-4 border-b border-gray-100">ملخص الطلب</h2>
+                <div className="space-y-3 mb-4">
+                  <div className="flex justify-between text-gray-600">
+                    <span>المجموع الفرعي</span>
+                    <span>{total.toFixed(3)} د.ك</span>
                   </div>
-                  <button className="remove-btn" onClick={() => handleRemove(item.id)}>حذف</button>
+                  <div className="flex justify-between text-gray-600">
+                    <span>التوصيل</span>
+                    <span className="text-green-600 font-medium">مجاني 🎉</span>
+                  </div>
                 </div>
-              ))}
+                <div className="flex justify-between text-xl font-bold text-dark pt-4 border-t border-gray-100 mb-6">
+                  <span>الإجمالي</span>
+                  <span className="text-primary">{total.toFixed(3)} د.ك</span>
+                </div>
+                <button onClick={() => router.push('/checkout')}
+                  className="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-primary-dark transition shadow-lg">
+                  إتمام الطلب ←
+                </button>
+                <Link href="/shop" className="block text-center text-primary hover:underline mt-4 text-sm font-medium">
+                  متابعة التسوق
+                </Link>
+              </div>
             </div>
-
-            <div className="cart-summary">
-              <h2>ملخص الطلب</h2>
-              <div className="summary-row">
-                <span>المجموع الفرعي</span>
-                <span>{total.toFixed(1)} ر.ع</span>
-              </div>
-              <div className="summary-row">
-                <span>التوصيل</span>
-                <span>مجاني</span>
-              </div>
-              <div className="summary-total">
-                <span>الإجمالي</span>
-                <span>{total.toFixed(1)} ر.ع</span>
-              </div>
-              <button className="checkout-btn" onClick={() => router.push('/checkout')}>
-                إتمام الطلب
-              </button>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
-
-      <style jsx>{`
-        .cart-page {
-          min-height: 100vh;
-          padding: 40px 0;
-          background: #f5f5f5;
-        }
-
-        h1 {
-          text-align: center;
-          margin-bottom: 40px;
-          font-size: 32px;
-          color: #333;
-        }
-
-        .cart-content {
-          display: grid;
-          grid-template-columns: 1fr 400px;
-          gap: 30px;
-        }
-
-        @media (max-width: 968px) {
-          .cart-content {
-            grid-template-columns: 1fr;
-          }
-        }
-
-        .cart-items {
-          background: white;
-          padding: 20px;
-          border-radius: 12px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .cart-item {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          padding: 20px;
-          border-bottom: 1px solid #f0f0f0;
-        }
-
-        .cart-item:last-child {
-          border-bottom: none;
-        }
-
-        .cart-item img {
-          width: 80px;
-          height: 80px;
-          object-fit: cover;
-          border-radius: 8px;
-        }
-
-        .item-details {
-          flex: 1;
-        }
-
-        .item-details h3 {
-          font-size: 18px;
-          color: #333;
-          margin-bottom: 8px;
-        }
-
-        .price {
-          font-size: 20px;
-          font-weight: 600;
-          color: #007bff;
-        }
-
-        .item-quantity {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-        }
-
-        .item-quantity button {
-          width: 32px;
-          height: 32px;
-          border: 1px solid #ddd;
-          background: white;
-          border-radius: 6px;
-          cursor: pointer;
-          font-size: 18px;
-          transition: all 0.3s;
-        }
-
-        .item-quantity button:hover {
-          background: #007bff;
-          color: white;
-          border-color: #007bff;
-        }
-
-        .item-quantity span {
-          font-size: 16px;
-          font-weight: 600;
-          min-width: 30px;
-          text-align: center;
-        }
-
-        .remove-btn {
-          padding: 8px 16px;
-          background: #ff4444;
-          color: white;
-          border: none;
-          border-radius: 6px;
-          cursor: pointer;
-          transition: background 0.3s;
-        }
-
-        .remove-btn:hover {
-          background: #cc0000;
-        }
-
-        .cart-summary {
-          background: white;
-          padding: 30px;
-          border-radius: 12px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-          height: fit-content;
-        }
-
-        .cart-summary h2 {
-          font-size: 20px;
-          margin-bottom: 20px;
-          padding-bottom: 15px;
-          border-bottom: 2px solid #f0f0f0;
-        }
-
-        .summary-row {
-          display: flex;
-          justify-content: space-between;
-          padding: 12px 0;
-          color: #666;
-        }
-
-        .summary-total {
-          display: flex;
-          justify-content: space-between;
-          padding: 20px 0;
-          margin-top: 15px;
-          border-top: 2px solid #f0f0f0;
-          font-size: 20px;
-          font-weight: 700;
-          color: #007bff;
-        }
-
-        .checkout-btn {
-          width: 100%;
-          padding: 16px;
-          background: #007bff;
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-size: 18px;
-          font-weight: 600;
-          cursor: pointer;
-          margin-top: 20px;
-          transition: background 0.3s;
-        }
-
-        .checkout-btn:hover {
-          background: #0056b3;
-        }
-
-        .empty-cart {
-          text-align: center;
-          padding: 60px 20px;
-          background: white;
-          border-radius: 12px;
-        }
-
-        .empty-cart p {
-          font-size: 20px;
-          color: #666;
-          margin-bottom: 20px;
-        }
-
-        .empty-cart button {
-          padding: 12px 30px;
-          background: #007bff;
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-size: 16px;
-          cursor: pointer;
-          transition: background 0.3s;
-        }
-
-        .empty-cart button:hover {
-          background: #0056b3;
-        }
-      `}</style>
-    </div>
+    </>
   );
 }

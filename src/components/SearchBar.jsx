@@ -23,8 +23,8 @@ export default function SearchBar() {
     }
   };
 
-  const handleSelect = (productId) => {
-    router.push(`/product/${productId}`);
+  const handleSelect = (product) => {
+    router.push(`/product/${product.slug}`);
     setQuery('');
     setShowResults(false);
   };
@@ -50,13 +50,13 @@ export default function SearchBar() {
           {results.map(product => (
             <div
               key={product.id}
-              onClick={() => handleSelect(product.id)}
+              onClick={() => handleSelect(product)}
               className="flex items-center gap-3 p-3 hover:bg-gray-50 cursor-pointer border-b last:border-b-0"
             >
               <img src={product.image} alt={product.title} className="w-12 h-12 object-cover rounded" />
               <div className="flex-1 text-right">
                 <p className="font-medium text-dark text-sm">{product.title}</p>
-                <p className="text-primary font-bold text-sm">{product.salePrice} د.إ</p>
+                <p className="text-primary font-bold text-sm">{product.salePrice.toFixed(3)} د.ك</p>
               </div>
             </div>
           ))}

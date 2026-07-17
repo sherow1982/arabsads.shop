@@ -4,85 +4,76 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>من نحن - عماني ستور</title>
+        <title>من نحن - إعلانات العرب الكويت</title>
       </Head>
 
       <main className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent mb-4">
-            عماني ستور
+            إعلانات العرب الكويت
           </h1>
-          <p className="text-2xl font-bold text-accent">مخزونك في جيبك</p>
+          <p className="text-2xl font-bold text-accent">🇰🇼 الكويت</p>
         </div>
 
         <div className="space-y-8">
-          {/* من نحن */}
           <section className="bg-white rounded-2xl shadow-card p-8">
             <h2 className="text-3xl font-bold text-primary mb-6">من نحن</h2>
             <p className="text-gray-700 leading-relaxed text-lg mb-4">
-              عماني ستور هو أحد أكبر المتاجر الإلكترونية في سلطنة عمان، نفخر بتقديم أفضل المنتجات بأعلى جودة وأفضل الأسعار لعملائنا الكرام.
+              إعلانات العرب الكويت هو أحد أكبر المتاجر الإلكترونية في دولة الكويت، نفخر بتقديم أفضل المنتجات بأعلى جودة وأفضل الأسعار لعملائنا الكرام.
             </p>
             <p className="text-gray-700 leading-relaxed text-lg">
-              نؤمن بأن التسوق الإلكتروني يجب أن يكون سهلاً وآمناً وممتعاً، لذلك نعمل جاهدين لتوفير تجربة تسوق استثنائية لجميع عملائنا.
+              نؤمن بأن التسوق الإلكتروني يجب أن يكون سهلاً وآمناً وممتعاً، لذلك نعمل جاهدين لتوفير تجربة تسوق استثنائية لجميع عملائنا في الكويت.
             </p>
           </section>
 
-          {/* رؤيتنا */}
           <section className="bg-gradient-to-r from-primary to-secondary text-white rounded-2xl shadow-card p-8">
             <h2 className="text-3xl font-bold mb-6">رؤيتنا</h2>
             <p className="text-lg leading-relaxed">
-              أن نكون المتجر الإلكتروني الأول والأكثر ثقة في سلطنة عمان، ونوفر لعملائنا تجربة تسوق لا مثيل لها.
+              أن نكون المتجر الإلكتروني الأول والأكثر ثقة في دولة الكويت، ونوفر لعملائنا تجربة تسوق لا مثيل لها.
             </p>
           </section>
 
-          {/* انتشارنا */}
           <section className="bg-white rounded-2xl shadow-card p-8">
             <h2 className="text-3xl font-bold text-primary mb-6">انتشارنا الجغرافي</h2>
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
-              نخدم عملاءنا في <span className="font-bold text-primary text-2xl">سلطنة عمان</span> مع توصيل سريع لجميع المحافظات:
+              نخدم عملاءنا في <span className="font-bold text-primary text-2xl">دولة الكويت</span> مع توصيل سريع لجميع المحافظات:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">محافظة مسقط</span>
+                <span className="text-3xl">🇰🇼</span>
+                <span className="font-bold text-dark">محافظة العاصمة</span>
               </div>
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">محافظة ظفار</span>
+                <span className="text-3xl">🇰🇼</span>
+                <span className="font-bold text-dark">محافظة حولي</span>
               </div>
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">محافظة مسندم</span>
+                <span className="text-3xl">🇰🇼</span>
+                <span className="font-bold text-dark">محافظة الفروانية</span>
               </div>
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">محافظة البريمي</span>
+                <span className="text-3xl">🇰🇼</span>
+                <span className="font-bold text-dark">محافظة الأحمدي</span>
               </div>
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">محافظة الداخلية</span>
+                <span className="text-3xl">🇰🇼</span>
+                <span className="font-bold text-dark">محافظة الجهراء</span>
               </div>
               <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">محافظة شمال الباطنة</span>
-              </div>
-              <div className="flex items-center gap-3 bg-light-gray p-4 rounded-lg">
-                <span className="text-3xl">🇴🇲</span>
-                <span className="font-bold text-dark">محافظة جنوب الباطنة</span>
+                <span className="text-3xl">🇰🇼</span>
+                <span className="font-bold text-dark">محافظة مبارك الكبير</span>
               </div>
             </div>
             <div className="mt-6 bg-accent bg-opacity-10 p-6 rounded-lg border-r-4 border-accent">
               <p className="text-gray-700 text-lg">
-                <span className="font-bold text-accent">ميزة خاصة:</span> شحن مجاني لجميع الطلبات داخل سلطنة عمان!
+                <span className="font-bold text-accent">ميزة خاصة:</span> شحن مجاني لجميع الطلبات داخل دولة الكويت!
               </p>
             </div>
           </section>
 
-          {/* مقرنا */}
           <section className="bg-white rounded-2xl shadow-card p-8">
             <h2 className="text-3xl font-bold text-primary mb-6">مقر الإدارة والشحن</h2>
             
-            {/* الإدارة */}
             <div className="flex items-start gap-6 mb-8 pb-8 border-b-2 border-gray-100">
               <div className="bg-primary bg-opacity-10 p-6 rounded-full">
                 <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,7 +88,6 @@ export default function About() {
               </div>
             </div>
             
-            {/* الشحن */}
             <div className="flex items-start gap-6">
               <div className="bg-secondary bg-opacity-10 p-6 rounded-full">
                 <svg className="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,9 +95,9 @@ export default function About() {
                 </svg>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-dark mb-3">🇴🇲 الشحن - سلطنة عمان</h3>
+                <h3 className="text-2xl font-bold text-dark mb-3">🇰🇼 الشحن - دولة الكويت</h3>
                 <p className="text-gray-700 leading-relaxed text-lg mb-4">
-                  جميع منتجاتنا يتم شحنها من <span className="font-bold text-secondary">داخل سلطنة عمان</span> لضمان:
+                  جميع منتجاتنا يتم شحنها من <span className="font-bold text-secondary">داخل دولة الكويت</span> لضمان:
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center gap-2">
@@ -127,14 +117,13 @@ export default function About() {
             </div>
           </section>
 
-          {/* مميزاتنا */}
           <section className="bg-white rounded-2xl shadow-card p-8">
-            <h2 className="text-3xl font-bold text-primary mb-6">لماذا عماني ستور؟</h2>
+            <h2 className="text-3xl font-bold text-primary mb-6">لماذا إعلانات العرب الكويت؟</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-light-gray rounded-xl">
                 <div className="text-5xl mb-4">🚚</div>
                 <h3 className="font-bold text-xl text-dark mb-2">شحن مجاني</h3>
-                <p className="text-gray-600">لجميع الطلبات بدون استثناء</p>
+                <p className="text-gray-600">لجميع الطلبات داخل الكويت</p>
               </div>
               <div className="text-center p-6 bg-light-gray rounded-xl">
                 <div className="text-5xl mb-4">⚡</div>
@@ -164,13 +153,12 @@ export default function About() {
             </div>
           </section>
 
-          {/* تواصل معنا */}
           <section className="bg-gradient-to-r from-secondary to-primary text-white rounded-2xl shadow-card p-8 text-center">
             <h2 className="text-3xl font-bold mb-4">تواصل معنا</h2>
             <p className="text-lg mb-6">نحن هنا لخدمتك في أي وقت</p>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <a href="mailto:sherow1982@gmail.com" className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-light-gray transition">
-                📧 sherow1982@gmail.com
+              <a href="mailto:info@arabsads.shop" className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-light-gray transition">
+                📧 info@arabsads.shop
               </a>
               <a href="https://wa.me/201110760081" target="_blank" rel="noopener noreferrer" className="bg-white text-primary px-8 py-3 rounded-lg font-bold hover:bg-light-gray transition">
                 📱 +201110760081

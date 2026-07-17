@@ -21,7 +21,7 @@ export default function Checkout() {
     email: '',
     address: '',
     city: '',
-    country: 'عمان',
+    country: 'الكويت',
     notes: '',
     paymentMethod: 'cash'
   });
@@ -31,7 +31,7 @@ export default function Checkout() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    if (!formData.firstName || !formData.phone || !formData.address) {
+    if (!formData.firstName || !formData.lastName || !formData.phone || !formData.address || !formData.city) {
       toast.error('يرجى ملء جميع الحقول المطلوبة');
       return;
     }
@@ -42,11 +42,11 @@ export default function Checkout() {
     }
 
     const productsText = items.map(item => 
-      `${item.title} × ${item.quantity} = ${(item.salePrice * item.quantity).toFixed(2)} ر.ع`
+      `${item.title} × ${item.quantity} = ${(item.salePrice * item.quantity).toFixed(3)} د.ك`
     ).join('\n');
 
     const message = `
-🛍️ *طلب جديد من عماني ستور*
+🛍️ *طلب جديد من إعلانات العرب الكويت*
 
 👤 *معلومات العميل:*
 الاسم: ${formData.firstName} ${formData.lastName}
@@ -61,7 +61,7 @@ export default function Checkout() {
 📦 *المنتجات:*
 ${productsText}
 
-💰 *الإجمالي:* ${total.toFixed(2)} ر.ع
+💰 *الإجمالي:* ${total.toFixed(3)} د.ك
 
 📝 *ملاحظات:* ${formData.notes || 'لا توجد'}
     `.trim();
@@ -138,7 +138,7 @@ ${productsText}
                         onChange={handleChange}
                         className="w-full bg-gray-1 rounded-md border border-gray-3 text-dark-4 py-3 pl-5 pr-9 duration-200 appearance-none outline-none focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                       >
-                        <option value="عمان">عمان</option>
+                        <option value="الكويت">الكويت</option>
                         <option value="السعودية">السعودية</option>
                         <option value="الإمارات">الإمارات</option>
                       </select>
@@ -168,7 +168,7 @@ ${productsText}
                       type="text"
                       name="city"
                       id="city"
-                      placeholder="مسقط، صلالة، صحار..."
+                      placeholder="العاصمة، حولي، الفروانية، الأحمدي..."
                       value={formData.city}
                       onChange={handleChange}
                       className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
@@ -183,7 +183,7 @@ ${productsText}
                       type="text"
                       name="phone"
                       id="phone"
-                      placeholder="+968 9XXXXXXX"
+                      placeholder="+965 XXXXXXXX"
                       value={formData.phone}
                       onChange={handleChange}
                       className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
@@ -275,7 +275,7 @@ ${productsText}
                   {items.map((item, index) => (
                     <div key={index} className="flex items-center justify-between py-5 border-b border-gray-3">
                       <div><p className="text-dark">{item.title} × {item.quantity}</p></div>
-                      <div><p className="text-dark text-right">{(item.salePrice * item.quantity).toFixed(2)} ر.ع</p></div>
+                      <div><p className="text-dark text-right">{(item.salePrice * item.quantity).toFixed(3)} د.ك</p></div>
                     </div>
                   ))}
 
@@ -286,7 +286,7 @@ ${productsText}
 
                   <div className="flex items-center justify-between pt-5">
                     <div><p className="font-medium text-lg text-dark">الإجمالي</p></div>
-                    <div><p className="font-medium text-lg text-dark text-right">{total.toFixed(2)} ر.ع</p></div>
+                    <div><p className="font-medium text-lg text-dark text-right">{total.toFixed(3)} د.ك</p></div>
                   </div>
                 </div>
               </div>

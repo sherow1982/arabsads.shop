@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://oman-makhzoonk.shop';
+const DOMAIN = 'https://arabsads.shop';
 const PRODUCT_COUNT = 142;
 
 // تحديث sitemap.xml
@@ -61,8 +61,8 @@ function updateMassSeoPages() {
   const keywords = [
     { key: 'buy', ar: 'شراء', en: 'Buy' },
     { key: 'price', ar: 'سعر', en: 'Price' },
-    { key: 'muscat', ar: 'مسقط', en: 'Muscat' },
-    { key: 'salalah', ar: 'صلالة', en: 'Salalah' },
+    { key: 'muscat', ar: 'الكويت العاصمة', en: 'Muscat' },
+    { key: 'salalah', ar: 'حولي', en: 'Salalah' },
     { key: 'offer', ar: 'عرض', en: 'Offer' }
   ];
 
@@ -75,10 +75,10 @@ function updateMassSeoPages() {
         slug,
         productId: product.id,
         keyword: kw.key,
-        title: `${kw.ar} ${product.name} في عمان | عماني ستور`,
-        description: `${kw.ar} ${product.name} بأفضل سعر في عمان. ${product.description.substring(0, 100)}... شحن مجاني لجميع مناطق السلطنة.`,
+        title: `${kw.ar} ${product.name} في الكويت | إعلانات العرب الكويت`,
+        description: `${kw.ar} ${product.name} بأفضل سعر في الكويت. ${product.description.substring(0, 100)}... شحن مجاني لجميع مناطق الكويت.`,
         h1: `${kw.ar} ${product.name}`,
-        content: `اكتشف ${product.name} في عماني ستور - متجرك الموثوق للمنتجات العمانية الأصيلة. ${product.description} نوفر شحن مجاني لجميع مناطق السلطنة مع ضمان الجودة.`
+        content: `اكتشف ${product.name} في إعلانات العرب الكويت - متجرك الموثوق للمنتجات اللكويتية الأصيلة. ${product.description} نوفر شحن مجاني لجميع مناطق الكويت مع ضمان الجودة.`
       });
     });
   });
@@ -98,10 +98,10 @@ function updateProductsSeo() {
   
   const seoData = products.map(product => ({
     id: product.id,
-    title: `${product.name} | عماني ستور - مخزونك في جيبك`,
-    description: `${product.description.substring(0, 150)}... اطلب الآن من عماني ستور مع شحن مجاني لجميع مناطق عمان.`,
-    keywords: `${product.name}, منتجات عمانية, ${product.category}, عماني ستور, مسقط, صلالة`,
-    ogTitle: `${product.name} - عماني ستور`,
+    title: `${product.name} | إعلانات العرب الكويت`,
+    description: `${product.description.substring(0, 150)}... اطلب الآن من إعلانات العرب الكويت مع شحن مجاني لجميع مناطق الكويت.`,
+    keywords: `${product.name}, منتجات الكويتية, ${product.category}, إعلانات العرب الكويت, الكويت العاصمة, حولي`,
+    ogTitle: `${product.name} - إعلانات العرب الكويت`,
     ogDescription: `${product.description.substring(0, 100)}...`,
     schema: {
       "@context": "https://schema.org",
@@ -109,11 +109,11 @@ function updateProductsSeo() {
       "name": product.name,
       "description": product.description,
       "image": product.image,
-      "brand": "عماني ستور",
+      "brand": "إعلانات العرب الكويت",
       "offers": {
         "@type": "Offer",
         "price": product.price,
-        "priceCurrency": "OMR",
+        "priceCurrency": "KWD",
         "availability": "https://schema.org/InStock"
       }
     }
@@ -128,7 +128,7 @@ function updateProductsSeo() {
 }
 
 // تشغيل جميع التحديثات
-console.log('🚀 بدء تحديث ملفات SEO للمنتجات العمانية...\n');
+console.log('🚀 بدء تحديث ملفات SEO...\n');
 updateSitemap();
 updateMassSeoSitemap();
 updateMassSeoPages();

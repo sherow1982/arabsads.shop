@@ -182,9 +182,9 @@ files.forEach(file => {
 // 12. روابط مفيدة
 console.log('\n🔗 روابط مفيدة:');
 console.log('─────────────────────────────────────');
-console.log('• Sitemap: https://emirates.storesads.shop/sitemap.xml');
-console.log('• Product Feed: https://emirates.storesads.shop/product-feed.xml');
-console.log('• Robots: https://emirates.storesads.shop/robots.txt');
+console.log('• Sitemap: https://arabsads.shop/sitemap.xml');
+console.log('• Product Feed: https://arabsads.shop/product-feed.xml');
+console.log('• Robots: https://arabsads.shop/robots.txt');
 console.log('• Google Search Console: https://search.google.com/search-console');
 console.log('• Rich Results Test: https://search.google.com/test/rich-results');
 

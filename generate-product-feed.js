@@ -1,8 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsData = require('./src/data/products-data.json');
-const products = productsData || [];
+const vm = require('vm');
+const productsPath = require('path').join(__dirname, 'src/data/products.js');
+let _content = require('fs').readFileSync(productsPath, 'utf8').replace('export const products =', 'module.exports.products =');
+const _mod = { exports: {} };
+vm.runInNewContext(_content, { module: _mod, exports: _mod.exports });
+const products = _mod.exports.products || [];
 
 function escapeXml(unsafe) {
   if (!unsafe) return '';
@@ -48,13 +52,13 @@ function generateProductFeed() {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>عماني ستور - مخزونك في جيبك</title>
-    <link>https://omany.storesads.shop</link>
-    <description>أفضل متجر إلكتروني في سلطنة عمان - شحن مجاني لجميع الطلبات</description>
+    <title>إعلانات العرب الكويت</title>
+    <link>https://arabsads.shop</link>
+    <description>أفضل متجر إلكتروني في الكويت - شحن مجاني لجميع الطلبات</description>
 `;
 
   products.filter(p => p.category !== 'ساعات وإكسسوارات').forEach(product => {
-    const googleCategory = getGoogleCategory(product.category, product.name);
+    const googleCategory = getGoogleCategory(product.category, product.title);
     const cleanDesc = (product.description || '')
       .replace(/[\r\n]+/g, ' ')
       .replace(/\s+/g, ' ')
@@ -62,22 +66,19 @@ function generateProductFeed() {
       .substring(0, 5000);
     const description = escapeXml(cleanDesc);
     
-    // استخراج الأسعار الصحيحة
-    const priceStr = String(product.price || '').split(/\s/)[0];
-    const price = parseFloat(priceStr) || 0;
-    const salePriceStr = product.sale_price ? String(product.sale_price).split(/\s/)[0] : null;
-    const salePrice = salePriceStr ? parseFloat(salePriceStr) : null;
+    const price = parseFloat(product.price) || 0;
+    const salePrice = parseFloat(product.salePrice) || 0;
     
     xml += `    <item>
       <g:id>${product.id}</g:id>
-      <g:title>${escapeXml(product.name)}</g:title>
+      <g:title>${escapeXml(product.title)}</g:title>
       <g:description>${description}</g:description>
-      <g:link>https://omany.storesads.shop/product/${product.id}</g:link>
-      <g:image_link>${escapeXml(product.mainImage || product.image)}</g:image_link>`;
+      <g:link>https://arabsads.shop/product/${escapeXml(product.slug)}</g:link>
+      <g:image_link>${escapeXml(product.image)}</g:image_link>`;
     
     // إضافة صور الجاليري
-    if (product.gallery && Array.isArray(product.gallery) && product.gallery.length > 0) {
-      product.gallery.slice(0, 10).forEach(img => {
+    if (product.images && Array.isArray(product.images) && product.images.length > 1) {
+      product.images.slice(1, 10).forEach(img => {
         if (img) xml += `
       <g:additional_image_link>${escapeXml(img)}</g:additional_image_link>`;
       });
@@ -86,24 +87,23 @@ function generateProductFeed() {
     xml += `
       <g:availability>in stock</g:availability>`;
     
-    // السعر قبل وبعد الخصم
     if (salePrice && salePrice < price) {
       xml += `
-      <g:price>${price} OMR</g:price>
-      <g:sale_price>${salePrice} OMR</g:sale_price>`;
+      <g:price>${price.toFixed(3)} KWD</g:price>
+      <g:sale_price>${salePrice.toFixed(3)} KWD</g:sale_price>`;
     } else {
       xml += `
-      <g:price>${price} OMR</g:price>`;
+      <g:price>${(salePrice || price).toFixed(3)} KWD</g:price>`;
     }
     
     xml += `
-      <g:brand>عماني ستور</g:brand>
+      <g:brand>إعلانات العرب الكويت</g:brand>
       <g:condition>new</g:condition>
       <g:google_product_category>${escapeXml(googleCategory)}</g:google_product_category>
       <g:product_type>${escapeXml(product.category)}</g:product_type>
       <g:identifier_exists>no</g:identifier_exists>
       <g:shipping>
-        <g:country>OM</g:country>
+        <g:country>KW</g:country>
         <g:service>Standard</g:service>
       </g:shipping>
     </item>

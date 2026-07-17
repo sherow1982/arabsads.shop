@@ -8,7 +8,7 @@ const { saveHistory } = require('./auto-history');
 
 // قائمة الصور البديلة عالية الجودة
 const HIGH_QUALITY_IMAGES = {
-  // صور المنتجات العمانية عالية الجودة
+  // صور المنتجات اللكويتية عالية الجودة
   'default': 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&h=800&fit=crop&crop=center',
   'jewelry': 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=800&fit=crop&crop=center',
   'watches': 'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=800&h=800&fit=crop&crop=center',

@@ -12,14 +12,14 @@ const filteredProducts = productsData.filter(product => {
 
 // إنشاء XML للفييد
 function generateProductFeed() {
-  const baseUrl = 'https://omany.storesads.shop';
+  const baseUrl = 'https://arabsads.shop';
   
   let xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>عماني ستور - منتجات</title>
+    <title>إعلانات العرب الكويت - منتجات</title>
     <link>${baseUrl}</link>
-    <description>أفضل متجر إلكتروني في سلطنة عمان</description>`;
+    <description>أفضل متجر إلكتروني في دولة الكويت</description>`;
 
   filteredProducts.forEach(product => {
     const price = parseFloat(product.price.replace(/[^\d.]/g, ''));
@@ -38,14 +38,14 @@ function generateProductFeed() {
       <g:image_link>${product.mainImage}</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in stock</g:availability>
-      <g:price>${finalPrice} OMR</g:price>
-      <g:brand>عماني ستور</g:brand>
+      <g:price>${finalPrice} KWD</g:price>
+      <g:brand>إعلانات العرب الكويت</g:brand>
       <g:product_type>${product.category || 'منتجات متنوعة'}</g:product_type>
       <g:google_product_category>${googleCategory}</g:google_product_category>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
-        <g:price>0 OMR</g:price>
+        <g:price>0 KWD</g:price>
       </g:shipping>
       <g:identifier_exists>no</g:identifier_exists>
     </item>`;
@@ -111,7 +111,7 @@ try {
   console.log(`📊 عدد المنتجات: ${filteredProducts.length}`);
   console.log(`📁 المسار: ${outputPath}`);
   console.log(`🚫 تم استبعاد فئة الساعات والإكسسوارات`);
-  console.log(`🌐 الرابط: https://omany.storesads.shop/product-feed.xml`);
+  console.log(`🌐 الرابط: https://arabsads.shop/product-feed.xml`);
   
 } catch (error) {
   console.error('❌ خطأ في إنشاء ملف الفييد:', error);

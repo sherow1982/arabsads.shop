@@ -36,7 +36,7 @@ filtered.forEach(p => {
     imagesStr,
     p.mainImage || '',
     'ACTIVE',
-    `https://omany.storesads.shop/product/${p.id}`,
+    `https://arabsads.shop/product/${p.id}`,
     '',
     '',
     `"${p.category}"`,

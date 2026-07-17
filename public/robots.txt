@@ -1,10 +1,5 @@
-# robots.txt for https://omany.storesads.shop
+# robots.txt for https://arabsads.shop
 
-# Allow Facebook crawler
-User-agent: facebookexternalhit
-Allow: /
-
-# Allow all other crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -12,5 +7,8 @@ Disallow: /checkout/success
 Disallow: /checkout/cancel
 
 # Sitemaps
-Sitemap: https://omany.storesads.shop/sitemap.xml
-Sitemap: https://omany.storesads.shop/pages-sitemap.xml
+Sitemap: https://arabsads.shop/sitemap.xml
+Sitemap: https://arabsads.shop/product-feed.xml
+
+# Crawl-delay
+Crawl-delay: 1

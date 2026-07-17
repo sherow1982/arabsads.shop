@@ -3,28 +3,26 @@ import { useRouter } from 'next/router';
 
 export default function ProductSEO({ product, seoData }) {
   const router = useRouter();
-  const canonicalUrl = `https://oman-makhzoonk.shop${router.asPath}`;
+  const canonicalUrl = `https://arabsads.shop${router.asPath}`;
   
-  // استخدام بيانات SEO المُحسّنة إذا كانت متوفرة
   const seo = seoData || {
-    title: `${product.title} - عماني ستور`,
+    title: `${product.title} - إعلانات العرب الكويت`,
     metaDescription: product.description?.substring(0, 160) || product.title,
     keywords: `${product.title}, ${product.category}`,
     canonicalUrl: canonicalUrl
   };
 
-  // استخدام richSchema من المنتج إذا كانت متوفرة
   const structuredData = product.richSchema || seo.structuredData || {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.title,
     description: product.description,
     image: product.image,
-    brand: { '@type': 'Brand', name: 'عماني ستور' },
+    brand: { '@type': 'Brand', name: 'إعلانات العرب الكويت' },
     offers: {
       '@type': 'Offer',
       url: canonicalUrl,
-      priceCurrency: 'OMR',
+      priceCurrency: 'KWD',
       price: product.salePrice,
       availability: 'https://schema.org/InStock'
     }
@@ -44,13 +42,13 @@ export default function ProductSEO({ product, seoData }) {
       <meta property="og:description" content={seo.ogDescription || seo.metaDescription} />
       <meta property="og:image" content={seo.ogImage || product.image} />
       <meta property="og:url" content={seo.canonicalUrl} />
-      <meta property="og:site_name" content="عماني ستور" />
-      <meta property="og:locale" content="ar_OM" />
+      <meta property="og:site_name" content="إعلانات العرب الكويت" />
+      <meta property="og:locale" content="ar_KW" />
       <meta property="product:price:amount" content={product.salePrice} />
-      <meta property="product:price:currency" content="OMR" />
+      <meta property="product:price:currency" content="KWD" />
       <meta property="product:availability" content={product.inStock ? 'in stock' : 'out of stock'} />
       <meta property="product:condition" content="new" />
-      <meta property="product:brand" content="عماني ستور" />
+      <meta property="product:brand" content="إعلانات العرب الكويت" />
       <meta property="product:category" content={product.category} />
       
       {/* Twitter Card */}
@@ -59,7 +57,7 @@ export default function ProductSEO({ product, seoData }) {
       <meta name="twitter:description" content={seo.ogDescription || seo.metaDescription} />
       <meta name="twitter:image" content={product.image} />
       <meta name="twitter:label1" content="السعر" />
-      <meta name="twitter:data1" content={`${product.salePrice} ر.ع`} />
+      <meta name="twitter:data1" content={`${product.salePrice} د.ك`} />
       <meta name="twitter:label2" content="التوفر" />
       <meta name="twitter:data2" content={product.inStock ? 'متوفر' : 'غير متوفر'} />
       
@@ -67,8 +65,8 @@ export default function ProductSEO({ product, seoData }) {
       <meta name="robots" content="index, follow, max-image-preview:large" />
       <meta name="googlebot" content="index, follow" />
       <meta name="bingbot" content="index, follow" />
-      <meta name="author" content="عماني ستور" />
-      <meta name="publisher" content="عماني ستور" />
+      <meta name="author" content="إعلانات العرب الكويت" />
+      <meta name="publisher" content="إعلانات العرب الكويت" />
       
       {/* Mobile Optimization */}
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
@@ -107,26 +105,25 @@ export default function ProductSEO({ product, seoData }) {
             '@context': 'https://schema.org',
             '@type': 'Offer',
             url: seo.canonicalUrl,
-            priceCurrency: 'OMR',
+            priceCurrency: 'KWD',
             price: product.salePrice,
             priceValidUntil: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
             availability: product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
             itemCondition: 'https://schema.org/NewCondition',
             seller: {
               '@type': 'Organization',
-              name: 'عماني ستور'
+              name: 'إعلانات العرب الكويت'
             }
           })
         }}
       />
       
       {/* Preconnect for Performance */}
-      <link rel="preconnect" href="https://m5zoon.com" />
-      <link rel="dns-prefetch" href="https://m5zoon.com" />
+      <link rel="preconnect" href="https://arabsads.shop" />
+      <link rel="dns-prefetch" href="https://arabsads.shop" />
       
-      {/* Alternate Languages */}
       <link rel="alternate" hrefLang="ar" href={seo.canonicalUrl} />
-      <link rel="alternate" hrefLang="ar-OM" href={seo.canonicalUrl} />
+      <link rel="alternate" hrefLang="ar-KW" href={seo.canonicalUrl} />
       <link rel="alternate" hrefLang="x-default" href={seo.canonicalUrl} />
     </Head>
   );

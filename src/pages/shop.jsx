@@ -7,13 +7,26 @@ import { products } from '@/data/products';
 import { getAverageRating, getProductReviews } from '@/data/productReviews';
 import { toast } from 'react-toastify';
 
+const CATEGORIES = [
+  'اجهزة منزلية',
+  'العاب',
+  'العدد والادوات',
+  'الكترونيات',
+  'عطور',
+  'مستلزمات السيارات',
+  'مستلزمات المطبخ',
+  'مستلزمات المنزل',
+  'مستلزمات رياضية',
+  'مستلزمات طبية',
+  'مشدات',
+];
+
 export default function Shop() {
   const router = useRouter();
   const dispatch = useDispatch();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [priceRange, setPriceRange] = useState([0, 1000]);
-  const [displayCount, setDisplayCount] = useState(12);
+  const [displayCount, setDisplayCount] = useState(24);
 
   useEffect(() => {
     if (router.query.category) {
@@ -27,16 +40,21 @@ export default function Shop() {
     toast.success('تمت إضافة المنتج إلى السلة');
   };
 
+  const openProduct = (product, e) => {
+    if (e) e.stopPropagation();
+    router.push(`/product/${product.slug}`);
+  };
+
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
+    setDisplayCount(24);
     router.push(`/shop?category=${encodeURIComponent(category)}`, undefined, { shallow: true });
   };
 
   const filteredProducts = products.filter(product => {
     const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = !selectedCategory || product.category === selectedCategory;
-    const matchesPrice = product.salePrice >= priceRange[0] && product.salePrice <= priceRange[1];
-    return matchesSearch && matchesCategory && matchesPrice;
+    return matchesSearch && matchesCategory;
   });
 
   const displayedProducts = filteredProducts.slice(0, displayCount);
@@ -45,7 +63,7 @@ export default function Shop() {
   return (
     <>
       <Head>
-        <title>المتجر - عماني ستور</title>
+        <title>المتجر - إعلانات العرب الكويت</title>
       </Head>
 
       <div className="max-w-7xl mx-auto px-4 py-10 overflow-x-hidden">
@@ -54,66 +72,28 @@ export default function Shop() {
           <p className="text-dark-3">عدد المنتجات: {filteredProducts.length}</p>
         </div>
 
-        {/* Categories Section */}
-        <div className="mb-10">
-          <h3 className="text-2xl font-bold text-dark mb-6 text-center">تسوق حسب الفئة</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
-            <button onClick={() => handleCategoryClick('ساعات وإكسسوارات')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'ساعات وإكسسوارات' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">ساعات وإكسسوارات</h4>
+        {/* Categories */}
+        <div className="mb-8">
+          <div className="flex flex-wrap gap-2 justify-center">
+            <button
+              onClick={() => { setSelectedCategory(''); router.push('/shop', undefined, { shallow: true }); }}
+              className={`px-4 py-2 rounded-full font-bold text-sm transition ${!selectedCategory ? 'bg-primary text-white' : 'bg-white text-dark border border-gray-200 hover:border-primary'}`}
+            >
+              الكل ({products.length})
             </button>
-            <button onClick={() => handleCategoryClick('أدوات تصفيف الشعر')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'أدوات تصفيف الشعر' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">أدوات تصفيف الشعر</h4>
-            </button>
-            <button onClick={() => handleCategoryClick('مستلزمات منزلية')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'مستلزمات منزلية' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">مستلزمات منزلية</h4>
-            </button>
-            <button onClick={() => handleCategoryClick('أجهزة مطبخ')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'أجهزة مطبخ' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">أجهزة مطبخ</h4>
-            </button>
-            <button onClick={() => handleCategoryClick('أدوات مطبخ')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'أدوات مطبخ' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">أدوات مطبخ</h4>
-            </button>
-            <button onClick={() => handleCategoryClick('أجهزة منزلية')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'أجهزة منزلية' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">أجهزة منزلية</h4>
-            </button>
-            <button onClick={() => handleCategoryClick('إلكترونيات ذكية')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'إلكترونيات ذكية' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">إلكترونيات ذكية</h4>
-            </button>
-            <button onClick={() => handleCategoryClick('العناية بالبشرة')} className={`group bg-white rounded-xl shadow-md hover:shadow-xl transition p-4 text-center ${selectedCategory === 'العناية بالبشرة' ? 'ring-2 ring-primary' : ''}`}>
-              <div className="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-opacity-20 transition">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
-              </div>
-              <h4 className="font-bold text-dark text-sm">العناية بالبشرة</h4>
-            </button>
+            {CATEGORIES.map((cat) => {
+              const count = products.filter(p => p.category === cat).length;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => handleCategoryClick(cat)}
+                  className={`px-4 py-2 rounded-full font-bold text-sm transition ${selectedCategory === cat ? 'bg-primary text-white' : 'bg-white text-dark border border-gray-200 hover:border-primary'}`}
+                >
+                  {cat} ({count})
+                </button>
+              );
+            })}
           </div>
-          {selectedCategory && (
-            <div className="text-center mt-4">
-              <button onClick={() => { setSelectedCategory(''); router.push('/shop', undefined, { shallow: true }); }} className="text-primary hover:underline font-semibold">
-                إلغاء التصفية ×
-              </button>
-            </div>
-          )}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 overflow-hidden">
@@ -124,41 +104,38 @@ export default function Shop() {
                 <h3 className="text-lg font-bold text-dark mb-3">البحث</h3>
                 <input
                   type="text"
-                  
+                  placeholder="ابحث عن منتج..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="w-full px-4 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
               </div>
-
               <div>
-                <h3 className="text-lg font-bold text-dark mb-3">نطاق السعر</h3>
-                <div className="flex gap-2">
-                  <input
-                    type="number"
-                    value={priceRange[0]}
-                    onChange={(e) => setPriceRange([Number(e.target.value), priceRange[1]])}
-                    
-                    className="w-full px-3 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <input
-                    type="number"
-                    value={priceRange[1]}
-                    onChange={(e) => setPriceRange([priceRange[0], Number(e.target.value)])}
-                    
-                    className="w-full px-3 py-2 border border-light-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                  />
-                </div>
+                <h3 className="text-lg font-bold text-dark mb-3">الفئات</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <button onClick={() => { setSelectedCategory(''); router.push('/shop', undefined, { shallow: true }); }} className={`w-full text-right py-1 px-2 rounded transition ${!selectedCategory ? 'text-primary font-bold' : 'text-gray-600 hover:text-primary'}`}>
+                      الكل ({products.length})
+                    </button>
+                  </li>
+                  {CATEGORIES.map((cat) => (
+                    <li key={cat}>
+                      <button onClick={() => handleCategoryClick(cat)} className={`w-full text-right py-1 px-2 rounded transition ${selectedCategory === cat ? 'text-primary font-bold' : 'text-gray-600 hover:text-primary'}`}>
+                        {cat} ({products.filter(p => p.category === cat).length})
+                      </button>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </aside>
 
           {/* Products Grid */}
           <div className="lg:col-span-3">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {displayedProducts.map((product) => (
                 <div key={product.id} className="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-hover transition-all duration-300 group">
-                  <div className="relative h-64 overflow-hidden cursor-pointer" onClick={() => router.push(`/product/${product.id}`)}>
+                  <div className="relative h-48 md:h-64 overflow-hidden cursor-pointer" onClick={(e) => openProduct(product, e)}>
                     <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
                     {product.salePrice < product.price && (
                       <span className="absolute top-3 right-3 bg-danger text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
@@ -167,27 +144,27 @@ export default function Shop() {
                     )}
                     <button 
                       onClick={(e) => handleAddToCart(product, e)}
-                      className="absolute bottom-3 left-3 right-3 bg-primary text-white py-2 rounded-md font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="absolute bottom-3 left-3 right-3 bg-primary text-white py-2 rounded-md font-bold opacity-0 group-hover:opacity-100 transition-opacity text-sm"
                     >
                       أضف للسلة
                     </button>
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-dark font-semibold mb-2 h-12 overflow-hidden cursor-pointer hover:text-primary transition" onClick={() => router.push(`/product/${product.id}`)}>
+                  <div className="p-3 md:p-4">
+                    <span className="text-xs text-primary font-medium bg-primary bg-opacity-10 px-2 py-0.5 rounded mb-1 inline-block">{product.category}</span>
+                    <h3 className="text-dark font-semibold mb-2 h-10 overflow-hidden cursor-pointer hover:text-primary transition text-sm line-clamp-2" onClick={(e) => openProduct(product, e)}>
                       {product.title}
                     </h3>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
-                          <span key={i} className={`text-sm ${i < Math.round(getAverageRating(product.id)) ? 'text-yellow-400' : 'text-gray-300'}`}>★</span>
+                          <span key={i} className={`text-xs ${i < Math.round(getAverageRating(product.id)) ? 'text-yellow-400' : 'text-gray-300'}`}>★</span>
                         ))}
                       </div>
-                      <span className="text-xs text-gray-500">({getProductReviews(product.id).length})</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-primary">{product.salePrice.toFixed(1)} ر.ع</span>
+                      <span className="text-xl font-bold text-primary">{product.salePrice.toFixed(3)} د.ك</span>
                       {product.salePrice < product.price && (
-                        <span className="text-gray-400 line-through">{product.price.toFixed(1)} ر.ع</span>
+                        <span className="text-gray-400 line-through text-sm">{product.price.toFixed(3)} د.ك</span>
                       )}
                     </div>
                   </div>
@@ -195,21 +172,20 @@ export default function Shop() {
               ))}
             </div>
 
-            {/* Load More Button */}
             {hasMore && (
               <div className="text-center mt-12">
                 <button 
-                  onClick={() => setDisplayCount(displayCount + 12)}
+                  onClick={() => setDisplayCount(displayCount + 24)}
                   className="bg-gradient-to-r from-primary to-secondary text-white px-12 py-4 rounded-md font-bold hover:opacity-90 transition shadow-lg text-lg"
                 >
-                  مشاهدة المزيد
+                  مشاهدة المزيد ({filteredProducts.length - displayCount} منتج)
                 </button>
               </div>
             )}
 
-            {!hasMore && filteredProducts.length > 12 && (
+            {!hasMore && filteredProducts.length > 24 && (
               <div className="text-center mt-12">
-                <p className="text-dark-3 text-lg">تم عرض جميع المنتجات</p>
+                <p className="text-dark-3 text-lg">تم عرض جميع المنتجات ({filteredProducts.length})</p>
               </div>
             )}
           </div>

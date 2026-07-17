@@ -4,22 +4,13 @@ import SEO from '@/components/SEO';
 
 export default function ThankYou() {
   useEffect(() => {
-    const confetti = () => {
-      const duration = 3 * 1000;
-      const end = Date.now() + duration;
-      (function frame() {
-        if (Date.now() < end) {
-          requestAnimationFrame(frame);
-        }
-      }());
-    };
-    confetti();
+    // confetti placeholder - يمكن إضافة مكتبة confetti لاحقاً
   }, []);
 
   return (
     <>
       <SEO 
-        title="شكراً لك - عماني ستور"
+        title="شكراً لك - إعلانات العرب الكويت"
         description="تم استلام طلبك بنجاح"
       />
       
@@ -62,7 +53,7 @@ export default function ThankYou() {
               <div className="text-center p-4 bg-gray-50 rounded-xl">
                 <div className="text-3xl mb-2">🚚</div>
                 <h3 className="font-bold text-dark mb-1">شحن مجاني</h3>
-                <p className="text-sm text-dark-3">لجميع محافظات عمان</p>
+                <p className="text-sm text-dark-3">لجميع محافظات الكويت</p>
               </div>
               <div className="text-center p-4 bg-gray-50 rounded-xl">
                 <div className="text-3xl mb-2">⏱️</div>

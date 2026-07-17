@@ -52,7 +52,7 @@ const BIG_TASKS = {
     name: 'توليد محتوى SEO متقدم',
     commands: [
       { cmd: 'node scripts/generate-content.js', desc: 'توليد المحتوى' },
-      { cmd: 'node scripts/update-oman-seo.js', desc: 'SEO عماني' },
+      { cmd: 'node scripts/update-oman-seo.js', desc: 'SEO الكويتي' },
       { cmd: 'node scripts/generate-mass-seo-pages.js', desc: 'صفحات Mass-SEO' },
       { cmd: 'node scripts/mass-seo-optimizer.js', desc: 'تحسين Mass-SEO' }
     ]

@@ -92,7 +92,7 @@ content = content.replace(
 // إصلاح 3: إضافة placeholder للحقول
 content = content.replace(
   /name="city"\s*id="city"/,
-  'name="city"\n                      id="city"\n                      placeholder="مسقط، صلالة، صحار..."'
+  'name="city"\n                      id="city"\n                      placeholder="الكويت العاصمة، حولي، صحار..."'
 );
 
 content = content.replace(

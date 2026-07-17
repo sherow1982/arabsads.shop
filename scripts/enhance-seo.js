@@ -9,9 +9,9 @@ function generateSpecs(product) {
   const keywords = [
     product.name,
     product.category,
-    'عمان',
-    'مسقط',
-    'صلالة',
+    'الكويت',
+    'الكويت العاصمة',
+    'حولي',
     'شحن مجاني',
     'توصيل سريع',
     'جودة عالية',
@@ -20,11 +20,11 @@ function generateSpecs(product) {
 
   return {
     name: `**${product.name}**`,
-    description: `${product.description}\n\nاحصل على **${product.name}** الأصلي من ${product.category} بأفضل سعر في سلطنة عمان. منتج عالي الجودة مع شحن مجاني لجميع محافظات عمان (مسقط، صلالة، صحار، نزوى). توصيل سريع خلال 1-3 أيام عمل. ${product.name} متوفر الآن في عماني ستور - مخزونك في جيبك.`,
+    description: `${product.description}\n\nاحصل على **${product.name}** الأصلي من ${product.category} بأفضل سعر في دولة الكويت. منتج عالي الجودة مع شحن مجاني لجميع محافظات الكويت (الكويت العاصمة، حولي، صحار، نزوى). توصيل سريع خلال 1-3 أيام عمل. ${product.name} متوفر الآن في إعلانات العرب الكويت.`,
     keywords: keywords.join(', '),
     features: [
       `✓ **${product.name}** أصلي 100%`,
-      `✓ شحن مجاني لجميع مناطق عمان`,
+      `✓ شحن مجاني لجميع مناطق الكويت`,
       `✓ توصيل سريع 1-3 أيام`,
       `✓ ضمان الجودة والأصالة`,
       `✓ دفع عند الاستلام`,
@@ -43,12 +43,12 @@ function generateRichSchema(product) {
     "image": [product.mainImage],
     "brand": {
       "@type": "Brand",
-      "name": "عماني ستور"
+      "name": "إعلانات العرب الكويت"
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://oman-makhzoonk.shop/product/${product.id}`,
-      "priceCurrency": "OMR",
+      "url": `https://arabsads.shop/product/${product.id}`,
+      "priceCurrency": "KWD",
       "price": product.price,
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition",
@@ -58,7 +58,7 @@ function generateRichSchema(product) {
         "shippingRate": {
           "@type": "MonetaryAmount",
           "value": "0",
-          "currency": "OMR"
+          "currency": "KWD"
         },
         "shippingDestination": {
           "@type": "DefinedRegion",
@@ -107,7 +107,7 @@ function generateRichSchema(product) {
       {
         "@type": "PropertyValue",
         "name": "الشحن",
-        "value": "مجاني لجميع مناطق عمان"
+        "value": "مجاني لجميع مناطق الكويت"
       },
       {
         "@type": "PropertyValue",

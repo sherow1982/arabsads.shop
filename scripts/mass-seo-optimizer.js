@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 // قراءة ملف المنتجات JSON
@@ -15,7 +15,7 @@ console.log(`✅ تم العثور على ${products.length} منتج`);
 
 // دالة لتوليد meta description محسّن
 function generateMetaDescription(product) {
-  return `اشتري ${product.name} بأفضل سعر في سلطنة عمان. السعر ${product.price} ريال. شحن مجاني وتوصيل سريع 1-3 أيام. ${product.category}`;
+  return `اشتري ${product.name} بأفضل سعر في دولة الكويت. السعر ${product.price} دينار. شحن مجاني وتوصيل سريع 1-3 أيام. ${product.category}`;
 }
 
 // دالة لتوليد keywords محسّنة
@@ -24,9 +24,9 @@ function generateKeywords(product) {
     product.name,
     product.category,
     `شراء ${product.name}`,
-    `${product.name} عمان`,
-    `${product.name} مسقط`,
-    `${product.name} صلالة`,
+    `${product.name} الكويت`,
+    `${product.name} الكويت العاصمة`,
+    `${product.name} حولي`,
     `${product.category} أونلاين`,
     `متجر ${product.category}`,
     'شحن مجاني',
@@ -47,18 +47,18 @@ function generateStructuredData(product) {
     description: product.description?.substring(0, 200) || product.name,
     brand: {
       '@type': 'Brand',
-      name: 'عماني ستور'
+      name: 'إعلانات العرب الكويت'
     },
     offers: {
       '@type': 'Offer',
-      url: `https://omany.storesads.shop/product/${product.id}`,
-      priceCurrency: 'OMR',
+      url: `https://arabsads.shop/product/${product.id}`,
+      priceCurrency: 'KWD',
       price: product.price,
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       seller: {
         '@type': 'Organization',
-        name: 'عماني ستور'
+        name: 'إعلانات العرب الكويت'
       }
     },
     category: product.category
@@ -75,10 +75,10 @@ if (!fs.existsSync(seoDataDir)) {
 const seoData = products.map(product => {
   return {
     id: product.id,
-    title: `${product.name} | عماني ستور`,
+    title: `${product.name} | إعلانات العرب الكويت`,
     metaDescription: generateMetaDescription(product),
     keywords: generateKeywords(product),
-    canonicalUrl: `https://omany.storesads.shop/product/${product.id}`,
+    canonicalUrl: `https://arabsads.shop/product/${product.id}`,
     ogTitle: product.name,
     ogDescription: product.description?.substring(0, 150) || product.name,
     ogImage: product.mainImage,
@@ -97,7 +97,7 @@ console.log(`✅ تم إنشاء بيانات SEO لـ ${seoData.length} منت�
 
 // إنشاء sitemap.xml محسّن
 function generateSitemap() {
-  const baseUrl = 'https://omany.storesads.shop';
+  const baseUrl = 'https://arabsads.shop';
   const today = new Date().toISOString().split('T')[0];
   
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -147,7 +147,7 @@ generateSitemap();
 
 // إنشاء robots.txt محسّن
 function generateRobotsTxt() {
-  const robotsTxt = `# robots.txt for https://omany.storesads.shop
+  const robotsTxt = `# robots.txt for https://arabsads.shop
 
 User-agent: *
 Allow: /
@@ -156,8 +156,8 @@ Disallow: /checkout/success
 Disallow: /checkout/cancel
 
 # Sitemaps
-Sitemap: https://omany.storesads.shop/sitemap.xml
-Sitemap: https://omany.storesads.shop/product-feed.xml
+Sitemap: https://arabsads.shop/sitemap.xml
+Sitemap: https://arabsads.shop/product-feed.xml
 
 # Crawl-delay
 Crawl-delay: 1
@@ -174,9 +174,9 @@ function generateProductFeed() {
   let feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>عماني ستور - منتجات</title>
-    <link>https://omany.storesads.shop</link>
-    <description>أفضل متجر إلكتروني في سلطنة عمان</description>
+    <title>إعلانات العرب الكويت - منتجات</title>
+    <link>https://arabsads.shop</link>
+    <description>أفضل متجر إلكتروني في دولة الكويت</description>
 `;
 
   products.forEach(product => {
@@ -184,18 +184,18 @@ function generateProductFeed() {
       <g:id>${product.id}</g:id>
       <g:title>${product.name}</g:title>
       <g:description>${(product.description || product.name).substring(0, 500)}</g:description>
-      <g:link>https://omany.storesads.shop/product/${product.id}</g:link>
+      <g:link>https://arabsads.shop/product/${product.id}</g:link>
       <g:image_link>${product.mainImage}</g:image_link>
       <g:condition>new</g:condition>
       <g:availability>in stock</g:availability>
-      <g:price>${product.price} OMR</g:price>
-      <g:brand>عماني ستور</g:brand>
+      <g:price>${product.price} KWD</g:price>
+      <g:brand>إعلانات العرب الكويت</g:brand>
       <g:product_type>${product.category}</g:product_type>
       <g:google_product_category>Home &amp; Garden</g:google_product_category>
       <g:shipping>
         <g:country>OM</g:country>
         <g:service>Standard</g:service>
-        <g:price>0 OMR</g:price>
+        <g:price>0 KWD</g:price>
       </g:shipping>
       <g:identifier_exists>no</g:identifier_exists>
     </item>

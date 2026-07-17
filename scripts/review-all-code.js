@@ -30,7 +30,7 @@ if (fs.existsSync(sitemapPath)) {
   if (sitemap.includes('oman-makhzoonk.shop')) {
     errors.push('❌ sitemap.xml يحتوي على نطاق خاطئ');
     const fixedSitemap = fs.readFileSync(sitemapPath, 'utf8')
-      .replace(/oman-makhzoonk\.shop/g, 'omany.storesads.shop');
+      .replace(/oman-makhzoonk\.shop/g, 'arabsads.shop');
     fs.writeFileSync(sitemapPath, fixedSitemap, 'utf8');
     fixed.push('✅ تم تصحيح النطاق في sitemap.xml');
   } else {
@@ -53,7 +53,7 @@ if (fs.existsSync(massSitemapPath)) {
   
   if (massSitemap.includes('oman-makhzoonk.shop')) {
     const fixedSitemap = fs.readFileSync(massSitemapPath, 'utf8')
-      .replace(/oman-makhzoonk\.shop/g, 'omany.storesads.shop');
+      .replace(/oman-makhzoonk\.shop/g, 'arabsads.shop');
     fs.writeFileSync(massSitemapPath, fixedSitemap, 'utf8');
     fixed.push('✅ تم تصحيح النطاق في mass-seo-sitemap.xml');
   } else {
@@ -122,7 +122,7 @@ if (fs.existsSync(robotsPath)) {
   const robots = fs.readFileSync(robotsPath, 'utf8');
   
   if (robots.includes('oman-makhzoonk.shop')) {
-    const fixedRobots = robots.replace(/oman-makhzoonk\.shop/g, 'omany.storesads.shop');
+    const fixedRobots = robots.replace(/oman-makhzoonk\.shop/g, 'arabsads.shop');
     fs.writeFileSync(robotsPath, fixedRobots, 'utf8');
     fixed.push('✅ تم تصحيح النطاق في robots.txt');
   } else {

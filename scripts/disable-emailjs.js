@@ -25,7 +25,7 @@ const newHandleSubmit = `const handleSubmit = async (e) => {
     ).join('\\n');
 
     const message = \`
-🛍️ *طلب جديد من عماني ستور*
+🛍️ *طلب جديد من إعلانات العرب الكويت*
 
 👤 *معلومات العميل:*
 الاسم: \${formData.firstName} \${formData.lastName}

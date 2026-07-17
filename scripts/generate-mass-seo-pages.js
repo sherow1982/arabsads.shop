@@ -15,25 +15,25 @@ console.log(`📊 إجمالي الصفحات: ${products.length * 5}\n`);
 // دالة لتوليد محتوى ثري واحترافي
 function generateRichDescription(product, type, discount) {
   const descriptions = {
-    buy: `هل تبحث عن ${product.title}؟ نوفر لك أفضل فرصة لشراء ${product.title} بسعر مميز ${product.salePrice} ريال فقط بدلاً من ${product.price} ريال. يمكنك الآن اقتناء ${product.title} من فئة ${product.category} بخصم يصل إلى ${discount}% مع ضمان الجودة العالية. نحن نقدم خدمة شحن مجاني لجميع محافظات سلطنة عمان سواء في مسقط، صلالة، مسندم، أو أي محافظة أخرى. عملية الشراء سهلة وآمنة، والتوصيل سريع خلال 1-3 أيام عمل. اطلب ${product.title} الآن واستمتع بأفضل تجربة تسوق إلكتروني في عمان.`,
+    buy: `هل تبحث عن ${product.title}؟ نوفر لك أفضل فرصة لشراء ${product.title} بسعر مميز ${product.salePrice} دينار فقط بدلاً من ${product.price} دينار. يمكنك الآن اقتناء ${product.title} من فئة ${product.category} بخصم يصل إلى ${discount}% مع ضمان الجودة العالية. نحن نقدم خدمة شحن مجاني لجميع مناطق الكويت. عملية الشراء سهلة وآمنة، والتوصيل سريع خلال 1-3 أيام عمل. اطلب ${product.title} الآن واستمتع بأفضل تجربة تسوق إلكتروني في الكويت.`,
     
-    price: `كم سعر ${product.title} في سلطنة عمان؟ السعر الحالي لـ ${product.title} هو ${product.salePrice} ريال فقط بعد الخصم، مقارنة بالسعر الأصلي ${product.price} ريال. هذا يعني أنك توفر ${discount}% من قيمة المنتج الأصلية. ${product.title} من فئة ${product.category} يتميز بجودة عالية وسعر تنافسي. نحن نضمن لك أفضل الأسعار في السوق العماني مع توفير شحن مجاني لجميع المناطق. لا تفوت هذه الفرصة للحصول على ${product.title} بهذا السعر المميز. التوصيل متاح لجميع المحافظات بما فيها مسقط وصلالة ومسندم.`,
+    price: `كم سعر ${product.title} في الكويت؟ السعر الحالي لـ ${product.title} هو ${product.salePrice} دينار فقط بعد الخصم، مقارنة بالسعر الأصلي ${product.price} دينار. هذا يعني أنك توفر ${discount}% من قيمة المنتج الأصلية. ${product.title} من فئة ${product.category} يتميز بجودة عالية وسعر تنافسي. نحن نضمن لك أفضل الأسعار في السوق الكويتي مع توفير شحن مجاني لجميع المناطق. لا تفوت هذه الفرصة للحصول على ${product.title} بهذا السعر المميز. التوصيل متاح لجميع المحافظات.`,
     
-    dubai: `${product.title} متوفر الآن في مسقط بسعر ${product.salePrice} ريال. إذا كنت تبحث عن ${product.title} في مسقط، نحن نوفر لك خدمة توصيل سريعة ومجانية لجميع مناطق مسقط بما في ذلك القرم، الخوير، المواليح، روي، بوشر، السيب، وجميع المناطق الأخرى. ${product.title} من فئة ${product.category} يأتي بخصم ${discount}% ويمكن توصيله خلال 24 ساعة فقط داخل مسقط. نحن نضمن جودة المنتج وسرعة التوصيل. اطلب ${product.title} الآن واستمتع بأفضل خدمة توصيل في مسقط.`,
+    dubai: `${product.title} متوفر الآن في الكويت بسعر ${product.salePrice} دينار. إذا كنت تبحث عن ${product.title} في الكويت، نحن نوفر لك خدمة توصيل سريعة ومجانية لجميع مناطق الكويت بما في ذلك العاصمة، حولي، الفروانية، الأحمدي، الجهراء، ومبارك الكبير. ${product.title} من فئة ${product.category} يأتي بخصم ${discount}% ويمكن توصيله خلال 24 ساعة فقط. نحن نضمن جودة المنتج وسرعة التوصيل. اطلب ${product.title} الآن واستمتع بأفضل خدمة توصيل في الكويت.`,
     
-    abudhabi: `احصل على ${product.title} في صلالة بسعر مميز ${product.salePrice} ريال. نوفر لك ${product.title} مع خدمة شحن مجاني لجميع مناطق صلالة والمناطق المحيطة. ${product.title} من فئة ${product.category} متاح بخصم ${discount}% مع ضمان الجودة والتوصيل السريع. سواء كنت في صلالة، طاقة، مرباط، أو أي منطقة في محافظة ظفار، نضمن لك وصول ${product.title} بأمان وسرعة. التوصيل يتم خلال 1-3 أيام عمل. اطلب الآن واستفد من العرض الخاص على ${product.title} في صلالة.`,
+    abudhabi: `احصل على ${product.title} في حولي بسعر مميز ${product.salePrice} دينار. نوفر لك ${product.title} مع خدمة شحن مجاني لجميع مناطق الكويت. ${product.title} من فئة ${product.category} متاح بخصم ${discount}% مع ضمان الجودة والتوصيل السريع. سواء كنت في حولي، السالمية، الرميثية، أو أي منطقة في الكويت، نضمن لك وصول ${product.title} بأمان وسرعة. التوصيل يتم خلال 1-3 أيام عمل. اطلب الآن واستفد من العرض الخاص على ${product.title}.`,
     
-    offer: `عرض خاص ومحدود على ${product.title}! وفر ${discount}% واحصل على ${product.title} بسعر ${product.salePrice} ريال فقط بدلاً من ${product.price} ريال. هذا العرض الحصري على ${product.title} من فئة ${product.category} لن يدوم طويلاً. نقدم لك فرصة ذهبية لاقتناء ${product.title} بأفضل سعر في سلطنة عمان مع شحن مجاني لجميع المحافظات. العرض يشمل ضمان الجودة والاستبدال والتوصيل السريع خلال 1-3 أيام. لا تفوت هذه الفرصة المميزة، اطلب ${product.title} الآن قبل انتهاء العرض واستمتع بالتوفير والجودة العالية.`
+    offer: `عرض خاص ومحدود على ${product.title}! وفر ${discount}% واحصل على ${product.title} بسعر ${product.salePrice} دينار فقط بدلاً من ${product.price} دينار. هذا العرض الحصري على ${product.title} من فئة ${product.category} لن يدوم طويلاً. نقدم لك فرصة ذهبية لاقتناء ${product.title} بأفضل سعر في الكويت مع شحن مجاني لجميع المناطق. العرض يشمل ضمان الجودة والاستبدال والتوصيل السريع خلال 1-3 أيام. لا تفوت هذه الفرصة المميزة، اطلب ${product.title} الآن قبل انتهاء العرض.`
   };
   return descriptions[type];
 }
 
 // الكلمات المفتاحية لكل صفحة
 const pageTypes = [
-  { slug: 'buy', title: 'شراء {product} في عمان', keywords: ['شراء', 'اشتري', 'طلب', 'عمان', 'مسقط', 'صلالة'] },
-  { slug: 'price', title: 'سعر {product} في عمان', keywords: ['سعر', 'أسعار', 'كم سعر', 'تكلفة', 'عمان'] },
-  { slug: 'dubai', title: '{product} مسقط - توصيل سريع', keywords: ['مسقط', 'توصيل مسقط', 'شحن مسقط', 'العاصمة'] },
-  { slug: 'abudhabi', title: '{product} صلالة - شحن مجاني', keywords: ['صلالة', 'توصيل صلالة', 'شحن صلالة', 'ظفار'] },
+  { slug: 'buy', title: 'شراء {product} في الكويت', keywords: ['شراء', 'اشتري', 'طلب', 'الكويت', 'العاصمة', 'حولي'] },
+  { slug: 'price', title: 'سعر {product} في الكويت', keywords: ['سعر', 'أسعار', 'كم سعر', 'تكلفة', 'الكويت'] },
+  { slug: 'dubai', title: '{product} الكويت - توصيل سريع', keywords: ['الكويت', 'توصيل الكويت', 'شحن الكويت', 'العاصمة'] },
+  { slug: 'abudhabi', title: '{product} حولي - شحن مجاني', keywords: ['حولي', 'توصيل حولي', 'شحن حولي', 'السالمية'] },
   { slug: 'offer', title: 'عرض خاص {product} - خصم {discount}%', keywords: ['عرض', 'خصم', 'تخفيض', 'أوفر', 'عروض'] }
 ];
 
@@ -48,7 +48,7 @@ products.forEach(product => {
     const slug = `${pageType.slug}-${product.id}`;
     const title = pageType.title.replace('{product}', product.title).replace('{discount}', discount);
     const description = generateRichDescription(product, pageType.slug, discount);
-    const keywords = [product.title, ...pageType.keywords, product.category, 'شحن مجاني', 'توصيل سريع', 'عمان'].join(', ');
+    const keywords = [product.title, ...pageType.keywords, product.category, 'شحن مجاني', 'توصيل سريع', 'الكويت'].join(', ');
 
     massPages.push({
       id: pageId++,
@@ -58,7 +58,7 @@ products.forEach(product => {
       title: title,
       description: description,
       keywords: keywords,
-      canonicalUrl: `https://omany.storesads.shop/seo/${slug}`,
+      canonicalUrl: `https://arabsads.shop/seo/${slug}`,
       product: {
         id: product.id,
         title: product.title,

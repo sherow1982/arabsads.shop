@@ -1,28 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
 import * as gtag from '@/lib/gtag';
 
-const loadCartFromStorage = () => {
-  if (typeof window !== 'undefined') {
-    const savedCart = localStorage.getItem('cart');
-    if (savedCart) {
-      return JSON.parse(savedCart);
-    }
-  }
-  return { items: [], total: 0 };
-};
-
 const saveCartToStorage = (state) => {
   if (typeof window !== 'undefined') {
     localStorage.setItem('cart', JSON.stringify(state));
   }
 };
 
-const initialState = loadCartFromStorage();
+const initialState = { items: [], total: 0 };
 
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
+    hydrate: (state, action) => {
+      state.items = action.payload.items || [];
+      state.total = action.payload.total || 0;
+    },
     addToCart: (state, action) => {
       const existingItem = state.items.find(item => item.id === action.payload.id);
       
@@ -63,5 +57,5 @@ const cartSlice = createSlice({
   },
 });
 
-export const { addToCart, removeFromCart, updateQuantity, clearCart } = cartSlice.actions;
+export const { hydrate, addToCart, removeFromCart, updateQuantity, clearCart } = cartSlice.actions;
 export default cartSlice.reducer;

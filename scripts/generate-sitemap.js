@@ -1,42 +1,64 @@
 const fs = require('fs');
-const data = require('../src/data/products-data.json');
+const path = require('path');
 
-const baseUrl = 'https://omany.storesads.shop';
-const now = new Date().toISOString();
+const DOMAIN = 'https://arabsads.shop';
+const TODAY = new Date().toISOString().split('T')[0];
+
+// قراءة المنتجات
+const productsPath = path.join(__dirname, '../src/data/products.js');
+const content = fs.readFileSync(productsPath, 'utf8');
+const match = content.match(/export const products = (\[[\s\S]*\]);/);
+if (!match) { console.error('Cannot parse products'); process.exit(1); }
+const products = JSON.parse(match[1]);
+
+// الصفحات الثابتة
+const staticPages = [
+  { url: '/',               priority: '1.0', changefreq: 'daily' },
+  { url: '/shop',           priority: '0.9', changefreq: 'daily' },
+  { url: '/about',          priority: '0.7', changefreq: 'monthly' },
+  { url: '/cart',           priority: '0.5', changefreq: 'never' },
+  { url: '/privacy',        priority: '0.4', changefreq: 'monthly' },
+  { url: '/terms',          priority: '0.4', changefreq: 'monthly' },
+  { url: '/shipping-policy',priority: '0.5', changefreq: 'monthly' },
+  { url: '/return-policy',  priority: '0.5', changefreq: 'monthly' },
+];
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>${baseUrl}</loc>
-<lastmod>${now}</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>${baseUrl}/shop</loc>
-<lastmod>${now}</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>${baseUrl}/contact-us</loc>
-<lastmod>${now}</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 `;
 
-data.forEach(p => {
-  xml += `<url>
-<loc>${baseUrl}/product/${p.id}</loc>
-<lastmod>${now}</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8</priority>
-</url>
-`;
+// الصفحات الثابتة
+staticPages.forEach(page => {
+  xml += `  <url>
+    <loc>${DOMAIN}${page.url}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>\n`;
+});
+
+// صفحات المنتجات
+products.forEach(product => {
+  if (!product.slug) return;
+  const imageTag = product.image ? `
+    <image:image>
+      <image:loc>${product.image}</image:loc>
+      <image:title>${(product.title || '').replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]))}</image:title>
+    </image:image>` : '';
+  xml += `  <url>
+    <loc>${DOMAIN}/product/${encodeURIComponent(product.slug)}</loc>
+    <lastmod>${TODAY}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>${imageTag}
+  </url>\n`;
 });
 
 xml += `</urlset>`;
 
-fs.writeFileSync('./public/sitemap.xml', xml, 'utf-8');
-console.log(`✅ تم إنشاء sitemap بـ ${data.length + 3} صفحة`);
+// حفظ في public
+const outPath = path.join(__dirname, '../public/sitemap.xml');
+fs.writeFileSync(outPath, xml, 'utf8');
+console.log(`✅ تم توليد sitemap.xml`);
+console.log(`📊 ${staticPages.length} صفحة ثابتة + ${products.length} منتج`);
+console.log(`🌐 الدومين: ${DOMAIN}`);

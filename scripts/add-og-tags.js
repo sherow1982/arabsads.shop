@@ -4,21 +4,21 @@ const path = require('path');
 const metaTags = `
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="عماني ستور">
-    <meta property="og:title" content="عماني ستور - مخزونك في جيبك | شحن مجاني">
-    <meta property="og:description" content="أفضل متجر إلكتروني في سلطنة عمان. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%">
-    <meta property="og:image" content="https://omany.storesads.shop/og-image.jpg">
-    <meta property="og:image:secure_url" content="https://omany.storesads.shop/og-image.jpg">
+    <meta property="og:site_name" content="إعلانات العرب الكويت">
+    <meta property="og:title" content="إعلانات العرب الكويت | شحن مجاني">
+    <meta property="og:description" content="أفضل متجر إلكتروني في دولة الكويت. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%">
+    <meta property="og:image" content="https://arabsads.shop/og-image.jpg">
+    <meta property="og:image:secure_url" content="https://arabsads.shop/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://omany.storesads.shop">
-    <meta property="og:locale" content="ar_OM">
+    <meta property="og:url" content="https://arabsads.shop">
+    <meta property="og:locale" content="ar_KW">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="عماني ستور - مخزونك في جيبك">
-    <meta name="twitter:description" content="أفضل متجر إلكتروني في سلطنة عمان. شحن مجاني لجميع الطلبات">
-    <meta name="twitter:image" content="https://omany.storesads.shop/og-image.jpg">`;
+    <meta name="twitter:title" content="إعلانات العرب الكويت">
+    <meta name="twitter:description" content="أفضل متجر إلكتروني في دولة الكويت. شحن مجاني لجميع الطلبات">
+    <meta name="twitter:image" content="https://arabsads.shop/og-image.jpg">`;
 
 const outDir = path.join(__dirname, '../out');
 const indexPath = path.join(outDir, 'index.html');

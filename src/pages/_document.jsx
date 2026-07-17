@@ -7,26 +7,24 @@ export default function Document() {
       <Head>
         {/* Basic Meta */}
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
         {/* Open Graph Default */}
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="عماني ستور" />
-        <meta property="og:locale" content="ar_OM" />
-        <meta property="og:title" content="عماني ستور - مخزونك في جيبك | شحن مجاني" />
-        <meta property="og:description" content="أفضل متجر إلكتروني في سلطنة عمان. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%" />
-        <meta property="og:image" content="https://omany.storesads.shop/og-image.jpg" />
-        <meta property="og:image:secure_url" content="https://omany.storesads.shop/og-image.jpg" />
+        <meta property="og:site_name" content="إعلانات العرب الكويت" />
+        <meta property="og:locale" content="ar_KW" />
+        <meta property="og:title" content="إعلانات العرب الكويت - تسوق أونلاين | شحن مجاني" />
+        <meta property="og:description" content="أفضل متجر إلكتروني في الكويت. شحن مجاني لجميع الطلبات. توصيل سريع 1-3 أيام. منتجات أصلية 100%" />
+        <meta property="og:image" content="https://arabsads.shop/og-image.jpg" />
+        <meta property="og:image:secure_url" content="https://arabsads.shop/og-image.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://omany.storesads.shop" />
+        <meta property="og:url" content="https://arabsads.shop" />
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
         
         {/* Preconnect to external domains */}
-        <link rel="dns-prefetch" href="https://m5zoon.com" />
+        <link rel="dns-prefetch" href="https://arabsads.shop" />
 
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGWFC0NSMR"></script>

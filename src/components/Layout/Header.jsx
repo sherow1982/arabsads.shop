@@ -23,28 +23,28 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
             <div className="flex flex-wrap gap-3 md:gap-6 justify-center md:justify-start">
-              <span className="hidden sm:inline">📧 sherow1982@gmail.com</span>
+              <span className="hidden sm:inline">📧 info@arabsads.shop</span>
               <span>📱 +201110760081</span>
             </div>
             <div>
-              <span className="font-bold">🚚 شحن مجاني</span>
+              <span className="font-bold">🚚 شحن مجاني داخل الكويت</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Main Header */}
-      <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
+      <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${mounted && scrolled ? 'shadow-md' : 'shadow-sm'}`}>
         <div className="max-w-7xl mx-auto px-4 py-3 md:py-4">
           <div className="flex items-center justify-between">
             <Link href="/">
               <div className="cursor-pointer hover:opacity-90 transition flex items-center gap-3">
-                <img src="/logo.jpg" alt="عماني ستور" className="h-12 md:h-16 w-auto object-contain" />
+                <img src="/logo.jpg" alt="إعلانات العرب الكويت" className="h-12 md:h-16 w-auto object-contain" />
                 <div>
                   <h1 className="text-xl md:text-3xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-                    عماني ستور
+                    إعلانات العرب
                   </h1>
-                  <p className="text-xs md:text-sm font-bold text-accent">مخزونك في جيبك</p>
+                  <p className="text-xs md:text-sm font-bold text-accent">الكويت 🇰🇼</p>
                 </div>
               </div>
             </Link>
@@ -85,18 +85,14 @@ export default function Header() {
               </Link>
               <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-dark p-2">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  {mobileMenuOpen ? (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  ) : (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  )}
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
             </div>
           </div>
 
           {/* Mobile Menu */}
-          {mobileMenuOpen && (
+          {mobileMenuOpen && mounted && (
             <nav className="md:hidden mt-4 pb-4 border-t pt-4 space-y-3">
               <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block text-dark hover:text-primary transition font-medium py-2">الرئيسية</Link>
               <Link href="/shop" onClick={() => setMobileMenuOpen(false)} className="block text-dark hover:text-primary transition font-medium py-2">المتجر</Link>

@@ -53,7 +53,7 @@ function findGoogleCategory(productName) {
 let updated = 0;
 const updatedProducts = products.map(product => {
   const oldCategory = product.category;
-  const newGoogleCategory = findGoogleCategory(product.name);
+  const newGoogleCategory = findGoogleCategory(product.title || product.name || '');
   
   // استخراج الفئة العربية من Google Category
   const arabicCategoryMap = {

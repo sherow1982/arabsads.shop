@@ -3,8 +3,8 @@ const path = require('path');
 
 const products = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/products-data.json'), 'utf8'));
 
-const baseUrl = 'https://omany.storesads.shop';
-const lastmod = '2025-02-12';
+const baseUrl = 'https://arabsads.shop';
+const lastmod = '2024-12-15';
 
 // 1. إنشاء ملف pages-sitemap.xml (الصفحات الفعلية)
 let pagesSitemap = `<?xml version="1.0" encoding="UTF-8"?>

@@ -26,7 +26,7 @@ export default function Footer() {
             <input 
               type="email" 
               required 
-               
+              placeholder="بريدك الإلكتروني..."
               className="flex-1 px-4 py-3 rounded-md text-dark focus:outline-none focus:ring-2 focus:ring-accent" 
             />
             <button type="submit" className="bg-secondary text-white px-6 py-3 rounded-md font-bold hover:bg-secondary-dark transition">
@@ -41,16 +41,16 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-primary mb-4">عماني ستور</h3>
-              <p className="text-gray-300 mb-2 font-bold text-accent">مخزونك في جيبك</p>
-              <p className="text-gray-300 mb-4">أفضل متجر إلكتروني في سلطنة عمان</p>
+              <h3 className="text-2xl font-bold text-primary mb-4">إعلانات العرب الكويت</h3>
+              <p className="text-gray-300 mb-2 font-bold text-accent">🇰🇼 الكويت</p>
+              <p className="text-gray-300 mb-4">أفضل متجر إلكتروني في الكويت</p>
               <div className="space-y-2 text-gray-300">
                 <p className="flex items-center gap-2">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                   </svg>
-                  sherow1982@gmail.com
+                  info@arabsads.shop
                 </p>
                 <p className="flex items-center gap-2">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -88,7 +88,7 @@ export default function Footer() {
                   <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
-                  شحن مجاني
+                  شحن مجاني داخل الكويت
                 </li>
                 <li className="flex items-center gap-2 text-gray-300">
                   <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
@@ -111,7 +111,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 py-6">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} عماني ستور. جميع الحقوق محفوظة.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} إعلانات العرب الكويت. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>

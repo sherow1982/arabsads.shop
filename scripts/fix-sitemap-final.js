@@ -6,7 +6,7 @@ console.log('🔧 إصلاح خرائط الموقع النهائي...\n');
 const productsData = JSON.parse(fs.readFileSync(path.join(__dirname, '../src/data/products-data.json'), 'utf8'));
 const products = Array.isArray(productsData) ? productsData : (productsData.products || []);
 
-const baseUrl = 'https://omany.storesads.shop';
+const baseUrl = 'https://arabsads.shop';
 const lastmod = '2024-12-15';
 
 // إنشاء sitemap.xml مع صور
@@ -113,7 +113,7 @@ if (fs.existsSync(massSeoPath)) {
 const robotsPath = path.join(__dirname, '../public/robots.txt');
 if (fs.existsSync(robotsPath)) {
   const content = fs.readFileSync(robotsPath, 'utf8');
-  if (content.includes('omany.storesads.shop')) {
+  if (content.includes('arabsads.shop')) {
     console.log('✅ robots.txt صحيح\n');
   } else {
     console.log('⚠️  robots.txt يحتاج تحديث النطاق\n');

@@ -1,102 +1,146 @@
 import Head from 'next/head';
+import Link from 'next/link';
+
+const SITE = 'https://arabsads.shop';
 
 export default function ReturnPolicy() {
   return (
     <>
       <Head>
-        <title>سياسة الإرجاع والاستبدال - عماني ستور</title>
+        <title>سياسة الإرجاع والاستبدال - إعلانات العرب الكويت | ضمان 14 يوم</title>
+        <meta name="description" content="سياسة الإرجاع والاستبدال في إعلانات العرب الكويت. إرجاع مجاني خلال 14 يوماً من تاريخ الاستلام. استرداد كامل للمبلغ بدون رسوم إضافية." />
+        <meta name="keywords" content="سياسة الإرجاع, استبدال المنتجات, ضمان الإرجاع, إعلانات العرب الكويت, استرداد الأموال" />
+        <link rel="canonical" href={`${SITE}/return-policy`} />
+        <meta property="og:title" content="سياسة الإرجاع والاستبدال - إعلانات العرب الكويت" />
+        <meta property="og:description" content="إرجاع مجاني خلال 14 يوماً من تاريخ الاستلام. استرداد كامل للمبلغ." />
+        <meta property="og:url" content={`${SITE}/return-policy`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="ar_KW" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'سياسة الإرجاع والاستبدال',
+          url: `${SITE}/return-policy`,
+          description: 'سياسة الإرجاع والاستبدال في إعلانات العرب الكويت',
+          breadcrumb: {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'الرئيسية', item: SITE },
+              { '@type': 'ListItem', position: 2, name: 'سياسة الإرجاع', item: `${SITE}/return-policy` }
+            ]
+          }
+        }) }} />
       </Head>
 
       <main className="max-w-4xl mx-auto px-4 py-16">
-          <h1 className="text-5xl font-bold text-dark mb-8">سياسة الإرجاع والاستبدال</h1>
-          
-          <div className="bg-white rounded-2xl shadow-card p-8 space-y-6">
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">فترة الإرجاع</h2>
-              <p className="text-gray-700 leading-relaxed">
-                يمكنك إرجاع المنتجات خلال 14 يوماً من تاريخ الاستلام. يجب أن تكون المنتجات في حالتها الأصلية مع جميع الملحقات والتغليف.
-              </p>
-            </section>
+        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6" aria-label="breadcrumb">
+          <Link href="/" className="hover:text-primary transition">الرئيسية</Link>
+          <span>/</span>
+          <span className="text-dark font-medium">سياسة الإرجاع</span>
+        </nav>
 
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">شروط الإرجاع</h2>
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>المنتج في حالته الأصلية وغير مستخدم</li>
-                <li>التغليف الأصلي سليم ومكتمل</li>
-                <li>جميع الملحقات والكتيبات موجودة</li>
-                <li>إيصال الشراء الأصلي</li>
-                <li>عدم وجود أي تلف أو خدوش</li>
+        <h1 className="text-4xl font-bold text-dark mb-8">🔄 سياسة الإرجاع والاستبدال</h1>
+
+        <div className="bg-white rounded-2xl shadow-card p-8 space-y-8">
+
+          <div className="bg-green-50 border border-green-100 p-6 rounded-xl text-center">
+            <div className="text-4xl font-black text-green-700 mb-2">✅ ضمان الإرجاع 14 يوم</div>
+            <p className="text-gray-700 text-lg font-medium">إرجاع مجاني خلال 14 يوماً من تاريخ الاستلام</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <section className="bg-gray-50 rounded-xl p-6">
+              <h2 className="text-xl font-bold text-dark mb-4 flex items-center gap-2">
+                <span>✅</span> شروط الإرجاع
+              </h2>
+              <ul className="space-y-2">
+                {[
+                  'المنتج في حالته الأصلية وغير مستخدم',
+                  'التغليف الأصلي سليم ومكتمل',
+                  'جميع الملحقات والكتيبات موجودة',
+                  'إيصال الشراء الأصلي',
+                  'عدم وجود أي تلف أو خدوش',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="text-green-500 font-bold mt-0.5">✓</span>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </section>
 
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">المنتجات غير القابلة للإرجاع</h2>
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>المنتجات الشخصية والصحية</li>
-                <li>المنتجات المخصصة أو المصنوعة حسب الطلب</li>
-                <li>المنتجات المفتوحة أو المستخدمة</li>
-                <li>المنتجات المخفضة أو في التصفية</li>
+            <section className="bg-gray-50 rounded-xl p-6">
+              <h2 className="text-xl font-bold text-dark mb-4 flex items-center gap-2">
+                <span>💰</span> استرداد الأموال
+              </h2>
+              <ul className="space-y-2">
+                {[
+                  'خلال 7-10 أيام عمل',
+                  'بنفس طريقة الدفع الأصلية',
+                  'استرداد كامل للمبلغ',
+                  'بدون رسوم إضافية',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="text-green-500 font-bold mt-0.5">✓</span>
+                    {item}
+                  </li>
+                ))}
               </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">كيفية الإرجاع</h2>
-              <div className="space-y-3 text-gray-700">
-                <p className="font-semibold">لإرجاع منتج، اتبع الخطوات التالية:</p>
-                <ol className="list-decimal list-inside space-y-2">
-                  <li>تواصل مع خدمة العملاء عبر البريد الإلكتروني أو الهاتف</li>
-                  <li>قدم رقم الطلب وسبب الإرجاع</li>
-                  <li>احصل على رقم تفويض الإرجاع (RMA)</li>
-                  <li>أعد تغليف المنتج بشكل آمن</li>
-                  <li>أرسل المنتج إلى العنوان المحدد</li>
-                </ol>
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">الاستبدال</h2>
-              <p className="text-gray-700 leading-relaxed mb-3">
-                نقبل استبدال المنتجات في الحالات التالية:
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>المنتج معيب أو تالف</li>
-                <li>استلام منتج خاطئ</li>
-                <li>رغبة في مقاس أو لون مختلف</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">استرداد الأموال</h2>
-              <p className="text-gray-700 leading-relaxed mb-3">
-                بعد استلام المنتج المرتجع وفحصه:
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>سيتم استرداد المبلغ خلال 7-10 أيام عمل</li>
-                <li>الاسترداد يتم بنفس طريقة الدفع الأصلية</li>
-                <li>رسوم الشحن غير قابلة للاسترداد</li>
-                <li>العميل يتحمل تكلفة شحن الإرجاع</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">المنتجات التالفة أو المعيبة</h2>
-              <p className="text-gray-700 leading-relaxed">
-                إذا استلمت منتجاً تالفاً أو معيباً، يرجى التواصل معنا فوراً. سنقوم باستبدال المنتج أو استرداد المبلغ كاملاً بما في ذلك رسوم الشحن.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-dark mb-4">الاتصال بنا</h2>
-              <p className="text-gray-700 leading-relaxed mb-3">
-                لأي استفسارات حول سياسة الإرجاع:
-              </p>
-              <div className="space-y-2 text-gray-700">
-                <p>📧 البريد الإلكتروني: sherow1982@gmail.com</p>
-                <p>📱 الهاتف / واتساب: +201110760081</p>
-              </div>
             </section>
           </div>
-        </main>
+
+          <section>
+            <h2 className="text-2xl font-bold text-dark mb-4">كيفية طلب الإرجاع</h2>
+            <ol className="space-y-3">
+              {[
+                'تواصل معنا عبر واتساب أو البريد الإلكتروني',
+                'أرسل رقم الطلب وسبب الإرجاع',
+                'احصل على موافقة الإرجاع ورقم التفويض (RMA)',
+                'أعد تغليف المنتج بشكل آمن',
+                'أرسل المنتج إلى العنوان المحدد',
+              ].map((step, i) => (
+                <li key={i} className="flex items-center gap-4 text-gray-700">
+                  <span className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">{i + 1}</span>
+                  {step}
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <section className="bg-yellow-50 border border-yellow-100 rounded-xl p-6">
+            <h2 className="text-xl font-bold text-dark mb-3">⚠️ حالات لا يُقبل فيها الإرجاع</h2>
+            <ul className="space-y-2">
+              {[
+                'المنتجات المستخدمة أو التالفة بسبب سوء الاستخدام',
+                'المنتجات التي مضى عليها أكثر من 14 يوماً',
+                'المنتجات التي فُقدت ملحقاتها أو تغليفها الأصلي',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
+                  <span className="text-yellow-600 font-bold mt-0.5">•</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="bg-blue-50 rounded-xl p-6">
+            <h2 className="text-xl font-bold text-dark mb-3">📞 تواصل معنا</h2>
+            <div className="space-y-2 text-gray-700">
+              <p>📧 البريد الإلكتروني: info@arabsads.shop</p>
+              <p>📱 واتساب: <a href="https://wa.me/201110760081" className="text-primary hover:underline font-medium">+201110760081</a></p>
+            </div>
+          </section>
+
+          <div className="flex gap-4 pt-2">
+            <Link href="/shipping-policy" className="inline-flex items-center gap-2 text-primary hover:underline font-medium">
+              🚚 سياسة الشحن ←
+            </Link>
+            <Link href="/shop" className="inline-flex items-center gap-2 text-primary hover:underline font-medium">
+              🛍️ تسوق الآن ←
+            </Link>
+          </div>
+        </div>
+      </main>
     </>
   );
 }
