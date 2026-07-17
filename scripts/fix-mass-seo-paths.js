@@ -13,16 +13,11 @@ console.log(`📄 عدد الصفحات: ${pages.length}`);
 const slugPath = path.join(process.cwd(), 'src/pages/seo/[slug].jsx');
 let content = fs.readFileSync(slugPath, 'utf8');
 
-// توليد جميع الـ paths
-const pathsCode = pages.map(p => `    { params: { slug: '${p.slug}' } }`).join(',\n');
-
-// استبدال getStaticPaths
+// استخدام fallback: 'blocking' لتجنب timeout في البناء
 const newGetStaticPaths = `export async function getStaticPaths() {
   return {
-    paths: [
-${pathsCode}
-    ],
-    fallback: false
+    paths: [],
+    fallback: 'blocking'
   };
 }`;
 
