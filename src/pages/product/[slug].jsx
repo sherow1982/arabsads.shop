@@ -11,8 +11,8 @@ import * as gtag from '@/lib/gtag';
 
 export async function getStaticPaths() {
   return {
-    paths: products.map(p => ({ params: { slug: p.slug } })),
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }
 
