@@ -24,16 +24,11 @@ export default function Document() {
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
 
-        {/* Preload critical font */}
+        {/* Font - direct stylesheet */}
         <link
-          rel="preload"
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap"
-          as="style"
-          onLoad="this.onload=null;this.rel='stylesheet'"
+          rel="stylesheet"
         />
-        <noscript>
-          <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
-        </noscript>
 
         {/* Google Analytics - deferred */}
         <script

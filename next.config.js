@@ -24,7 +24,16 @@ const nextConfig = {
         ...config.optimization,
         splitChunks: {
           chunks: 'all',
+          maxSize: 20 * 1024 * 1024, // 20MB max per chunk
+          minSize: 20000,
           cacheGroups: {
+            productsData: {
+              test: /[\\/]src[\\/]data[\\/]products/,
+              name: false, // تقسيم تلقائي بدون اسم ثابت
+              chunks: 'all',
+              priority: 30,
+              enforce: true,
+            },
             swiper: {
               test: /[\\/]node_modules[\\/]swiper[\\/]/,
               name: 'swiper',
@@ -37,11 +46,12 @@ const nextConfig = {
               chunks: 'all',
               priority: 15,
             },
-            commons: {
-              name: 'commons',
+            defaultVendors: {
+              test: /[\\/]node_modules[\\/]/,
+              name: false,
               chunks: 'all',
-              minChunks: 2,
               priority: 10,
+              maxSize: 20 * 1024 * 1024,
             },
           },
         },
