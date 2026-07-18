@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { useRouter } from 'next/router';
-import { products } from '@/data/products';
 
 export default function SearchBar() {
   const [query, setQuery] = useState('');
@@ -8,10 +7,11 @@ export default function SearchBar() {
   const [showResults, setShowResults] = useState(false);
   const router = useRouter();
 
-  const handleSearch = (value) => {
+  const handleSearch = useCallback(async (value) => {
     setQuery(value);
     if (value.length > 1) {
-      const filtered = products.filter(p => 
+      const { products } = await import('@/data/products');
+      const filtered = products.filter(p =>
         p.title.toLowerCase().includes(value.toLowerCase()) ||
         p.category.toLowerCase().includes(value.toLowerCase())
       ).slice(0, 5);
@@ -21,7 +21,7 @@ export default function SearchBar() {
       setResults([]);
       setShowResults(false);
     }
-  };
+  }, []);
 
   const handleSelect = (product) => {
     router.push(`/product/${product.slug}`);
@@ -53,7 +53,7 @@ export default function SearchBar() {
               onClick={() => handleSelect(product)}
               className="flex items-center gap-3 p-3 hover:bg-gray-50 cursor-pointer border-b last:border-b-0"
             >
-              <img src={product.image} alt={product.title} className="w-12 h-12 object-cover rounded" />
+              <img src={product.image} alt={product.title} width="48" height="48" loading="lazy" className="w-12 h-12 object-cover rounded" />
               <div className="flex-1 text-right">
                 <p className="font-medium text-dark text-sm">{product.title}</p>
                 <p className="text-primary font-bold text-sm">{product.salePrice.toFixed(3)} د.ك</p>
