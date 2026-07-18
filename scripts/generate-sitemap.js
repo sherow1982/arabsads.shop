@@ -21,6 +21,7 @@ const staticPages = [
   { url: '/terms',          priority: '0.4', changefreq: 'monthly' },
   { url: '/shipping-policy',priority: '0.5', changefreq: 'monthly' },
   { url: '/return-policy',  priority: '0.5', changefreq: 'monthly' },
+  { url: '/contact',        priority: '0.5', changefreq: 'monthly' },
 ];
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +48,7 @@ products.forEach(product => {
       <image:title>${(product.title || '').replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]))}</image:title>
     </image:image>` : '';
   xml += `  <url>
-    <loc>${DOMAIN}/product/${encodeURIComponent(product.slug)}</loc>
+    <loc>${DOMAIN}/product/${product.slug}</loc>
     <lastmod>${TODAY}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>${imageTag}
