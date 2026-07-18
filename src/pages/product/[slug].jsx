@@ -142,6 +142,10 @@ export default function ProductDetail({ product }) {
               <img
                 src={selectedImage || product.image}
                 alt={product.title}
+                width="600"
+                height="600"
+                loading="eager"
+                fetchPriority="high"
                 className="w-full h-full object-contain p-4"
               />
               {discount > 0 && (
@@ -154,7 +158,7 @@ export default function ProductDetail({ product }) {
               {allImages.map((img, i) => (
                 <button key={i} onClick={() => setSelectedImage(img)}
                   className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition flex-shrink-0 ${(selectedImage === img || (!selectedImage && i === 0)) ? 'border-primary shadow-md' : 'border-gray-200 hover:border-gray-400'}`}>
-                  <img src={img} alt={`${product.title} ${i + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`${product.title} - صورة ${i + 1}`} width="64" height="64" loading="lazy" className="w-full h-full object-cover" />
                 </button>
               ))}
             </div>
@@ -230,9 +234,11 @@ export default function ProductDetail({ product }) {
                 <span className="font-bold text-dark text-sm">الكمية:</span>
                 <div className="flex items-center gap-3 bg-gray-100 rounded-xl px-3 py-2">
                   <button onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                    aria-label="تقليل الكمية"
                     className="w-8 h-8 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition shadow-sm text-xl leading-none">−</button>
                   <span className="text-lg font-bold min-w-[32px] text-center">{quantity}</span>
                   <button onClick={() => setQuantity(quantity + 1)}
+                    aria-label="زيادة الكمية"
                     className="w-8 h-8 bg-white rounded-lg font-bold text-primary hover:bg-primary hover:text-white transition shadow-sm text-xl leading-none">+</button>
                 </div>
               </div>

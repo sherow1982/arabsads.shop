@@ -39,7 +39,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link href="/">
               <div className="cursor-pointer hover:opacity-90 transition flex items-center gap-3">
-                <img src="/logo.jpg" alt="إعلانات العرب الكويت" className="h-12 md:h-16 w-auto object-contain" />
+                <img src="/logo.jpg" alt="إعلانات العرب الكويت" width="64" height="64" className="h-12 md:h-16 w-auto object-contain" />
                 <div>
                   <h1 className="text-xl md:text-3xl font-black bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
                     إعلانات العرب
@@ -54,7 +54,7 @@ export default function Header() {
               <Link href="/" className="text-dark hover:text-primary transition font-medium">الرئيسية</Link>
               <Link href="/shop" className="text-dark hover:text-primary transition font-medium">المتجر</Link>
               <Link href="/about" className="text-dark hover:text-primary transition font-medium">من نحن</Link>
-              <Link href="/cart" className="relative">
+              <Link href="/cart" className="relative" aria-label="عربة التسوق">
                 <div className="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-md hover:opacity-90 transition font-medium flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -71,7 +71,7 @@ export default function Header() {
 
             {/* Mobile Menu Button & Cart */}
             <div className="flex md:hidden items-center gap-3">
-              <Link href="/cart" className="relative">
+              <Link href="/cart" className="relative" aria-label="عربة التسوق">
                 <div className="bg-gradient-to-r from-primary to-secondary text-white p-2 rounded-md">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -83,7 +83,7 @@ export default function Header() {
                   )}
                 </div>
               </Link>
-              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-dark p-2">
+              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="فتح القائمة" className="text-dark p-2">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>

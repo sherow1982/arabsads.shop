@@ -19,7 +19,7 @@ export default function FloatingCart() {
     <button
       onClick={() => router.push('/cart')}
       className="fixed bottom-6 right-6 z-50 bg-primary text-white p-4 rounded-full shadow-lg hover:bg-primary-dark transition-all hover:scale-110"
-      aria-label="Cart"
+      aria-label={`عربة التسوق - ${items.length} منتج`}
     >
       <div className="relative">
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

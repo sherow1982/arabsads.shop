@@ -6,12 +6,12 @@ import { products } from '@/data/products';
 import { getAverageRating, getProductReviews } from '@/data/productReviews';
 import { toast } from 'react-toastify';
 import SEO from '@/components/SEO';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, EffectCoverflow, Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-coverflow';
+import dynamic from 'next/dynamic';
+
+const Swiper = dynamic(() => import('swiper/react').then(m => m.Swiper), { ssr: false });
+const SwiperSlide = dynamic(() => import('swiper/react').then(m => m.SwiperSlide), { ssr: false });
+
+import { useEffect, useState } from 'react';
 
 const CATEGORIES = [
   { name: 'اجهزة منزلية', icon: '🏠' },
@@ -30,6 +30,21 @@ const CATEGORIES = [
 export default function Home() {
   const router = useRouter();
   const dispatch = useDispatch();
+  const [swiperModules, setSwiperModules] = useState(null);
+
+  useEffect(() => {
+    import('swiper/react').then(() => {
+      Promise.all([
+        import('swiper/modules'),
+        import('swiper/css'),
+        import('swiper/css/pagination'),
+        import('swiper/css/navigation'),
+        import('swiper/css/effect-coverflow'),
+      ]).then(([modules]) => {
+        setSwiperModules([modules.Autoplay, modules.Pagination, modules.EffectCoverflow, modules.Navigation]);
+      });
+    });
+  }, []);
   
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
@@ -55,7 +70,7 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-white opacity-90">اكتشف أفضل العروض في الكويت 🇰🇼</p>
           </div>
           <Swiper
-            modules={[Autoplay, Pagination, EffectCoverflow, Navigation]}
+            modules={swiperModules || []}
             effect="coverflow"
             grabCursor={true}
             centeredSlides={true}
@@ -71,7 +86,7 @@ export default function Home() {
               <SwiperSlide key={product.id}>
                 <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl cursor-pointer transform transition-all hover:scale-105" onClick={() => openProduct(product)} role="button" tabIndex={0}>
                   <div className="relative h-80 md:h-96">
-                    <img src={product.image} alt={product.title} className="w-full h-full object-cover" />
+                    <img src={product.image} alt={product.title} width="350" height="384" loading="lazy" className="w-full h-full object-cover" />
                     {product.salePrice < product.price && (
                       <span className="absolute top-4 right-4 bg-red-600 text-white px-4 py-2 rounded-full text-lg font-bold shadow-lg animate-pulse">
                         -{Math.round((1 - product.salePrice / product.price) * 100)}%
@@ -131,7 +146,7 @@ export default function Home() {
             {products.slice(0, 8).map((product) => (
               <div key={product.id} className="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-hover transition-all duration-300 group">
                 <div className="relative h-48 md:h-64 overflow-hidden cursor-pointer" onClick={() => openProduct(product)}>
-                  <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+                  <img src={product.image} alt={product.title} width="300" height="256" loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
                   {product.salePrice < product.price && (
                     <span className="absolute top-2 md:top-3 right-2 md:right-3 bg-danger text-white px-2 md:px-3 py-1 rounded-full text-xs md:text-sm font-bold shadow-lg">
                       -{Math.round((1 - product.salePrice / product.price) * 100)}%

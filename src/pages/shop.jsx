@@ -136,7 +136,7 @@ export default function Shop() {
               {displayedProducts.map((product) => (
                 <div key={product.id} className="bg-white rounded-lg shadow-card overflow-hidden hover:shadow-hover transition-all duration-300 group">
                   <div className="relative h-48 md:h-64 overflow-hidden cursor-pointer" onClick={(e) => openProduct(product, e)}>
-                    <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+                    <img src={product.image} alt={product.title} width="300" height="256" loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
                     {product.salePrice < product.price && (
                       <span className="absolute top-3 right-3 bg-danger text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                         -{Math.round((1 - product.salePrice / product.price) * 100)}%

@@ -13,7 +13,7 @@ export default function Footer() {
       {/* Banner Before Footer */}
       <div className="py-4 md:py-6 bg-light-gray">
         <div className="max-w-7xl mx-auto px-4">
-          <img src="/banner.jpg" alt="Banner" className="w-full rounded-lg shadow-lg" />
+          <img src="/banner.jpg" alt="عروض وخصومات إعلانات العرب الكويت" width="1200" height="200" loading="lazy" className="w-full rounded-lg shadow-lg" />
         </div>
       </div>
 
