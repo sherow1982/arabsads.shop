@@ -8,10 +8,7 @@ import { toast } from 'react-toastify';
 import SEO from '@/components/SEO';
 import dynamic from 'next/dynamic';
 
-const Swiper = dynamic(() => import('swiper/react').then(m => m.Swiper), { ssr: false });
-const SwiperSlide = dynamic(() => import('swiper/react').then(m => m.SwiperSlide), { ssr: false });
-
-import { useEffect, useState } from 'react';
+const SwiperSlider = dynamic(() => import('@/components/HomeSlider'), { ssr: false });
 
 const CATEGORIES = [
   { name: 'اجهزة منزلية', icon: '🏠' },
@@ -30,21 +27,6 @@ const CATEGORIES = [
 export default function Home() {
   const router = useRouter();
   const dispatch = useDispatch();
-  const [swiperModules, setSwiperModules] = useState(null);
-
-  useEffect(() => {
-    import('swiper/react').then(() => {
-      Promise.all([
-        import('swiper/modules'),
-        import('swiper/css'),
-        import('swiper/css/pagination'),
-        import('swiper/css/navigation'),
-        import('swiper/css/effect-coverflow'),
-      ]).then(([modules]) => {
-        setSwiperModules([modules.Autoplay, modules.Pagination, modules.EffectCoverflow, modules.Navigation]);
-      });
-    });
-  }, []);
   
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
@@ -69,51 +51,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-6xl font-black text-white mb-4">منتجاتنا المميزة</h2>
             <p className="text-xl md:text-2xl text-white opacity-90">اكتشف أفضل العروض في الكويت 🇰🇼</p>
           </div>
-          <Swiper
-            modules={swiperModules || []}
-            effect="coverflow"
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView="auto"
-            coverflowEffect={{ rotate: 30, stretch: 0, depth: 100, modifier: 1, slideShadows: true }}
-            autoplay={{ delay: 2500, disableOnInteraction: false }}
-            pagination={{ clickable: true }}
-            navigation={true}
-            loop={true}
-            className="product-slider"
-          >
-            {products.slice(0, 12).map((product) => (
-              <SwiperSlide key={product.id}>
-                <div className="relative bg-white rounded-2xl overflow-hidden shadow-2xl cursor-pointer transform transition-all hover:scale-105" onClick={() => openProduct(product)} role="button" tabIndex={0}>
-                  <div className="relative h-80 md:h-96">
-                    <img src={product.image} alt={product.title} width="350" height="384" loading="lazy" className="w-full h-full object-cover" />
-                    {product.salePrice < product.price && (
-                      <span className="absolute top-4 right-4 bg-red-600 text-white px-4 py-2 rounded-full text-lg font-bold shadow-lg animate-pulse">
-                        -{Math.round((1 - product.salePrice / product.price) * 100)}%
-                      </span>
-                    )}
-                  </div>
-                  <div className="p-6 bg-gradient-to-t from-white to-gray-50">
-                    <h3 className="text-xl font-bold text-dark mb-3 line-clamp-2">{product.title}</h3>
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <span className="text-3xl font-black text-primary">{product.salePrice.toFixed(3)} د.ك</span>
-                        {product.salePrice < product.price && (
-                          <span className="text-lg text-gray-400 line-through ml-2">{product.price.toFixed(3)} د.ك</span>
-                        )}
-                      </div>
-                      <button 
-                        onClick={(e) => { e.stopPropagation(); handleAddToCart(product); }}
-                        className="bg-primary text-white px-6 py-3 rounded-full font-bold hover:bg-primary-dark transition shadow-lg"
-                      >
-                        أضف للسلة
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <SwiperSlider products={products.slice(0, 12)} onAddToCart={handleAddToCart} onOpenProduct={openProduct} />
         </div>
       </section>
 
